@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T11:05:10.257904Z",
+  "generated_at": "2026-08-04T11:34:32.253301Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -14,7 +14,7 @@
     {
       "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 36,
+      "completion": 28,
       "project_ids": [
         "3ab367a5-461c-8131-8f83-c11b94897a00",
         "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
@@ -92,10 +92,10 @@
       "stage": "Now",
       "pillar": "Knowledge",
       "summary": "Methodology reframing approved and pushed live on the new website. Design brief for the public page sent. Remaining: upload images to site, review Layer 3 with Cesca, and work through Layer 1 with Krystyna (Aug 5).",
-      "completion": 40,
+      "completion": 22,
       "task_counts": {
-        "done": 2,
-        "total": 5
+        "done": 4,
+        "total": 18
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -182,20 +182,6 @@
       ]
     },
     {
-      "id": "336367a5-461c-8045-8cd1-c84588e5d68a",
-      "name": "[Merged \u2014 see Project Garry] Old Garry stub",
-      "status": "Canceled",
-      "stage": null,
-      "pillar": null,
-      "summary": "Merged into the consolidated Project Garry page on Aug 3, 2026. Tasks and history moved there. Safe to delete this page.",
-      "completion": 24,
-      "task_counts": {
-        "done": 5,
-        "total": 21
-      },
-      "goal_ids": []
-    },
-    {
       "id": "2f5367a5-461c-808c-a448-dd421d916570",
       "name": "What do to with trends",
       "status": "Backlog",
@@ -256,7 +242,7 @@
     {
       "id": "2f5367a5-461c-80e8-a14c-f73a0d970622",
       "name": "Customer Stories Program",
-      "status": "Planning",
+      "status": "Paused",
       "stage": null,
       "pillar": "Collateral",
       "summary": "The Customer Stories Program is a high-priority project planned from January 25, 2026, to June 30, 2026, with various tasks outlined. Key outputs and references related to customer stories are included for project work.",
@@ -286,7 +272,7 @@
     {
       "id": "2f5367a5-461c-80b0-8d3d-cce1bff408d5",
       "name": "Admin",
-      "status": "Planning",
+      "status": "Backlog",
       "stage": null,
       "pillar": null,
       "summary": "Project \"Admin\" is in the planning stage with a low priority, scheduled from January 1, 2026, to December 31, 2026. Specific tasks are yet to be defined.",
@@ -358,7 +344,7 @@
     {
       "id": "2de367a5-461c-8042-b886-eb23b2cd2691",
       "name": "Use Cases Library",
-      "status": "Planning",
+      "status": "Paused",
       "stage": null,
       "pillar": "Collateral",
       "summary": "The Use Cases Library project is planned with a medium priority, scheduled from May 24, 2026, to June 30, 2026. Additional information can be found through a provided link, and project tasks are yet to be specified.",
