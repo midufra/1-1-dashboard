@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T10:28:23.285128Z",
+  "generated_at": "2026-08-04T11:05:10.257904Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -14,7 +14,7 @@
     {
       "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 33,
+      "completion": 36,
       "project_ids": [
         "3ab367a5-461c-8131-8f83-c11b94897a00",
         "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 22,
+      "completion": 24,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -56,7 +56,7 @@
     {
       "id": "3ab367a5-461c-8107-9761-dc9fe40d9709",
       "name": "Client Endorsements (Gong)",
-      "status": "Paused",
+      "status": "Not started",
       "stage": "Later",
       "pillar": "Proof",
       "summary": "Paused due to capacity -- Garry, Methodology, Accuracy Number, and Client Follower took priority. Was the 'easy win' pivot away from slow Customer Stories process; 20-testimonial mapping with Marion on hold, not cancelled.",
@@ -72,7 +72,7 @@
     {
       "id": "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
       "name": "Client Crawler (AI)",
-      "status": "In Progress",
+      "status": "Not started",
       "stage": "Next",
       "pillar": "Knowledge",
       "summary": "Originally planned for November, accelerated to now due to leadership interest. Data team conversation (Fri) suggests much of the groundwork may already exist -- possible quick win. Needs scoping to confirm effort.",
@@ -92,10 +92,10 @@
       "stage": "Now",
       "pillar": "Knowledge",
       "summary": "Methodology reframing approved and pushed live on the new website. Design brief for the public page sent. Remaining: upload images to site, review Layer 3 with Cesca, and work through Layer 1 with Krystyna (Aug 5).",
-      "completion": 33,
+      "completion": 40,
       "task_counts": {
         "done": 2,
-        "total": 6
+        "total": 5
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -108,10 +108,10 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Investor demo delivered end of July; presented to full commercial team at Town Hall. Design largely implemented; hierarchy bugs being ironed out. 10 working days to launch, daily syncs running with Oleg/Eline. Current top blocker: product/feature catalog and image library. Also open: production subdomain (still on dev URL), approval workflow definition, and post-launch handover to Callum/Lou's team (pending Charlie's return).",
-      "completion": 17,
+      "completion": 24,
       "task_counts": {
-        "done": 6,
-        "total": 36
+        "done": 11,
+        "total": 45
       },
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
@@ -120,7 +120,7 @@
     {
       "id": "3ab367a5-461c-8174-913f-f1423f473448",
       "name": "Accuracy Number (WGSN)",
-      "status": "Blocked",
+      "status": "In Progress",
       "stage": "Now",
       "pillar": "Proof",
       "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative.",
@@ -152,7 +152,7 @@
     {
       "id": "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
       "name": "Onboarding Pack",
-      "status": "In Progress",
+      "status": "Done",
       "stage": null,
       "pillar": "Onboarding",
       "summary": "Project is currently in progress, focusing on the onboarding pack and associated tasks.",
@@ -188,10 +188,10 @@
       "stage": null,
       "pillar": null,
       "summary": "Merged into the consolidated Project Garry page on Aug 3, 2026. Tasks and history moved there. Safe to delete this page.",
-      "completion": 0,
+      "completion": 24,
       "task_counts": {
-        "done": 0,
-        "total": 22
+        "done": 5,
+        "total": 21
       },
       "goal_ids": []
     },
@@ -210,9 +210,23 @@
       "goal_ids": []
     },
     {
+      "id": "2f5367a5-461c-80ba-b4bc-ceec4ae58f96",
+      "name": "Trend Confirmations",
+      "status": "Blocked",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Sub-project details are incomplete; the project \"Trend Confirmations\" is due on March 29, 2026, with Mirela assigned and the status marked as in progress for February, week 4.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
+    {
       "id": "2f5367a5-461c-808c-9866-e91f126035e5",
       "name": "Proof Points",
-      "status": "In Progress",
+      "status": "Paused",
       "stage": null,
       "pillar": "Proof",
       "summary": "Sub-projects are listed under the project name \"Proof Points,\" which is currently in progress with a low priority, scheduled from April 1, 2026, to June 30, 2026. Project tasks are referenced but not detailed.",
@@ -314,7 +328,7 @@
     {
       "id": "2e1367a5-461c-805b-a7cc-ddc0db2e6d26",
       "name": "Sales Deck V1",
-      "status": "In Progress",
+      "status": "Paused",
       "stage": null,
       "pillar": "Collateral",
       "summary": "O Programa Trendhackers foi criado para ajudar marcas a analisar criticamente as tend\u00eancias atuais, priorizando e sistematizando a aplica\u00e7\u00e3o estrat\u00e9gica delas para impulsionar resultados de neg\u00f3cios. O foco \u00e9 equalizar conhecimentos entre \u00e1reas e pensar estrategicamente al\u00e9m das tend\u00eancias.",
