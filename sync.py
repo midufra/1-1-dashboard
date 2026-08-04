@@ -139,10 +139,41 @@ def main():
             "project_ids": linked_ids,
         })
 
+    # --- History log + monthly recap ---
+    # Read whatever already exists so we accumulate real weekly snapshots
+    # over time, and preserve any recap text a person has written in.
+    existing_history = []
+    monthly_recap = ""
+    if os.path.exists("docs/data.json"):
+        try:
+            with open("docs/data.json") as f:
+                old = json.load(f)
+                existing_history = old.get("history", [])
+                monthly_recap = old.get("monthly_recap", "")
+        except Exception:
+            pass
+
+    today = __import__("datetime").datetime.utcnow().date().isoformat()
+    today_entry = {
+        "date": today,
+        "projects": [
+            {"name": p["name"], "status": p["status"], "summary": p["summary"]}
+            for p in projects if p["stage"] == "Now"
+        ],
+    }
+    # One entry per day max (re-runs same day just update it)
+    if existing_history and existing_history[-1]["date"] == today:
+        existing_history[-1] = today_entry
+    else:
+        existing_history.append(today_entry)
+    existing_history = existing_history[-56:]  # keep roughly the last 8 weeks
+
     out = {
         "generated_at": __import__("datetime").datetime.utcnow().isoformat() + "Z",
         "goals": goals,
         "projects": projects,
+        "history": existing_history,
+        "monthly_recap": monthly_recap,
     }
 
     os.makedirs("docs", exist_ok=True)
