@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-04T11:34:32.253301Z",
+  "generated_at": "2026-08-04T11:58:59.551051Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
       "name": "Arm every deal with proof",
-      "completion": 0,
+      "completion": 40,
       "project_ids": [
         "2f5367a5-461c-808c-9866-e91f126035e5",
         "3ab367a5-461c-8174-913f-f1423f473448",
@@ -90,7 +90,7 @@
       "name": "Methodology Narrative (Layer 2)",
       "status": "In Progress",
       "stage": "Now",
-      "pillar": "Knowledge",
+      "pillar": "Proof",
       "summary": "Methodology reframing approved and pushed live on the new website. Design brief for the public page sent. Remaining: upload images to site, review Layer 3 with Cesca, and work through Layer 1 with Krystyna (Aug 5).",
       "completion": 22,
       "task_counts": {
@@ -124,10 +124,10 @@
       "stage": "Now",
       "pillar": "Proof",
       "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative.",
-      "completion": 0,
+      "completion": 40,
       "task_counts": {
-        "done": 0,
-        "total": 1
+        "done": 2,
+        "total": 5
       },
       "goal_ids": [
         "3b1367a5-461c-8145-8219-c297b2626ae2"
@@ -201,11 +201,11 @@
       "status": "Blocked",
       "stage": null,
       "pillar": "Proof",
-      "summary": "Sub-project details are incomplete; the project \"Trend Confirmations\" is due on March 29, 2026, with Mirela assigned and the status marked as in progress for February, week 4.",
-      "completion": null,
+      "summary": "No content",
+      "completion": 0,
       "task_counts": {
         "done": 0,
-        "total": 0
+        "total": 1
       },
       "goal_ids": []
     },
@@ -357,5 +357,33 @@
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
       ]
     }
-  ]
+  ],
+  "history": [
+    {
+      "date": "2026-08-04",
+      "projects": [
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "3 of 6 interviews recorded (Andrea Q, Isiah, plus a well-received AI-topic video). David/Chesca filming blocked until Justin returns Aug 7. Warren/Claire and Chris/Xan scripts in progress. Distribution plan set: Vimeo hosting, drip campaign, dedicated landing page (Knowledge Center can't take direct links). First 2 drafts going to Jenna this week to shape newsletter placement."
+        },
+        {
+          "name": "Methodology Narrative (Layer 2)",
+          "status": "In Progress",
+          "summary": "Methodology reframing approved and pushed live on the new website. Design brief for the public page sent. Remaining: upload images to site, review Layer 3 with Cesca, and work through Layer 1 with Krystyna (Aug 5)."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Investor demo delivered end of July; presented to full commercial team at Town Hall. Design largely implemented; hierarchy bugs being ironed out. 10 working days to launch, daily syncs running with Oleg/Eline. Current top blocker: product/feature catalog and image library. Also open: production subdomain (still on dev URL), approval workflow definition, and post-launch handover to Callum/Lou's team (pending Charlie's return)."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "In Progress",
+          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
+        }
+      ]
+    }
+  ],
+  "monthly_recap": ""
 }
