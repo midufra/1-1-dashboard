@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mission Control — Weekly Status</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#ffffff; --panel-hover:#f1f3f6; --hairline:#e3e7ed;
+    --text:#1b222c; --muted:#5b6579; --faint:#94a0b3;
+    --on-track:#2f9e6e; --on-track-dim:#2f9e6e17;
+    --watch:#b8790a; --watch-dim:#b8790a17;
+    --risk:#b7453a; --risk-dim:#b7453a15;
+    --upcoming:#5b6579; --upcoming-dim:#5b657913;
+    --goal:#4a5fc7; --goal-dim:#4a5fc70f;
+    --track-base:#ecedf1;
+    --shadow:0 1px 2px rgba(20,25,40,0.04), 0 1px 10px rgba(20,25,40,0.03);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',sans-serif;padding:40px 24px 80px;}
+  .wrap{max-width:1040px;margin:0 auto;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;color:var(--faint);text-transform:uppercase;margin-bottom:6px;}
+  h1{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;margin:0 0 4px;letter-spacing:-0.01em;}
+  .subhead{color:var(--muted);font-size:14px;margin-bottom:32px;}
+  .runway-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint);margin-bottom:14px;}
+  .runway{background:var(--panel);border:1px solid var(--hairline);box-shadow:var(--shadow);border-radius:10px;padding:20px 24px 22px;margin-bottom:40px;}
+  .goal-block{padding:16px 0;}
+  .goal-block + .goal-block{border-top:1px solid var(--hairline);}
+  .goal-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;}
+  .goal-head .goal-name{font-size:15px;font-weight:500;}
+  .goal-head .goal-pct{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--goal);}
+  .track{position:relative;height:6px;background:var(--track-base);border-radius:4px;overflow:hidden;margin-bottom:10px;}
+  .fill{position:absolute;left:0;top:0;bottom:0;background:var(--goal);border-radius:4px;}
+  .goal-projects{display:flex;flex-wrap:wrap;gap:8px;padding-left:2px;}
+  .goal-projects span{font-size:12px;color:var(--muted);background:var(--bg);border:1px solid var(--hairline);padding:4px 10px;border-radius:20px;}
+  .section-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin:44px 0 14px;display:flex;align-items:center;gap:10px;}
+  .section-label::after{content:"";flex:1;height:1px;background:var(--hairline);}
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+  .card{background:var(--panel);border:1px solid var(--hairline);box-shadow:var(--shadow);border-radius:10px;padding:22px;}
+  .card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;}
+  .proj-name{font-family:'Space Grotesk',sans-serif;font-size:19px;font-weight:600;}
+  .dial{position:relative;width:56px;height:56px;flex-shrink:0;}
+  .dial svg{transform:rotate(-90deg);}
+  .dial-pct{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:500;}
+  .status-pill{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:4px 9px 4px 7px;border-radius:20px;margin-bottom:14px;}
+  .dot{width:6px;height:6px;border-radius:50%;}
+  .st-ontrack{background:var(--on-track-dim);color:var(--on-track);} .st-ontrack .dot{background:var(--on-track);}
+  .st-watch{background:var(--watch-dim);color:var(--watch);} .st-watch .dot{background:var(--watch);}
+  .st-risk{background:var(--risk-dim);color:var(--risk);} .st-risk .dot{background:var(--risk);}
+  .st-upcoming{background:var(--upcoming-dim);color:var(--upcoming);} .st-upcoming .dot{background:var(--upcoming);}
+  .summary-text{font-size:13px;line-height:1.55;color:var(--text);margin:0 0 6px;}
+  .plist{background:var(--panel);border:1px solid var(--hairline);box-shadow:var(--shadow);border-radius:10px;overflow:hidden;}
+  .prow{border-bottom:1px solid var(--hairline);}
+  .prow:last-child{border-bottom:none;}
+  .prow summary{list-style:none;display:grid;grid-template-columns:1fr 100px 70px;align-items:center;gap:12px;padding:13px 20px;cursor:pointer;font-size:13px;}
+  .prow summary::-webkit-details-marker{display:none;}
+  .prow summary:hover{background:var(--panel-hover);}
+  .prow .pname{font-weight:500;display:flex;align-items:center;gap:9px;}
+  .prow .pillar-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+  .prow .pstatus{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:20px;justify-self:start;}
+  .prow .ppct{font-family:'IBM Plex Mono',monospace;color:var(--muted);text-align:right;}
+  .prow-detail{padding:4px 20px 18px 20px;font-size:12.5px;color:var(--muted);}
+  .loading, .error{color:var(--muted);font-size:14px;}
+  .refresh-note{font-size:11px;color:var(--faint);margin-top:6px;}
+  @media(max-width:760px){ .cards{grid-template-columns:1fr;} .prow summary{grid-template-columns:1fr 70px;} .prow .ppct{display:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Sales Enablement · Mirela</div>
+  <h1 id="week-title">Weekly Status</h1>
+  <div class="subhead" id="subhead">Loading live data from Notion…</div>
+
+  <div class="runway-label">Year Targets</div>
+  <div class="runway" id="goals-panel"><div class="loading">Loading goals…</div></div>
+
+  <div class="section-label">This week — Stage: Now</div>
+  <div class="cards" id="cards-panel"><div class="loading">Loading projects…</div></div>
+
+  <div class="section-label">All projects</div>
+  <div class="plist" id="all-projects-panel"><div class="loading">Loading…</div></div>
+</div>
+
+<script>
+function statusClass(status) {
+  if (!status) return 'st-upcoming';
+  const s = status.toLowerCase();
+  if (s.includes('blocked') || s.includes('risk')) return 'st-risk';
+  if (s.includes('progress') || s.includes('done')) return 'st-ontrack';
+  if (s.includes('upcoming') || s.includes('backlog') || s.includes('planning') || s.includes('not started')) return 'st-upcoming';
+  if (s.includes('paused') || s.includes('on hold') || s.includes('waiting')) return 'st-watch';
+  return 'st-upcoming';
+}
+function pillarColor(pillar) {
+  const map = { Garry: '#2f9e6e', Proof: '#b7453a', Knowledge: '#b8790a', Onboarding: '#4a5fc7', Collateral: '#5b6579' };
+  return map[pillar] || '#94a0b3';
+}
+function dialSvg(pct, colorVar) {
+  const p = pct === null || pct === undefined ? 0 : pct;
+  const circumference = 150.8;
+  const offset = circumference - (circumference * p / 100);
+  return `<div class="dial"><svg width="56" height="56">
+    <circle cx="28" cy="28" r="24" fill="none" stroke="var(--track-base)" stroke-width="5"/>
+    <circle cx="28" cy="28" r="24" fill="none" stroke="${colorVar}" stroke-width="5" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" stroke-linecap="round"/>
+  </svg><div class="dial-pct">${pct === null ? '—' : p + '%'}</div></div>`;
+}
+
+async function render() {
+  let data;
+  try {
+    const res = await fetch('data.json?_=' + Date.now());
+    data = await res.json();
+  } catch (e) {
+    document.getElementById('goals-panel').innerHTML = '<div class="error">Could not load data.json — has the sync run yet?</div>';
+    return;
+  }
+
+  const genDate = new Date(data.generated_at);
+  document.getElementById('subhead').textContent = 'Live from Notion · last synced ' + genDate.toLocaleString();
+
+  const projectsById = {};
+  data.projects.forEach(p => projectsById[p.id] = p);
+
+  // Goals
+  const goalsHtml = data.goals.map(g => {
+    const linked = g.project_ids.map(id => projectsById[id]).filter(Boolean);
+    const chips = linked.map(p => `<span>${p.name}</span>`).join('');
+    return `<div class="goal-block">
+      <div class="goal-head"><div class="goal-name">${g.name}</div><div class="goal-pct">${g.completion}%</div></div>
+      <div class="track"><div class="fill" style="width:${g.completion}%"></div></div>
+      <div class="goal-projects">${chips}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('goals-panel').innerHTML = goalsHtml || '<div class="loading">No goals found.</div>';
+
+  // This week (Stage = Now)
+  const nowProjects = data.projects.filter(p => p.stage === 'Now');
+  const cardsHtml = nowProjects.map(p => {
+    const cls = statusClass(p.status);
+    return `<div class="card">
+      <div class="card-top">
+        <div class="proj-name">${p.name}</div>
+        ${dialSvg(p.completion, 'var(--goal)')}
+      </div>
+      <span class="status-pill ${cls}"><span class="dot"></span>${p.status || 'Unknown'}</span>
+      <p class="summary-text">${p.summary || 'No summary yet.'}</p>
+    </div>`;
+  }).join('');
+  document.getElementById('cards-panel').innerHTML = cardsHtml || '<div class="loading">Nothing tagged Stage: Now.</div>';
+
+  // All projects
+  const allHtml = data.projects.map(p => {
+    const cls = statusClass(p.status);
+    return `<details class="prow">
+      <summary>
+        <span class="pname"><span class="pillar-dot" style="background:${pillarColor(p.pillar)}"></span>${p.name}</span>
+        <span class="pstatus ${cls}">${p.status || '—'}</span>
+        <span class="ppct">${p.completion === null ? '—' : p.completion + '%'}</span>
+      </summary>
+      <div class="prow-detail">${p.summary || 'No summary yet.'}</div>
+    </details>`;
+  }).join('');
+  document.getElementById('all-projects-panel').innerHTML = allHtml || '<div class="loading">No projects found.</div>';
+}
+
+render();
+</script>
+</body>
+</html>
