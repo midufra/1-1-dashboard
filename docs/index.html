@@ -58,6 +58,21 @@
   .st-backlog{background:#6b728017;color:#6b7280;} .st-backlog .dot{background:#6b7280;}
   .st-canceled{background:#94a0b31a;color:#94a0b3;} .st-canceled .dot{background:#94a0b3;}
   .status-group-label{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);padding:12px 20px 6px;background:var(--bg);}
+  ul.detail-bullets{margin:0;padding:0;list-style:none;}
+  ul.detail-bullets li{padding-left:14px;position:relative;margin-bottom:4px;}
+  ul.detail-bullets li::before{content:"—";position:absolute;left:0;color:var(--faint);}
+  .month-panel{background:var(--panel);border:1px solid var(--hairline);box-shadow:var(--shadow);border-radius:10px;padding:22px 24px;margin-bottom:8px;}
+  .month-week{display:grid;grid-template-columns:90px 1fr;gap:16px;padding:11px 0;}
+  .month-week + .month-week{border-top:1px solid var(--hairline);}
+  .month-week .wk{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--faint);padding-top:2px;}
+  .month-week.current .wk{color:var(--goal);}
+  .month-week ul{margin:0;padding:0;list-style:none;}
+  .month-week li{font-size:13px;line-height:1.55;color:var(--muted);padding-left:14px;position:relative;margin-bottom:4px;}
+  .month-week li::before{content:"—";position:absolute;left:0;color:var(--faint);}
+  .month-week.current li{color:var(--text);}
+  .month-recap{margin-top:6px;padding:16px 0 2px;border-top:1px solid var(--hairline);display:grid;grid-template-columns:90px 1fr;gap:16px;}
+  .month-recap .wk{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--goal);padding-top:2px;}
+  .month-recap p{margin:0;font-size:13px;line-height:1.6;color:var(--muted);}
   .summary-text{font-size:13px;line-height:1.55;color:var(--text);margin:0 0 6px;}
   .plist{background:var(--panel);border:1px solid var(--hairline);box-shadow:var(--shadow);border-radius:10px;overflow:hidden;}
   .prow{border-bottom:1px solid var(--hairline);}
@@ -81,11 +96,14 @@
   <h1 id="week-title">Weekly Status</h1>
   <div class="subhead" id="subhead">Loading live data from Notion…</div>
 
-  <div class="runway-label">Year Targets</div>
-  <div class="runway" id="goals-panel"><div class="loading">Loading goals…</div></div>
-
   <div class="section-label">This week — Stage: Now</div>
   <div class="cards" id="cards-panel"><div class="loading">Loading projects…</div></div>
+
+  <div class="section-label">Month status</div>
+  <div class="month-panel" id="month-panel"><div class="loading">Loading history…</div></div>
+
+  <div class="runway-label">Year Targets</div>
+  <div class="runway" id="goals-panel"><div class="loading">Loading goals…</div></div>
 
   <div class="section-label">All projects</div>
   <div class="plist" id="all-projects-panel"><div class="loading">Loading…</div></div>
@@ -118,6 +136,20 @@ function dialSvg(pct, colorVar) {
     <circle cx="28" cy="28" r="24" fill="none" stroke="var(--track-base)" stroke-width="5"/>
     <circle cx="28" cy="28" r="24" fill="none" stroke="${colorVar}" stroke-width="5" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" stroke-linecap="round"/>
   </svg><div class="dial-pct">${pct === null ? '—' : p + '%'}</div></div>`;
+}
+// Splits a Summary blob into rough bullet points on sentence boundaries.
+function toBullets(text) {
+  if (!text) return ['No summary yet.'];
+  return text.split(/(?<=[.;])\s+(?=[A-Z])/).map(s => s.trim()).filter(Boolean);
+}
+function isoWeekKey(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00Z');
+  const target = new Date(d.valueOf());
+  const dayNr = (d.getUTCDay() + 6) % 7;
+  target.setUTCDate(target.getUTCDate() - dayNr + 3);
+  const firstThursday = new Date(Date.UTC(target.getUTCFullYear(), 0, 4));
+  const week = 1 + Math.round(((target - firstThursday) / 86400000 - 3 + ((firstThursday.getUTCDay() + 6) % 7)) / 7);
+  return `${target.getUTCFullYear()}-W${week}`;
 }
 
 async function render() {
@@ -163,20 +195,48 @@ async function render() {
   }).join('');
   document.getElementById('cards-panel').innerHTML = cardsHtml || '<div class="loading">Nothing tagged Stage: Now.</div>';
 
+  // Month status — group history entries by ISO week
+  const history = data.history || [];
+  const weeks = {};
+  history.forEach(entry => {
+    const key = isoWeekKey(entry.date);
+    weeks[key] = entry; // last entry per week wins (most recent snapshot that week)
+  });
+  const weekKeys = Object.keys(weeks).sort().reverse(); // most recent first
+  const currentKey = weekKeys[0];
+  let monthHtml = weekKeys.map(key => {
+    const entry = weeks[key];
+    const isCurrent = key === currentKey;
+    const items = entry.projects.map(p => `<li>${p.name}: ${p.summary || p.status || 'no update'}</li>`).join('');
+    return `<div class="month-week${isCurrent ? ' current' : ''}">
+      <div class="wk">${key}${isCurrent ? '<br>(current)' : ''}</div>
+      <ul>${items || '<li>No active projects logged.</li>'}</ul>
+    </div>`;
+  }).join('');
+  if (data.monthly_recap) {
+    monthHtml += `<div class="month-recap"><div class="wk">Recap</div><p>${data.monthly_recap}</p></div>`;
+  } else {
+    monthHtml += `<div class="month-recap"><div class="wk">Recap</div><p style="color:var(--faint)">No recap written yet for this month — ask Claude to add one once there's a full arc to summarize.</p></div>`;
+  }
+  document.getElementById('month-panel').innerHTML = monthHtml || '<div class="loading">No history yet — this builds up automatically after a few daily syncs.</div>';
+
   // All projects — grouped by Status, in fixed order, skipping empty groups
   let allHtml = '';
   STATUS_GROUPS.forEach(group => {
     const inGroup = data.projects.filter(p => (p.status || 'Upcoming') === group.value);
     if (inGroup.length === 0) return;
     allHtml += `<div class="status-group-label">${group.label} (${inGroup.length})</div>`;
-    allHtml += inGroup.map(p => `<details class="prow">
+    allHtml += inGroup.map(p => {
+      const bullets = toBullets(p.summary).map(b => `<li>${b}</li>`).join('');
+      return `<details class="prow">
       <summary>
         <span class="pname"><span class="pillar-dot" style="background:${pillarColor(p.pillar)}"></span>${p.name}</span>
         <span class="pstatus ${group.cls}">${group.label}</span>
         <span class="ppct">${p.completion === null ? '—' : p.completion + '%'}</span>
       </summary>
-      <div class="prow-detail">${p.summary || 'No summary yet.'}</div>
-    </details>`).join('');
+      <div class="prow-detail"><ul class="detail-bullets">${bullets}</ul></div>
+    </details>`;
+    }).join('');
   });
   document.getElementById('all-projects-panel').innerHTML = allHtml || '<div class="loading">No projects found.</div>';
 }
