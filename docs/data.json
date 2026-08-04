@@ -1,5 +1,361 @@
 {
-  "generated_at": "1970-01-01T00:00:00Z",
-  "goals": [],
-  "projects": []
+  "generated_at": "2026-08-04T10:28:23.285128Z",
+  "goals": [
+    {
+      "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
+      "name": "Arm every deal with proof",
+      "completion": 0,
+      "project_ids": [
+        "2f5367a5-461c-808c-9866-e91f126035e5",
+        "3ab367a5-461c-8174-913f-f1423f473448",
+        "3ab367a5-461c-8107-9761-dc9fe40d9709"
+      ]
+    },
+    {
+      "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
+      "name": "Make every seller tell the same winning story",
+      "completion": 33,
+      "project_ids": [
+        "3ab367a5-461c-8131-8f83-c11b94897a00",
+        "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
+        "3b1367a5-461c-8094-90e2-e319c14ceb9a",
+        "336367a5-461c-80a3-9f1d-f205a80bc4ca"
+      ]
+    },
+    {
+      "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
+      "name": "Give selling time back to sales",
+      "completion": 22,
+      "project_ids": [
+        "3ab367a5-461c-816c-a30e-d1cd10c1df22",
+        "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
+        "2f5367a5-461c-80e8-a14c-f73a0d970622",
+        "336367a5-461c-8022-afb3-dbaae818ba06",
+        "2e1367a5-461c-805b-a7cc-ddc0db2e6d26",
+        "2de367a5-461c-8042-b886-eb23b2cd2691"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "3b1367a5-461c-8094-90e2-e319c14ceb9a",
+      "name": "Ex-Com Interview Series",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Knowledge",
+      "summary": "3 of 6 interviews recorded (Andrea Q, Isiah, plus a well-received AI-topic video). David/Chesca filming blocked until Justin returns Aug 7. Warren/Claire and Chris/Xan scripts in progress. Distribution plan set: Vimeo hosting, drip campaign, dedicated landing page (Knowledge Center can't take direct links). First 2 drafts going to Jenna this week to shape newsletter placement.",
+      "completion": 33,
+      "task_counts": {
+        "done": 2,
+        "total": 6
+      },
+      "goal_ids": [
+        "3b1367a5-461c-8195-a1d9-d7d72963c2df"
+      ]
+    },
+    {
+      "id": "3ab367a5-461c-8107-9761-dc9fe40d9709",
+      "name": "Client Endorsements (Gong)",
+      "status": "Paused",
+      "stage": "Later",
+      "pillar": "Proof",
+      "summary": "Paused due to capacity -- Garry, Methodology, Accuracy Number, and Client Follower took priority. Was the 'easy win' pivot away from slow Customer Stories process; 20-testimonial mapping with Marion on hold, not cancelled.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": [
+        "3b1367a5-461c-8145-8219-c297b2626ae2"
+      ]
+    },
+    {
+      "id": "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
+      "name": "Client Crawler (AI)",
+      "status": "In Progress",
+      "stage": "Next",
+      "pillar": "Knowledge",
+      "summary": "Originally planned for November, accelerated to now due to leadership interest. Data team conversation (Fri) suggests much of the groundwork may already exist -- possible quick win. Needs scoping to confirm effort.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": [
+        "3b1367a5-461c-8195-a1d9-d7d72963c2df"
+      ]
+    },
+    {
+      "id": "3ab367a5-461c-8131-8f83-c11b94897a00",
+      "name": "Methodology Narrative (Layer 2)",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Knowledge",
+      "summary": "Methodology reframing approved and pushed live on the new website. Design brief for the public page sent. Remaining: upload images to site, review Layer 3 with Cesca, and work through Layer 1 with Krystyna (Aug 5).",
+      "completion": 33,
+      "task_counts": {
+        "done": 2,
+        "total": 6
+      },
+      "goal_ids": [
+        "3b1367a5-461c-8195-a1d9-d7d72963c2df"
+      ]
+    },
+    {
+      "id": "3ab367a5-461c-816c-a30e-d1cd10c1df22",
+      "name": "Project Garry",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Garry",
+      "summary": "Investor demo delivered end of July; presented to full commercial team at Town Hall. Design largely implemented; hierarchy bugs being ironed out. 10 working days to launch, daily syncs running with Oleg/Eline. Current top blocker: product/feature catalog and image library. Also open: production subdomain (still on dev URL), approval workflow definition, and post-launch handover to Callum/Lou's team (pending Charlie's return).",
+      "completion": 17,
+      "task_counts": {
+        "done": 6,
+        "total": 36
+      },
+      "goal_ids": [
+        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
+      ]
+    },
+    {
+      "id": "3ab367a5-461c-8174-913f-f1423f473448",
+      "name": "Accuracy Number (WGSN)",
+      "status": "Blocked",
+      "stage": "Now",
+      "pillar": "Proof",
+      "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative.",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 1
+      },
+      "goal_ids": [
+        "3b1367a5-461c-8145-8219-c297b2626ae2"
+      ]
+    },
+    {
+      "id": "336367a5-461c-80a3-9f1d-f205a80bc4ca",
+      "name": "Customer Journey Collateral Map",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Knowledge",
+      "summary": "The project, Customer Journey Collateral Map, is completed and includes a section for project tasks.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": [
+        "3b1367a5-461c-8195-a1d9-d7d72963c2df"
+      ]
+    },
+    {
+      "id": "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
+      "name": "Onboarding Pack",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Onboarding",
+      "summary": "Project is currently in progress, focusing on the onboarding pack and associated tasks.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": [
+        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
+      ]
+    },
+    {
+      "id": "336367a5-461c-8022-afb3-dbaae818ba06",
+      "name": "Brand Videos",
+      "status": "Not started",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "Project named \"Brand Videos\" is currently in the planning stage, with tasks outlined for execution.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": [
+        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
+      ]
+    },
+    {
+      "id": "336367a5-461c-8045-8cd1-c84588e5d68a",
+      "name": "[Merged \u2014 see Project Garry] Old Garry stub",
+      "status": "Canceled",
+      "stage": null,
+      "pillar": null,
+      "summary": "Merged into the consolidated Project Garry page on Aug 3, 2026. Tasks and history moved there. Safe to delete this page.",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 22
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "2f5367a5-461c-808c-a448-dd421d916570",
+      "name": "What do to with trends",
+      "status": "Backlog",
+      "stage": null,
+      "pillar": null,
+      "summary": "Faltam profissionais para analisar criticamente as tend\u00eancias e criar algo novo a partir delas. O Programa Trendhackers foi criado para identificar as dores das marcas em rela\u00e7\u00e3o \u00e0s tend\u00eancias e sistematizar um pensamento estrat\u00e9gico para impulsionar resultados de neg\u00f3cios. A WGSN oferece intelig\u00eancia de previs\u00e3o para ajudar as equipes a construir produtos com sucesso, decodificando sinais culturais e comportamentais dos consumidores. Com o lan\u00e7amento do Trend Forecast Database, as estrat\u00e9gias s\u00e3o criadas para garantir o sucesso no mercado em r\u00e1pida mudan\u00e7a.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "2f5367a5-461c-808c-9866-e91f126035e5",
+      "name": "Proof Points",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Sub-projects are listed under the project name \"Proof Points,\" which is currently in progress with a low priority, scheduled from April 1, 2026, to June 30, 2026. Project tasks are referenced but not detailed.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": [
+        "3b1367a5-461c-8145-8219-c297b2626ae2"
+      ]
+    },
+    {
+      "id": "2f5367a5-461c-80a3-88a6-cbb6700a3545",
+      "name": "Sales Hub",
+      "status": "Done",
+      "stage": null,
+      "pillar": null,
+      "summary": "Sales Hub project is planned with high priority, currently in progress from January 27, 2026, to April 13, 2026. Specific tasks are listed but not detailed.",
+      "completion": 86,
+      "task_counts": {
+        "done": 6,
+        "total": 7
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "2f5367a5-461c-80e8-a14c-f73a0d970622",
+      "name": "Customer Stories Program",
+      "status": "Planning",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "The Customer Stories Program is a high-priority project planned from January 25, 2026, to June 30, 2026, with various tasks outlined. Key outputs and references related to customer stories are included for project work.",
+      "completion": 13,
+      "task_counts": {
+        "done": 3,
+        "total": 23
+      },
+      "goal_ids": [
+        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
+      ]
+    },
+    {
+      "id": "2f5367a5-461c-8015-9b28-d27b6e073f60",
+      "name": "Metric Survey",
+      "status": "Backlog",
+      "stage": null,
+      "pillar": null,
+      "summary": "Admin project for a Metric Survey scheduled from April 1 to April 16, 2026, with a low priority and currently in the planning phase. Tasks are yet to be defined.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "2f5367a5-461c-80b0-8d3d-cce1bff408d5",
+      "name": "Admin",
+      "status": "Planning",
+      "stage": null,
+      "pillar": null,
+      "summary": "Project \"Admin\" is in the planning stage with a low priority, scheduled from January 1, 2026, to December 31, 2026. Specific tasks are yet to be defined.",
+      "completion": 33,
+      "task_counts": {
+        "done": 1,
+        "total": 3
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "2f5367a5-461c-802b-bd95-d6a9561a8716",
+      "name": "ROI",
+      "status": "Canceled",
+      "stage": null,
+      "pillar": null,
+      "summary": "The project named ROI has a low priority and is currently canceled, with a timeline from January 27, 2026, to December 31, 2026. There are tasks associated with the project, but details are not provided.",
+      "completion": 100,
+      "task_counts": {
+        "done": 1,
+        "total": 1
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "2f5367a5-461c-80ac-8c1b-ce466f6b473b",
+      "name": "TFD",
+      "status": "Done",
+      "stage": null,
+      "pillar": null,
+      "summary": "Project TFD is a high-priority initiative currently in progress, scheduled from January 4, 2026, to April 30, 2026. Specific tasks are yet to be detailed.",
+      "completion": 64,
+      "task_counts": {
+        "done": 7,
+        "total": 11
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "2e1367a5-461c-805b-a7cc-ddc0db2e6d26",
+      "name": "Sales Deck V1",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "O Programa Trendhackers foi criado para ajudar marcas a analisar criticamente as tend\u00eancias atuais, priorizando e sistematizando a aplica\u00e7\u00e3o estrat\u00e9gica delas para impulsionar resultados de neg\u00f3cios. O foco \u00e9 equalizar conhecimentos entre \u00e1reas e pensar estrategicamente al\u00e9m das tend\u00eancias.",
+      "completion": 9,
+      "task_counts": {
+        "done": 1,
+        "total": 11
+      },
+      "goal_ids": [
+        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
+      ]
+    },
+    {
+      "id": "2de367a5-461c-8033-922f-d42cdc65f1a2",
+      "name": "ROI Survey",
+      "status": "Backlog",
+      "stage": null,
+      "pillar": null,
+      "summary": "The project focuses on researching ROI, with tasks outlined in the backlog. A link to additional resources is provided for further information.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "2de367a5-461c-8042-b886-eb23b2cd2691",
+      "name": "Use Cases Library",
+      "status": "Planning",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "The Use Cases Library project is planned with a medium priority, scheduled from May 24, 2026, to June 30, 2026. Additional information can be found through a provided link, and project tasks are yet to be specified.",
+      "completion": 50,
+      "task_counts": {
+        "done": 1,
+        "total": 2
+      },
+      "goal_ids": [
+        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
+      ]
+    }
+  ]
 }
