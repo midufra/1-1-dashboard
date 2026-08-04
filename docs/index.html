@@ -49,6 +49,15 @@
   .st-watch{background:var(--watch-dim);color:var(--watch);} .st-watch .dot{background:var(--watch);}
   .st-risk{background:var(--risk-dim);color:var(--risk);} .st-risk .dot{background:var(--risk);}
   .st-upcoming{background:var(--upcoming-dim);color:var(--upcoming);} .st-upcoming .dot{background:var(--upcoming);}
+  .st-inprogress{background:#d4a72c17;color:#a8821f;} .st-inprogress .dot{background:#c9a227;}
+  .st-paused{background:#4a5fc717;color:#4a5fc7;} .st-paused .dot{background:#4a5fc7;}
+  .st-blocked{background:var(--risk-dim);color:var(--risk);} .st-blocked .dot{background:var(--risk);}
+  .st-notstarted{background:#94a0b31a;color:#6b7688;} .st-notstarted .dot{background:#94a0b3;}
+  .st-done{background:var(--on-track-dim);color:var(--on-track);} .st-done .dot{background:var(--on-track);}
+  .st-planning{background:#c2568b17;color:#c2568b;} .st-planning .dot{background:#c2568b;}
+  .st-backlog{background:#6b728017;color:#6b7280;} .st-backlog .dot{background:#6b7280;}
+  .st-canceled{background:#94a0b31a;color:#94a0b3;} .st-canceled .dot{background:#94a0b3;}
+  .status-group-label{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);padding:12px 20px 6px;background:var(--bg);}
   .summary-text{font-size:13px;line-height:1.55;color:var(--text);margin:0 0 6px;}
   .plist{background:var(--panel);border:1px solid var(--hairline);box-shadow:var(--shadow);border-radius:10px;overflow:hidden;}
   .prow{border-bottom:1px solid var(--hairline);}
@@ -83,14 +92,19 @@
 </div>
 
 <script>
-function statusClass(status) {
-  if (!status) return 'st-upcoming';
-  const s = status.toLowerCase();
-  if (s.includes('blocked') || s.includes('risk')) return 'st-risk';
-  if (s.includes('progress') || s.includes('done')) return 'st-ontrack';
-  if (s.includes('upcoming') || s.includes('backlog') || s.includes('planning') || s.includes('not started')) return 'st-upcoming';
-  if (s.includes('paused') || s.includes('on hold') || s.includes('waiting')) return 'st-watch';
-  return 'st-upcoming';
+// Order + display label + CSS class for each real Notion Status value.
+// "Upcoming" is displayed as "Not Started" per Mirela's requested grouping.
+const STATUS_GROUPS = [
+  { value: 'In Progress', label: 'In Progress', cls: 'st-inprogress' },
+  { value: 'Paused',      label: 'Paused',      cls: 'st-paused' },
+  { value: 'Blocked',     label: 'Blocked',     cls: 'st-blocked' },
+  { value: 'Upcoming',    label: 'Not Started', cls: 'st-notstarted' },
+  { value: 'Done',        label: 'Done',        cls: 'st-done' },
+  { value: 'Planning',    label: 'Planning',    cls: 'st-planning' },
+  { value: 'Backlog',     label: 'Backlog',     cls: 'st-backlog' },
+];
+function statusGroupFor(status) {
+  return STATUS_GROUPS.find(g => g.value === status) || STATUS_GROUPS[3]; // default: Not Started
 }
 function pillarColor(pillar) {
   const map = { Garry: '#2f9e6e', Proof: '#b7453a', Knowledge: '#b8790a', Onboarding: '#4a5fc7', Collateral: '#5b6579' };
@@ -137,30 +151,33 @@ async function render() {
   // This week (Stage = Now)
   const nowProjects = data.projects.filter(p => p.stage === 'Now');
   const cardsHtml = nowProjects.map(p => {
-    const cls = statusClass(p.status);
+    const g = statusGroupFor(p.status);
     return `<div class="card">
       <div class="card-top">
         <div class="proj-name">${p.name}</div>
         ${dialSvg(p.completion, 'var(--goal)')}
       </div>
-      <span class="status-pill ${cls}"><span class="dot"></span>${p.status || 'Unknown'}</span>
+      <span class="status-pill ${g.cls}"><span class="dot"></span>${g.label}</span>
       <p class="summary-text">${p.summary || 'No summary yet.'}</p>
     </div>`;
   }).join('');
   document.getElementById('cards-panel').innerHTML = cardsHtml || '<div class="loading">Nothing tagged Stage: Now.</div>';
 
-  // All projects
-  const allHtml = data.projects.map(p => {
-    const cls = statusClass(p.status);
-    return `<details class="prow">
+  // All projects — grouped by Status, in fixed order, skipping empty groups
+  let allHtml = '';
+  STATUS_GROUPS.forEach(group => {
+    const inGroup = data.projects.filter(p => (p.status || 'Upcoming') === group.value);
+    if (inGroup.length === 0) return;
+    allHtml += `<div class="status-group-label">${group.label} (${inGroup.length})</div>`;
+    allHtml += inGroup.map(p => `<details class="prow">
       <summary>
         <span class="pname"><span class="pillar-dot" style="background:${pillarColor(p.pillar)}"></span>${p.name}</span>
-        <span class="pstatus ${cls}">${p.status || '—'}</span>
+        <span class="pstatus ${group.cls}">${group.label}</span>
         <span class="ppct">${p.completion === null ? '—' : p.completion + '%'}</span>
       </summary>
       <div class="prow-detail">${p.summary || 'No summary yet.'}</div>
-    </details>`;
-  }).join('');
+    </details>`).join('');
+  });
   document.getElementById('all-projects-panel').innerHTML = allHtml || '<div class="loading">No projects found.</div>';
 }
 
