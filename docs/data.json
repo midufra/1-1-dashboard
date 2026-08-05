@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T18:27:52.426429Z",
+  "generated_at": "2026-08-05T18:38:29.757853Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -14,7 +14,7 @@
     {
       "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 24,
+      "completion": 32,
       "project_ids": [
         "3ab367a5-461c-8131-8f83-c11b94897a00",
         "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 18,
+      "completion": 20,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -43,11 +43,11 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Knowledge",
-      "summary": "3 of 6 interviews recorded (Andrea Q, Isiah, plus a well-received AI-topic video). David/Chesca filming blocked until Justin returns Aug 7. Warren/Claire and Chris/Xan scripts in progress. Distribution plan set: Vimeo hosting, drip campaign, dedicated landing page (Knowledge Center can't take direct links). First 2 drafts going to Jenna this week to shape newsletter placement.",
-      "completion": 21,
+      "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next.",
+      "completion": 32,
       "task_counts": {
-        "done": 3,
-        "total": 14
+        "done": 7,
+        "total": 22
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -91,11 +91,11 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Proof",
-      "summary": "Methodology reframing approved and live on the new website. Design brief for the public page sent. Layer 3 thinking now finalized. Remaining: upload images to site, review Layer 3 with Cesca, work through Layer 1 with Krystyna.",
-      "completion": 26,
+      "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site.",
+      "completion": 33,
       "task_counts": {
-        "done": 5,
-        "total": 19
+        "done": 7,
+        "total": 21
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -107,11 +107,11 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Garry",
-      "summary": "Redoing the catalogue. Design in its last stages of implementation \u2014 new nomenclature created, new \"read more\" section design done, updates shared with Oleg. Met with more champions and incorporating their feedback. Localisation approved. Salesforce integration scoped with Callum (see requirements doc); Sandra briefing and Lou roadmap session still to come. 10 working days to launch.",
-      "completion": 33,
+      "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed.",
+      "completion": 38,
       "task_counts": {
-        "done": 19,
-        "total": 58
+        "done": 25,
+        "total": 66
       },
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
@@ -372,17 +372,17 @@
         {
           "name": "Ex-Com Interview Series",
           "status": "In Progress",
-          "summary": "3 of 6 interviews recorded (Andrea Q, Isiah, plus a well-received AI-topic video). David/Chesca filming blocked until Justin returns Aug 7. Warren/Claire and Chris/Xan scripts in progress. Distribution plan set: Vimeo hosting, drip campaign, dedicated landing page (Knowledge Center can't take direct links). First 2 drafts going to Jenna this week to shape newsletter placement."
+          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
         },
         {
           "name": "Methodology Narrative (Layer 2)",
           "status": "In Progress",
-          "summary": "Methodology reframing approved and live on the new website. Design brief for the public page sent. Layer 3 thinking now finalized. Remaining: upload images to site, review Layer 3 with Cesca, work through Layer 1 with Krystyna."
+          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
         },
         {
           "name": "Project Garry",
           "status": "In Progress",
-          "summary": "Redoing the catalogue. Design in its last stages of implementation \u2014 new nomenclature created, new \"read more\" section design done, updates shared with Oleg. Met with more champions and incorporating their feedback. Localisation approved. Salesforce integration scoped with Callum (see requirements doc); Sandra briefing and Lou roadmap session still to come. 10 working days to launch."
+          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
         },
         {
           "name": "Accuracy Number (WGSN)",
