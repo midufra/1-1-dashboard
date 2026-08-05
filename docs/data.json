@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T13:20:11.655037Z",
+  "generated_at": "2026-08-05T18:27:52.426429Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -14,7 +14,7 @@
     {
       "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 22,
+      "completion": 24,
       "project_ids": [
         "3ab367a5-461c-8131-8f83-c11b94897a00",
         "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 16,
+      "completion": 18,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -44,10 +44,10 @@
       "stage": "Now",
       "pillar": "Knowledge",
       "summary": "3 of 6 interviews recorded (Andrea Q, Isiah, plus a well-received AI-topic video). David/Chesca filming blocked until Justin returns Aug 7. Warren/Claire and Chris/Xan scripts in progress. Distribution plan set: Vimeo hosting, drip campaign, dedicated landing page (Knowledge Center can't take direct links). First 2 drafts going to Jenna this week to shape newsletter placement.",
-      "completion": 23,
+      "completion": 21,
       "task_counts": {
         "done": 3,
-        "total": 13
+        "total": 14
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -91,11 +91,11 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Proof",
-      "summary": "Methodology reframing approved and pushed live on the new website. Design brief for the public page sent. Remaining: upload images to site, review Layer 3 with Cesca, and work through Layer 1 with Krystyna (Aug 5).",
-      "completion": 22,
+      "summary": "Methodology reframing approved and live on the new website. Design brief for the public page sent. Layer 3 thinking now finalized. Remaining: upload images to site, review Layer 3 with Cesca, work through Layer 1 with Krystyna.",
+      "completion": 26,
       "task_counts": {
-        "done": 4,
-        "total": 18
+        "done": 5,
+        "total": 19
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -107,11 +107,11 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Garry",
-      "summary": "Investor demo delivered end of July; presented to full commercial team at Town Hall. Design largely implemented; hierarchy bugs being ironed out. 10 working days to launch, daily syncs running with Oleg/Eline. Current top blocker: product/feature catalog and image library. Also open: production subdomain (still on dev URL), approval workflow definition, and post-launch handover to Callum/Lou's team (pending Charlie's return).",
-      "completion": 26,
+      "summary": "Redoing the catalogue. Design in its last stages of implementation \u2014 new nomenclature created, new \"read more\" section design done, updates shared with Oleg. Met with more champions and incorporating their feedback. Localisation approved. Salesforce integration scoped with Callum (see requirements doc); Sandra briefing and Lou roadmap session still to come. 10 working days to launch.",
+      "completion": 33,
       "task_counts": {
-        "done": 12,
-        "total": 46
+        "done": 19,
+        "total": 58
       },
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
@@ -377,12 +377,12 @@
         {
           "name": "Methodology Narrative (Layer 2)",
           "status": "In Progress",
-          "summary": "Methodology reframing approved and pushed live on the new website. Design brief for the public page sent. Remaining: upload images to site, review Layer 3 with Cesca, and work through Layer 1 with Krystyna (Aug 5)."
+          "summary": "Methodology reframing approved and live on the new website. Design brief for the public page sent. Layer 3 thinking now finalized. Remaining: upload images to site, review Layer 3 with Cesca, work through Layer 1 with Krystyna."
         },
         {
           "name": "Project Garry",
           "status": "In Progress",
-          "summary": "Investor demo delivered end of July; presented to full commercial team at Town Hall. Design largely implemented; hierarchy bugs being ironed out. 10 working days to launch, daily syncs running with Oleg/Eline. Current top blocker: product/feature catalog and image library. Also open: production subdomain (still on dev URL), approval workflow definition, and post-launch handover to Callum/Lou's team (pending Charlie's return)."
+          "summary": "Redoing the catalogue. Design in its last stages of implementation \u2014 new nomenclature created, new \"read more\" section design done, updates shared with Oleg. Met with more champions and incorporating their feedback. Localisation approved. Salesforce integration scoped with Callum (see requirements doc); Sandra briefing and Lou roadmap session still to come. 10 working days to launch."
         },
         {
           "name": "Accuracy Number (WGSN)",
