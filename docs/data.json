@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T12:01:05.073470Z",
+  "generated_at": "2026-08-05T13:20:11.655037Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -14,7 +14,7 @@
     {
       "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 28,
+      "completion": 22,
       "project_ids": [
         "3ab367a5-461c-8131-8f83-c11b94897a00",
         "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 24,
+      "completion": 16,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -44,10 +44,10 @@
       "stage": "Now",
       "pillar": "Knowledge",
       "summary": "3 of 6 interviews recorded (Andrea Q, Isiah, plus a well-received AI-topic video). David/Chesca filming blocked until Justin returns Aug 7. Warren/Claire and Chris/Xan scripts in progress. Distribution plan set: Vimeo hosting, drip campaign, dedicated landing page (Knowledge Center can't take direct links). First 2 drafts going to Jenna this week to shape newsletter placement.",
-      "completion": 33,
+      "completion": 23,
       "task_counts": {
-        "done": 2,
-        "total": 6
+        "done": 3,
+        "total": 13
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -108,10 +108,10 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Investor demo delivered end of July; presented to full commercial team at Town Hall. Design largely implemented; hierarchy bugs being ironed out. 10 working days to launch, daily syncs running with Oleg/Eline. Current top blocker: product/feature catalog and image library. Also open: production subdomain (still on dev URL), approval workflow definition, and post-launch handover to Callum/Lou's team (pending Charlie's return).",
-      "completion": 24,
+      "completion": 26,
       "task_counts": {
-        "done": 11,
-        "total": 45
+        "done": 12,
+        "total": 46
       },
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
@@ -134,22 +134,6 @@
       ]
     },
     {
-      "id": "336367a5-461c-80a3-9f1d-f205a80bc4ca",
-      "name": "Customer Journey Collateral Map",
-      "status": "Done",
-      "stage": null,
-      "pillar": "Knowledge",
-      "summary": "The project, Customer Journey Collateral Map, is completed and includes a section for project tasks.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": [
-        "3b1367a5-461c-8195-a1d9-d7d72963c2df"
-      ]
-    },
-    {
       "id": "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
       "name": "Onboarding Pack",
       "status": "Done",
@@ -164,6 +148,20 @@
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
       ]
+    },
+    {
+      "id": "336367a5-461c-8064-a813-f175603d9065",
+      "name": "Tradeshows cost Stat",
+      "status": "Paused",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Project on tradeshows cost is in the planning stage, with tasks outlined for execution.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
     },
     {
       "id": "336367a5-461c-8022-afb3-dbaae818ba06",
@@ -232,10 +230,10 @@
       "stage": null,
       "pillar": null,
       "summary": "Sales Hub project is planned with high priority, currently in progress from January 27, 2026, to April 13, 2026. Specific tasks are listed but not detailed.",
-      "completion": 86,
+      "completion": 100,
       "task_counts": {
         "done": 6,
-        "total": 7
+        "total": 6
       },
       "goal_ids": []
     },
@@ -340,27 +338,36 @@
         "total": 0
       },
       "goal_ids": []
-    },
-    {
-      "id": "2de367a5-461c-8042-b886-eb23b2cd2691",
-      "name": "Use Cases Library",
-      "status": "Paused",
-      "stage": null,
-      "pillar": "Collateral",
-      "summary": "The Use Cases Library project is planned with a medium priority, scheduled from May 24, 2026, to June 30, 2026. Additional information can be found through a provided link, and project tasks are yet to be specified.",
-      "completion": 50,
-      "task_counts": {
-        "done": 1,
-        "total": 2
-      },
-      "goal_ids": [
-        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
-      ]
     }
   ],
   "history": [
     {
       "date": "2026-08-04",
+      "projects": [
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "3 of 6 interviews recorded (Andrea Q, Isiah, plus a well-received AI-topic video). David/Chesca filming blocked until Justin returns Aug 7. Warren/Claire and Chris/Xan scripts in progress. Distribution plan set: Vimeo hosting, drip campaign, dedicated landing page (Knowledge Center can't take direct links). First 2 drafts going to Jenna this week to shape newsletter placement."
+        },
+        {
+          "name": "Methodology Narrative (Layer 2)",
+          "status": "In Progress",
+          "summary": "Methodology reframing approved and pushed live on the new website. Design brief for the public page sent. Remaining: upload images to site, review Layer 3 with Cesca, and work through Layer 1 with Krystyna (Aug 5)."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Investor demo delivered end of July; presented to full commercial team at Town Hall. Design largely implemented; hierarchy bugs being ironed out. 10 working days to launch, daily syncs running with Oleg/Eline. Current top blocker: product/feature catalog and image library. Also open: production subdomain (still on dev URL), approval workflow definition, and post-launch handover to Callum/Lou's team (pending Charlie's return)."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "In Progress",
+          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-05",
       "projects": [
         {
           "name": "Ex-Com Interview Series",
