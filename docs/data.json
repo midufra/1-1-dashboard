@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T13:12:54.638099Z",
+  "generated_at": "2026-08-07T10:15:51.984045Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -14,7 +14,7 @@
     {
       "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 32,
+      "completion": 36,
       "project_ids": [
         "3ab367a5-461c-8131-8f83-c11b94897a00",
         "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
@@ -92,10 +92,10 @@
       "stage": "Now",
       "pillar": "Proof",
       "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site.",
-      "completion": 33,
+      "completion": 41,
       "task_counts": {
-        "done": 7,
-        "total": 21
+        "done": 9,
+        "total": 22
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -108,9 +108,9 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed.",
-      "completion": 38,
+      "completion": 39,
       "task_counts": {
-        "done": 25,
+        "done": 26,
         "total": 66
       },
       "goal_ids": [
@@ -393,6 +393,31 @@
     },
     {
       "date": "2026-08-06",
+      "projects": [
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
+        },
+        {
+          "name": "Methodology Narrative (Layer 2)",
+          "status": "In Progress",
+          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "In Progress",
+          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-07",
       "projects": [
         {
           "name": "Ex-Com Interview Series",
