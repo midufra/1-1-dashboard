@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ignition — Unblock Console</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F8FB;
+    --panel:#FFFFFF;
+    --panel-2:#EEF1F7;
+    --line:rgba(18,24,43,0.10);
+    --line-soft:rgba(18,24,43,0.06);
+    --ink:#12182B;
+    --muted:#6B7280;
+
+    --c-move:#1F9D5C;
+    --c-read:#B8790A;
+    --c-listen:#D6416A;
+    --c-art:#7C4FE0;
+    --c-ai:#0E8E8E;
+    --c-culture:#2F5FDB;
+    --c-build:#E85A2A;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(1100px 550px at 10% -10%, rgba(232,90,42,0.07), transparent 60%),
+      radial-gradient(900px 480px at 105% 0%, rgba(14,142,142,0.06), transparent 55%),
+      var(--bg);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    padding:52px 20px 90px;
+  }
+  .wrap{max-width:700px;margin:0 auto;}
+  svg{display:block;}
+  a{color:inherit;}
+
+  /* ---------- masthead ---------- */
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;
+    color:var(--c-read);display:flex;align-items:center;gap:10px;margin-bottom:12px;
+  }
+  .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--c-move);box-shadow:0 0 0 3px rgba(31,157,92,0.16);}
+  h1{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(42px,9vw,68px);
+    line-height:0.94;margin:0 0 8px;letter-spacing:-0.015em;color:var(--ink);
+  }
+  .sub{color:var(--muted);font-size:15.5px;line-height:1.55;max-width:50ch;margin-bottom:36px;}
+
+  .playlist-strip{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:30px;
+    box-shadow:0 1px 2px rgba(18,24,43,0.04);
+  }
+  .playlist-strip .l{font-size:13.5px;color:var(--muted);}
+  .playlist-strip .l b{color:var(--ink);font-weight:600;}
+  .playlist-strip a{
+    font-family:'JetBrains Mono',monospace;font-size:11.5px;font-weight:700;letter-spacing:0.06em;
+    color:#fff;background:var(--c-move);padding:9px 14px;border-radius:100px;text-decoration:none;flex:none;
+  }
+
+  /* ---------- ignition console ---------- */
+  .console{
+    background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:40px 28px 30px;text-align:center;margin-bottom:16px;
+    box-shadow:0 2px 10px rgba(18,24,43,0.05);
+  }
+  .dial-zone{display:flex;flex-direction:column;align-items:center;gap:18px;}
+  #ignite-btn{
+    width:172px;height:172px;border-radius:50%;border:none;cursor:pointer;
+    background:radial-gradient(circle at 32% 28%, #FF8A5F, var(--c-build) 55%, #C8461F 100%);
+    box-shadow:0 0 0 8px rgba(232,90,42,0.10), 0 0 0 16px rgba(232,90,42,0.05), 0 18px 34px -12px rgba(232,90,42,0.45);
+    font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#2E0E00;letter-spacing:0.02em;
+    transition:transform .15s ease;
+  }
+  #ignite-btn:hover{transform:translateY(-2px);}
+  #ignite-btn:active{transform:translateY(1px) scale(0.98);}
+  #ignite-btn.spin{animation:spin-up .55s cubic-bezier(.36,.07,.19,.97);}
+  @keyframes spin-up{0%{transform:rotate(0) scale(1);}60%{transform:rotate(300deg) scale(1.04);}100%{transform:rotate(360deg) scale(1);}}
+  .console-label{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);}
+
+  .timer-row{display:none;align-items:center;justify-content:center;gap:16px;margin-top:24px;padding-top:22px;border-top:1px solid var(--line);}
+  .timer-row.active{display:flex;}
+  #clock{font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:700;min-width:110px;color:var(--ink);}
+  .timer-actions{display:flex;gap:8px;}
+  .pill-btn{
+    font-family:'Inter',sans-serif;font-weight:600;font-size:12.5px;color:var(--ink);
+    background:var(--panel-2);border:1px solid var(--line);border-radius:100px;padding:9px 16px;cursor:pointer;
+  }
+  .pill-btn:hover{background:#E4E8F0;}
+  .pill-btn.gold{color:#fff;background:var(--c-build);border-color:var(--c-build);}
+  .pill-btn.gold:hover{background:#D64F1F;}
+
+  #session{display:none;margin-top:16px;}
+  #session.active{display:block;}
+  .result-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-bottom:12px;
+    display:flex;gap:16px;align-items:flex-start;box-shadow:0 1px 3px rgba(18,24,43,0.04);
+  }
+  .result-tag{
+    flex:none;width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+    font-family:'JetBrains Mono',monospace;font-weight:700;font-size:9.5px;letter-spacing:0.02em;text-align:center;line-height:1.15;padding:2px;
+  }
+  .result-body{flex:1;min-width:0;}
+  .result-kicker{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+  .result-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;line-height:1.28;margin-bottom:4px;color:var(--ink);}
+  .result-meta{font-size:13.5px;color:var(--muted);line-height:1.45;}
+  .result-link{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:13px;font-weight:600;text-decoration:none;background:none;border:none;cursor:pointer;padding:0;font-family:'Inter',sans-serif;}
+  .result-link:hover{text-decoration:underline;}
+  .foot-actions{display:flex;gap:10px;justify-content:center;margin-top:2px;}
+
+  /* ---------- archive: shared section chrome ---------- */
+  .archive-head{margin:52px 0 26px;text-align:left;}
+  .archive-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+  .archive-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;letter-spacing:-0.01em;color:var(--ink);}
+
+  .sync-strip{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    background:var(--panel-2);border:1px dashed var(--line);border-radius:14px;padding:12px 16px;margin-bottom:34px;font-size:12.5px;color:var(--muted);
+  }
+  .sync-strip a{color:var(--ink);background:var(--panel);border:1px solid var(--line);padding:7px 12px;border-radius:100px;text-decoration:none;font-weight:600;flex:none;font-size:12px;}
+
+  .cat{margin-bottom:44px;}
+  .cat-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+  .cat-icon{
+    flex:none;width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+    background:color-mix(in srgb, var(--accent) 14%, transparent);color:var(--accent);
+  }
+  .cat-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;color:var(--ink);}
+  .cat-desc{font-size:12px;color:var(--muted);margin-top:1px;}
+  .cat-rule{flex:1;height:1px;background:var(--line);margin-left:4px;}
+  .cat-count{
+    font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);
+    border:1px solid color-mix(in srgb, var(--accent) 40%, transparent);border-radius:100px;padding:3px 9px;flex:none;
+  }
+
+  /* MOVE — kinetic chip row */
+  .move-row{display:flex;flex-wrap:wrap;gap:9px;}
+  .move-chip{
+    font-size:13px;font-weight:600;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:100px;
+    padding:9px 15px;display:flex;align-items:center;gap:8px;box-shadow:0 1px 2px rgba(18,24,43,0.03);
+  }
+  .move-chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--c-move);flex:none;}
+
+  /* READ — editorial numbered list */
+  .read-list{border-top:1px solid var(--line);}
+  .read-row{display:flex;align-items:baseline;gap:16px;padding:16px 2px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;}
+  .read-num{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);flex:none;width:22px;}
+  .read-text{flex:1;min-width:0;}
+  .read-title{font-family:'Fraunces',serif;font-size:17.5px;font-weight:500;line-height:1.3;display:block;color:var(--ink);}
+  .read-meta{font-size:13px;color:var(--muted);margin-top:3px;display:block;}
+  .read-arrow{flex:none;color:var(--muted);font-size:15px;transition:transform .15s, color .15s;}
+  .read-row:hover .read-arrow{color:var(--accent);transform:translateX(3px);}
+  .read-row:hover .read-title{color:var(--accent);}
+
+  /* LISTEN — waveform rows */
+  .listen-list{display:flex;flex-direction:column;gap:10px;}
+  .listen-row{
+    display:flex;align-items:center;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:14px;
+    padding:14px 16px;text-decoration:none;color:inherit;box-shadow:0 1px 2px rgba(18,24,43,0.03);
+  }
+  .wave{flex:none;display:flex;align-items:flex-end;gap:2.5px;height:26px;width:30px;}
+  .wave i{display:block;width:3.5px;border-radius:2px;background:var(--accent);opacity:.85;}
+  .listen-text{flex:1;min-width:0;}
+  .listen-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14.5px;display:block;line-height:1.3;color:var(--ink);}
+  .listen-meta{font-size:12.5px;color:var(--muted);margin-top:3px;display:block;}
+  .listen-dur{flex:none;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);}
+  .listen-row:hover{border-color:color-mix(in srgb, var(--accent) 45%, transparent);}
+
+  /* ART — gradient tile grid */
+  .art-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .art-tile{
+    position:relative;aspect-ratio:4/3;border-radius:14px;overflow:hidden;text-decoration:none;
+    background:linear-gradient(135deg,var(--g1),var(--g2));display:flex;align-items:flex-end;
+  }
+  .art-tile-label{
+    position:relative;color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13.5px;
+    padding:12px 14px;line-height:1.25;background:linear-gradient(0deg, rgba(0,0,0,0.55), transparent);width:100%;
+  }
+  .art-tile:hover{outline:2px solid var(--accent);outline-offset:2px;}
+
+  /* CLAUDE / AI — terminal rows (deliberate dark inset within a light page) */
+  .term-block{background:#12182B;border:1px solid var(--line);border-radius:14px;padding:6px 4px;}
+  .term-row{display:flex;gap:12px;align-items:baseline;padding:12px 16px;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.07);}
+  .term-row:last-child{border-bottom:none;}
+  .term-prompt{font-family:'JetBrains Mono',monospace;color:var(--accent);flex:none;font-size:13px;}
+  .term-text{min-width:0;}
+  .term-title{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:13.5px;display:block;color:#EDEFF5;}
+  .term-meta{font-family:'Inter',sans-serif;font-size:12.5px;color:#9AA3C0;margin-top:3px;display:block;}
+  .term-row:hover .term-title{color:var(--accent);}
+
+  /* CULTURE — magazine pull items */
+  .culture-list{display:flex;flex-direction:column;}
+  .culture-item{display:flex;gap:16px;padding:18px 2px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;}
+  .culture-item:first-child{border-top:1px solid var(--line);}
+  .culture-mark{font-family:'Fraunces',serif;font-style:italic;font-size:34px;color:var(--accent);line-height:0.7;flex:none;width:24px;}
+  .culture-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15.5px;display:block;color:var(--ink);}
+  .culture-meta{font-size:13px;color:var(--muted);margin-top:4px;display:block;line-height:1.45;}
+  .culture-item:hover .culture-title{color:var(--accent);}
+
+  /* BUILD IDEA — blueprint spec cards */
+  .build-grid{display:flex;flex-direction:column;gap:12px;}
+  .build-card{
+    position:relative;border:1px dashed color-mix(in srgb, var(--accent) 55%, transparent);border-radius:10px;padding:16px 18px;
+    background:
+      linear-gradient(var(--panel),var(--panel)) padding-box,
+      repeating-linear-gradient(0deg, transparent, transparent 23px, var(--line-soft) 23px, var(--line-soft) 24px);
+  }
+  .build-tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;color:var(--accent);margin-bottom:6px;}
+  .build-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15.5px;margin-bottom:5px;color:var(--ink);}
+  .build-meta{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:12px;}
+  .build-copy{
+    font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.04em;color:var(--accent);
+    background:none;border:1px solid color-mix(in srgb, var(--accent) 45%, transparent);border-radius:100px;padding:6px 12px;cursor:pointer;
+  }
+  .build-copy:hover{background:color-mix(in srgb, var(--accent) 12%, transparent);}
+
+  .footnote{text-align:center;color:var(--muted);font-size:12.5px;margin-top:14px;line-height:1.6;}
+  #sync-time{font-weight:600;}
+
+  .toast{
+    position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);
+    background:var(--ink);color:#fff;font-weight:600;font-size:13px;padding:10px 18px;border-radius:100px;
+    opacity:0;pointer-events:none;transition:all .25s ease;
+  }
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+  .loading{color:var(--muted);font-size:13px;padding:20px 2px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">unblock console</div>
+  <h1>Ignition</h1>
+  <div class="sub">Skip the deciding. Press ignite for a randomized 30-minute session — one move to wake the body, one thing to feed your brain, and the timer that keeps it honest.</div>
+
+  <div class="playlist-strip">
+    <div class="l">Always on deck — <b>Morning Momentum Mix</b>, built for this exact moment</div>
+    <a href="https://open.spotify.com/playlist/64BBoJQFGGpIwT95fAT8g6" target="_blank" rel="noopener">▶ OPEN</a>
+  </div>
+
+  <div class="console">
+    <div class="dial-zone">
+      <button id="ignite-btn">IGNITE</button>
+      <div class="console-label" id="console-label">press to generate a session</div>
+    </div>
+    <div class="timer-row" id="timer-row">
+      <div id="clock">30:00</div>
+      <div class="timer-actions">
+        <button class="pill-btn gold" id="timer-toggle">Start</button>
+        <button class="pill-btn" id="timer-reset">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="session">
+    <div class="result-card">
+      <div class="result-tag" id="move-tag" style="background:color-mix(in srgb, var(--c-move) 14%, transparent); color:var(--c-move);">MOVE</div>
+      <div class="result-body">
+        <div class="result-kicker">wake the body</div>
+        <div class="result-title" id="move-title">—</div>
+        <div class="result-meta" id="move-meta">—</div>
+      </div>
+    </div>
+    <div class="result-card">
+      <div class="result-tag" id="feed-tag-box">READ</div>
+      <div class="result-body">
+        <div class="result-kicker" id="feed-kicker">feed the brain</div>
+        <div class="result-title" id="feed-title">—</div>
+        <div class="result-meta" id="feed-meta">—</div>
+        <a class="result-link" id="feed-link" href="#" target="_blank" rel="noopener" style="display:none;">Open ↗</a>
+        <button class="result-link" id="feed-copy" style="display:none;">Copy this idea ⧉</button>
+      </div>
+    </div>
+    <div class="foot-actions">
+      <button class="pill-btn" id="reshuffle-btn">↻ Reshuffle</button>
+    </div>
+  </div>
+
+  <!-- ================= ARCHIVE ================= -->
+  <div class="archive-head">
+    <div class="archive-eyebrow">the archive</div>
+    <div class="archive-title">Everything in the pool, by section</div>
+  </div>
+
+  <div class="sync-strip">
+    <span>Add rows in Notion anytime, then ask Claude to <b style="color:var(--ink)">"refresh Ignition"</b> to pull them in. Last synced: <span id="sync-time">—</span></span>
+    <a href="https://app.notion.com/p/5d378a8266284a0d8ce832b9eb79b5be" target="_blank" rel="noopener">Open in Notion</a>
+  </div>
+
+  <div id="archive-root">
+    <div class="loading">Loading your library…</div>
+  </div>
+
+  <div class="footnote">30 minutes is the ceiling, not the target. If work pulls you in at minute 10 — go.</div>
+
+</div>
+
+<div class="toast" id="toast">Copied</div>
+
+<script>
+  const igniteBtn = document.getElementById('ignite-btn');
+  const consoleLabel = document.getElementById('console-label');
+  const session = document.getElementById('session');
+  const timerRow = document.getElementById('timer-row');
+  const feedLink = document.getElementById('feed-link');
+  const feedCopy = document.getElementById('feed-copy');
+  const feedTagBox = document.getElementById('feed-tag-box');
+  const toast = document.getElementById('toast');
+
+  function showToast(msg){ toast.textContent = msg; toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'),2000); }
+  function pick(arr, avoid){ let c,t=0; do{ c=arr[Math.floor(Math.random()*arr.length)]; t++; }while(arr.length>1 && avoid && c.title===avoid && t<8); return c; }
+  function hueFromString(str){ let h=0; for(let i=0;i<str.length;i++){ h=str.charCodeAt(i)+((h<<5)-h); } return Math.abs(h)%360; }
+
+  let moves=[], feedPool=[], lastMove=null, lastFeed=null;
+
+  function renderSession(){
+    const move = pick(moves, lastMove); lastMove = move.title;
+    const feed = pick(feedPool, lastFeed); lastFeed = feed.title;
+
+    document.getElementById('move-title').textContent = move.title;
+    document.getElementById('move-meta').textContent = move.meta;
+
+    feedTagBox.textContent = feed.type;
+    feedTagBox.style.background = `color-mix(in srgb, ${feed.accent} 14%, transparent)`;
+    feedTagBox.style.color = feed.accent;
+    document.getElementById('feed-kicker').textContent = feed.kicker;
+    document.getElementById('feed-title').textContent = feed.title;
+    document.getElementById('feed-meta').textContent = feed.meta || '';
+
+    if(feed.url){
+      feedLink.href = feed.url; feedLink.style.display='inline-flex'; feedLink.style.color = feed.accent;
+      feedCopy.style.display='none';
+    } else {
+      feedLink.style.display='none';
+      feedCopy.style.display='inline-flex'; feedCopy.style.color = feed.accent;
+      feedCopy.onclick = () => navigator.clipboard.writeText(feed.title+' — '+feed.meta).then(()=>showToast('Copied — paste into a new Claude chat'));
+    }
+    session.classList.add('active'); timerRow.classList.add('active');
+    consoleLabel.textContent = "session locked — go";
+  }
+  igniteBtn.addEventListener('click', () => { igniteBtn.classList.remove('spin'); void igniteBtn.offsetWidth; igniteBtn.classList.add('spin'); renderSession(); resetTimer(); });
+  document.getElementById('reshuffle-btn').addEventListener('click', renderSession);
+
+  /* timer */
+  let remaining = 1800, timerInterval=null;
+  const clockEl=document.getElementById('clock'), toggleBtn=document.getElementById('timer-toggle'), resetBtn=document.getElementById('timer-reset');
+  function fmt(s){return Math.floor(s/60).toString().padStart(2,'0')+':'+(s%60).toString().padStart(2,'0');}
+  function tick(){ if(remaining<=0){clearInterval(timerInterval);timerInterval=null;toggleBtn.textContent='Start';clockEl.textContent='GO TIME';return;} remaining--; clockEl.textContent=fmt(remaining); }
+  function resetTimer(){ clearInterval(timerInterval); timerInterval=null; remaining=1800; clockEl.textContent=fmt(remaining); toggleBtn.textContent='Start'; }
+  toggleBtn.addEventListener('click', () => { if(timerInterval){clearInterval(timerInterval);timerInterval=null;toggleBtn.textContent='Resume';} else {timerInterval=setInterval(tick,1000);toggleBtn.textContent='Pause';} });
+  resetBtn.addEventListener('click', resetTimer);
+
+  /* archive sections — built once data.json arrives */
+  function buildArchive(data){
+    moves = data.moves;
+    feedPool = [
+      ...data.reads.map(x=>({...x, type:"READ", kicker:"consumer behavior · psychology", accent:"var(--c-read)"})),
+      ...data.listens.map(x=>({...x, type:"LISTEN", kicker:x.dur+" · behavioral economics", accent:"var(--c-listen)"})),
+      ...data.arts.map(x=>({...x, type:"ART", kicker:"art · beginner-friendly", accent:"var(--c-art)"})),
+      ...data.ai.map(x=>({...x, type:"AI", kicker:"claude & ai", accent:"var(--c-ai)"})),
+      ...data.culture.map(x=>({...x, type:"CULTURE", kicker:"brand & trend strategy", accent:"var(--c-culture)"})),
+      ...data.builds.map(x=>({...x, type:"BUILD", kicker:"claude build idea", accent:"var(--c-build)"}))
+    ];
+
+    document.getElementById('sync-time').textContent = data.synced || '—';
+
+    const root = document.getElementById('archive-root');
+    root.innerHTML = `
+      <section class="cat" style="--accent:var(--c-move);">
+        <div class="cat-head"><div class="cat-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 11 14 10 22 21 10 13 10 13 2"/></svg></div>
+        <div><div class="cat-name">Move</div><div class="cat-desc">Physical resets to wake the body</div></div>
+        <div class="cat-rule"></div><div class="cat-count">${data.moves.length}</div></div>
+        <div class="move-row" id="move-list"></div>
+      </section>
+
+      <section class="cat" style="--accent:var(--c-read);">
+        <div class="cat-head"><div class="cat-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg></div>
+        <div><div class="cat-name">Read</div><div class="cat-desc">Consumer behavior & psychology, in prose</div></div>
+        <div class="cat-rule"></div><div class="cat-count">${data.reads.length}</div></div>
+        <div class="read-list" id="read-list"></div>
+      </section>
+
+      <section class="cat" style="--accent:var(--c-listen);">
+        <div class="cat-head"><div class="cat-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="10" x2="4" y2="14"/><line x1="9" y1="6" x2="9" y2="18"/><line x1="14" y1="3" x2="14" y2="21"/><line x1="19" y1="8" x2="19" y2="16"/></svg></div>
+        <div><div class="cat-name">Listen</div><div class="cat-desc">Short, hooky episodes — no slow build</div></div>
+        <div class="cat-rule"></div><div class="cat-count">${data.listens.length}</div></div>
+        <div class="listen-list" id="listen-list"></div>
+      </section>
+
+      <section class="cat" style="--accent:var(--c-art);">
+        <div class="cat-head"><div class="cat-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+        <div><div class="cat-name">Art</div><div class="cat-desc">Learning to look — no art history degree required</div></div>
+        <div class="cat-rule"></div><div class="cat-count">${data.arts.length}</div></div>
+        <div class="art-grid" id="art-grid"></div>
+      </section>
+
+      <section class="cat" style="--accent:var(--c-ai);">
+        <div class="cat-head"><div class="cat-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><line x1="7" y1="12" x2="17" y2="7"/><line x1="7" y1="12" x2="17" y2="17"/></svg></div>
+        <div><div class="cat-name">Claude / AI</div><div class="cat-desc">Fuel for what you build next</div></div>
+        <div class="cat-rule"></div><div class="cat-count">${data.ai.length}</div></div>
+        <div class="term-block" id="ai-list"></div>
+      </section>
+
+      <section class="cat" style="--accent:var(--c-culture);">
+        <div class="cat-head"><div class="cat-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div><div class="cat-name">Culture</div><div class="cat-desc">Brand & trend strategy, sharply argued</div></div>
+        <div class="cat-rule"></div><div class="cat-count">${data.culture.length}</div></div>
+        <div class="culture-list" id="culture-list"></div>
+      </section>
+
+      <section class="cat" style="--accent:var(--c-build);">
+        <div class="cat-head"><div class="cat-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="7" x2="12" y2="12"/><line x1="12" y1="12" x2="15.5" y2="14"/></svg></div>
+        <div><div class="cat-name">Build ideas</div><div class="cat-desc">Specs to paste into a new Claude chat</div></div>
+        <div class="cat-rule"></div><div class="cat-count">${data.builds.length}</div></div>
+        <div class="build-grid" id="build-list"></div>
+      </section>
+    `;
+
+    const moveList = document.getElementById('move-list');
+    data.moves.forEach(m => { const c=document.createElement('div'); c.className='move-chip'; c.textContent=m.title; c.title=m.meta; moveList.appendChild(c); });
+
+    const readList = document.getElementById('read-list');
+    data.reads.forEach((r,i) => {
+      const a=document.createElement('a'); a.className='read-row'; a.href=r.url; a.target='_blank'; a.rel='noopener';
+      a.innerHTML = `<span class="read-num">0${i+1}</span><span class="read-text"><span class="read-title">${r.title}</span><span class="read-meta">${r.meta}</span></span><span class="read-arrow">→</span>`;
+      readList.appendChild(a);
+    });
+
+    const listenList = document.getElementById('listen-list');
+    data.listens.forEach(l => {
+      const a=document.createElement('a'); a.className='listen-row'; a.href=l.url; a.target='_blank'; a.rel='noopener';
+      const heights=[10,20,14,26,16];
+      a.innerHTML = `<span class="wave">${heights.map(h=>`<i style="height:${h}px"></i>`).join('')}</span><span class="listen-text"><span class="listen-title">${l.title}</span><span class="listen-meta">${l.meta}</span></span><span class="listen-dur">${l.dur}</span>`;
+      listenList.appendChild(a);
+    });
+
+    const artGrid = document.getElementById('art-grid');
+    data.arts.forEach(art => {
+      const h1 = hueFromString(art.title), h2 = (h1+40)%360;
+      const a=document.createElement('a'); a.className='art-tile'; a.href=art.url; a.target='_blank'; a.rel='noopener';
+      a.style.setProperty('--g1', `hsl(${h1} 65% 46%)`); a.style.setProperty('--g2', `hsl(${h2} 60% 26%)`);
+      a.innerHTML = `<span class="art-tile-label">${art.title}</span>`;
+      artGrid.appendChild(a);
+    });
+
+    const aiList = document.getElementById('ai-list');
+    data.ai.forEach(x => {
+      const a=document.createElement('a'); a.className='term-row'; a.href=x.url; a.target='_blank'; a.rel='noopener';
+      a.innerHTML = `<span class="term-prompt">›</span><span class="term-text"><span class="term-title">${x.title}</span><span class="term-meta">${x.meta}</span></span>`;
+      aiList.appendChild(a);
+    });
+
+    const cultureList = document.getElementById('culture-list');
+    data.culture.forEach(x => {
+      const a=document.createElement('a'); a.className='culture-item'; a.href=x.url; a.target='_blank'; a.rel='noopener';
+      a.innerHTML = `<span class="culture-mark">“</span><span><span class="culture-title">${x.title}</span><span class="culture-meta">${x.meta}</span></span>`;
+      cultureList.appendChild(a);
+    });
+
+    const buildList = document.getElementById('build-list');
+    data.builds.forEach((b,i) => {
+      const d=document.createElement('div'); d.className='build-card';
+      d.innerHTML = `<div class="build-tag">SPEC—0${i+1}</div><div class="build-title">${b.title}</div><div class="build-meta">${b.meta}</div><button class="build-copy">Copy idea ⧉</button>`;
+      d.querySelector('.build-copy').addEventListener('click', () => navigator.clipboard.writeText(b.title+' — '+b.meta).then(()=>showToast('Copied — paste into a new Claude chat')));
+      buildList.appendChild(d);
+    });
+  }
+
+  fetch('./data.json').then(r => r.json()).then(buildArchive).catch(() => {
+    document.getElementById('archive-root').innerHTML = '<div class="loading">Could not load data.json — make sure it sits next to this file.</div>';
+  });
+</script>
+</body>
+</html>
