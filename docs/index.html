@@ -16,8 +16,6 @@
     --goal:#4a5fc7; --goal-dim:#4a5fc70f;
     --track-base:#ecedf1;
     --shadow:0 1px 2px rgba(20,25,40,0.04), 0 1px 10px rgba(20,25,40,0.03);
-    --focus-topic:#6d28d9; --focus-topic-bg:#6d28d90d; --focus-topic-border:#6d28d92e;
-    --focus-help:#e11d5e; --focus-help-bg:#e11d5e0d; --focus-help-border:#e11d5e2e;
   }
   *{box-sizing:border-box;}
   body{margin:0;background:var(--bg);color:var(--text);font-family:'IBM Plex Sans',sans-serif;padding:40px 24px 80px;}
@@ -38,20 +36,6 @@
   .goal-projects span{font-size:12px;color:var(--muted);background:var(--bg);border:1px solid var(--hairline);padding:4px 10px;border-radius:20px;}
   .section-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin:44px 0 14px;display:flex;align-items:center;gap:10px;}
   .section-label::after{content:"";flex:1;height:1px;background:var(--hairline);}
-  .section-label.first{margin-top:0;}
-  .focus-scroll{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 10px;scroll-snap-type:x proximity;scrollbar-width:none;-ms-overflow-style:none;}
-  .focus-scroll::-webkit-scrollbar{display:none;}
-  .focus-card{scroll-snap-align:start;flex:0 0 auto;width:216px;border-radius:12px;padding:14px 16px 15px;border:1px solid;box-shadow:var(--shadow);}
-  .focus-card.topic{background:var(--focus-topic-bg);border-color:var(--focus-topic-border);}
-  .focus-card.help{background:var(--focus-help-bg);border-color:var(--focus-help-border);}
-  .focus-tag{display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:9px;}
-  .focus-card.topic .focus-tag{color:var(--focus-topic);}
-  .focus-card.help .focus-tag{color:var(--focus-help);}
-  .focus-tag .dot{width:6px;height:6px;border-radius:50%;}
-  .focus-card.topic .dot{background:var(--focus-topic);}
-  .focus-card.help .dot{background:var(--focus-help);}
-  .focus-text{font-size:14px;font-weight:500;line-height:1.42;color:var(--text);}
-  .focus-empty{font-size:13px;color:var(--faint);padding:4px 2px;}
   .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
   .card{background:var(--panel);border:1px solid var(--hairline);box-shadow:var(--shadow);border-radius:10px;padding:22px;}
   .card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;}
@@ -86,6 +70,14 @@
   .month-week li{font-size:13px;line-height:1.55;color:var(--muted);padding-left:14px;position:relative;margin-bottom:4px;}
   .month-week li::before{content:"—";position:absolute;left:0;color:var(--faint);}
   .month-week.current li{color:var(--text);}
+  .month-more{border-top:1px solid var(--hairline);}
+  .month-more summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:11px 0 11px 2px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);}
+  .month-more summary::-webkit-details-marker{display:none;}
+  .month-more summary:hover{color:var(--muted);}
+  .month-more .chev{width:0;height:0;border-left:4px solid currentColor;border-top:3.5px solid transparent;border-bottom:3.5px solid transparent;transition:transform .15s ease;}
+  .month-more[open] .chev{transform:rotate(90deg);}
+  .month-more[open] summary{border-bottom:1px solid var(--hairline);}
+  .month-more .month-week:first-child{padding-top:4px;border-top:none;}
   .month-recap{margin-top:6px;padding:16px 0 2px;border-top:1px solid var(--hairline);display:grid;grid-template-columns:90px 1fr;gap:16px;}
   .month-recap .wk{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--goal);padding-top:2px;}
   .month-recap p{margin:0;font-size:13px;line-height:1.6;color:var(--muted);}
@@ -112,9 +104,6 @@
   <h1 id="week-title">Weekly Status</h1>
   <div class="subhead" id="subhead">Loading live data from Notion…</div>
 
-  <div class="section-label first">This week's focus</div>
-  <div class="focus-scroll" id="focus-panel"></div>
-
   <div class="section-label">This week — Stage: Now</div>
   <div class="cards" id="cards-panel"><div class="loading">Loading projects…</div></div>
 
@@ -129,31 +118,6 @@
 </div>
 
 <script>
-// ── WEEKLY FOCUS — edit this by hand each week. Not synced from Notion. ──
-// type: 'topic' (things to cover) or 'help' (things you need help with).
-// Keep each "text" to one short line — these render as small cards.
-const WEEKLY_FOCUS = [
-  { type: 'topic', text: 'New onboarding flow — walkthrough' },
-  { type: 'topic', text: 'Q3 collateral review status' },
-  { type: 'help',  text: 'Need sign-off on Proof deck timeline' },
-  { type: 'help',  text: 'Stuck on Garry access permissions' },
-];
-
-function renderFocus(items) {
-  if (!items || !items.length) {
-    return '<div class="focus-empty">Nothing set for this week — edit WEEKLY_FOCUS in index.html.</div>';
-  }
-  return items.map(it => {
-    const isHelp = it.type === 'help';
-    const cls = isHelp ? 'help' : 'topic';
-    const label = isHelp ? 'Need help' : 'Topic';
-    return `<div class="focus-card ${cls}">
-      <span class="focus-tag"><span class="dot"></span>${label}</span>
-      <div class="focus-text">${it.text}</div>
-    </div>`;
-  }).join('');
-}
-
 // Order + display label + CSS class for each real Notion Status value.
 // "Upcoming" is displayed as "Not Started" per Mirela's requested grouping.
 const STATUS_GROUPS = [
@@ -197,15 +161,12 @@ function isoWeekKey(dateStr) {
 }
 
 async function render() {
-  // Weekly focus is manual and independent of the Notion sync — render first.
-  document.getElementById('focus-panel').innerHTML = renderFocus(WEEKLY_FOCUS);
-
   let data;
   try {
     const res = await fetch('data.json?_=' + Date.now());
     data = await res.json();
   } catch (e) {
-    document.getElementById('goals-panel').innerHTML = '<div class="error">Could not load data.json — has the sync run yet?</div>';
+    document.getElementById('goals-panel').innerHTML = '<div class="error">Status data is currently unavailable.</div>';
     return;
   }
 
@@ -240,7 +201,7 @@ async function render() {
       <p class="summary-text">${p.summary || 'No summary yet.'}</p>
     </div>`;
   }).join('');
-  document.getElementById('cards-panel').innerHTML = cardsHtml || '<div class="loading">Nothing tagged Stage: Now.</div>';
+  document.getElementById('cards-panel').innerHTML = cardsHtml || '<div class="loading">No projects are active this week.</div>';
 
   // Month status — group history entries by ISO week
   const history = data.history || [];
@@ -251,21 +212,28 @@ async function render() {
   });
   const weekKeys = Object.keys(weeks).sort().reverse(); // most recent first
   const currentKey = weekKeys[0];
-  let monthHtml = weekKeys.map(key => {
+  function weekRow(key, isCurrent) {
     const entry = weeks[key];
-    const isCurrent = key === currentKey;
     const items = entry.projects.map(p => `<li>${p.name}: ${p.summary || p.status || 'no update'}</li>`).join('');
     return `<div class="month-week${isCurrent ? ' current' : ''}">
       <div class="wk">${key}${isCurrent ? '<br>(current)' : ''}</div>
       <ul>${items || '<li>No active projects logged.</li>'}</ul>
     </div>`;
-  }).join('');
-  if (data.monthly_recap) {
-    monthHtml += `<div class="month-recap"><div class="wk">Recap</div><p>${data.monthly_recap}</p></div>`;
-  } else {
-    monthHtml += `<div class="month-recap"><div class="wk">Recap</div><p style="color:var(--faint)">No recap written yet for this month — ask Claude to add one once there's a full arc to summarize.</p></div>`;
   }
-  document.getElementById('month-panel').innerHTML = monthHtml || '<div class="loading">No history yet — this builds up automatically after a few daily syncs.</div>';
+  // Only the current week stays open; earlier weeks collapse into an accordion.
+  let monthHtml = currentKey ? weekRow(currentKey, true) : '';
+  const earlierKeys = weekKeys.slice(1);
+  if (earlierKeys.length) {
+    monthHtml += `<details class="month-more">
+      <summary><span class="chev"></span>${earlierKeys.length} earlier week${earlierKeys.length > 1 ? 's' : ''}</summary>
+      <div class="month-more-body">${earlierKeys.map(k => weekRow(k, false)).join('')}</div>
+    </details>`;
+  }
+  const recapText = data.monthly_recap
+    ? data.monthly_recap
+    : 'Published at the end of the month.';
+  monthHtml += `<div class="month-recap"><div class="wk">Recap</div><p${data.monthly_recap ? '' : ' style="color:var(--faint)"'}>${recapText}</p></div>`;
+  document.getElementById('month-panel').innerHTML = monthHtml || '<div class="loading">No week history recorded yet.</div>';
 
   // All projects — grouped by Status, in fixed order, skipping empty groups
   let allHtml = '';
