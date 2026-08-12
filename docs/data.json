@@ -1,571 +1,528 @@
 {
-  "generated_at": "2026-08-12T10:41:36.094307Z",
+  "generated_at": "2026-08-12T11:37:19Z",
   "goals": [
     {
-      "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
       "name": "Arm every deal with proof",
-      "completion": 40,
       "project_ids": [
-        "2f5367a5-461c-808c-9866-e91f126035e5",
-        "3ab367a5-461c-8174-913f-f1423f473448",
-        "3ab367a5-461c-8107-9761-dc9fe40d9709"
-      ]
+        "2f5367a5461c808c9866e91f126035e5",
+        "3ab367a5461c8174913ff1423f473448",
+        "3ab367a5461c81079761dc9fe40d9709"
+      ],
+      "completion": 0
     },
     {
-      "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 48,
       "project_ids": [
-        "3ab367a5-461c-8131-8f83-c11b94897a00",
-        "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
-        "3b1367a5-461c-8094-90e2-e319c14ceb9a",
-        "336367a5-461c-80a3-9f1d-f205a80bc4ca"
-      ]
+        "3ab367a5461c81318f83c11b94897a00",
+        "3ab367a5461c811a8de9f1bb4ecf137d",
+        "3b1367a5461c809490e2e319c14ceb9a",
+        "336367a5461c80a39f1df205a80bc4ca"
+      ],
+      "completion": 25
     },
     {
-      "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 23,
       "project_ids": [
-        "3ab367a5-461c-816c-a30e-d1cd10c1df22",
-        "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
-        "2f5367a5-461c-80e8-a14c-f73a0d970622",
-        "336367a5-461c-8022-afb3-dbaae818ba06",
-        "2e1367a5-461c-805b-a7cc-ddc0db2e6d26",
-        "2de367a5-461c-8042-b886-eb23b2cd2691"
-      ]
+        "3ab367a5461c816ca30ed1cd10c1df22",
+        "336367a5461c80f5b3e8f5288dbe1c1d",
+        "2f5367a5461c80e8a14cf73a0d970622",
+        "336367a5461c8022afb3dbaae818ba06",
+        "2e1367a5461c805ba7ccddc0db2e6d26",
+        "2de367a5461c8042b886eb23b2cd2691"
+      ],
+      "completion": 17
     }
   ],
   "projects": [
     {
-      "id": "3b1367a5-461c-8094-90e2-e319c14ceb9a",
-      "name": "Ex-Com Interview Series",
+      "id": "336367a5461c80099374e0e9fee446c1",
+      "name": "50 Beauty",
       "status": "In Progress",
-      "stage": "Now",
-      "pillar": "Knowledge",
-      "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next.",
-      "completion": 52,
-      "task_counts": {
-        "done": 11,
-        "total": 21
-      },
-      "goal_ids": [
-        "3b1367a5-461c-8195-a1d9-d7d72963c2df"
-      ]
-    },
-    {
-      "id": "3ab367a5-461c-8107-9761-dc9fe40d9709",
-      "name": "Client Endorsements (Gong)",
-      "status": "Not started",
-      "stage": "Later",
+      "stage": null,
       "pillar": "Proof",
-      "summary": "Paused due to capacity -- Garry, Methodology, Accuracy Number, and Client Follower took priority. Was the 'easy win' pivot away from slow Customer Stories process; 20-testimonial mapping with Marion on hold, not cancelled.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": [
-        "3b1367a5-461c-8145-8219-c297b2626ae2"
-      ]
+      "summary": "Project \"50 Beauty\" is currently in progress.",
+      "completion": null
     },
     {
-      "id": "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
-      "name": "Client Crawler (AI)",
-      "status": "Not started",
-      "stage": "Next",
-      "pillar": "Knowledge",
-      "summary": "Originally planned for November, accelerated to now due to leadership interest. Data team conversation (Fri) suggests much of the groundwork may already exist -- possible quick win. Needs scoping to confirm effort.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": [
-        "3b1367a5-461c-8195-a1d9-d7d72963c2df"
-      ]
-    },
-    {
-      "id": "3ab367a5-461c-8131-8f83-c11b94897a00",
-      "name": "Methodology Narrative (Layer 2)",
-      "status": "In Progress",
-      "stage": "Now",
-      "pillar": "Proof",
-      "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site.",
-      "completion": 43,
-      "task_counts": {
-        "done": 10,
-        "total": 23
-      },
-      "goal_ids": [
-        "3b1367a5-461c-8195-a1d9-d7d72963c2df"
-      ]
-    },
-    {
-      "id": "3ab367a5-461c-816c-a30e-d1cd10c1df22",
-      "name": "Project Garry",
-      "status": "In Progress",
-      "stage": "Now",
-      "pillar": "Garry",
-      "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed.",
-      "completion": 47,
-      "task_counts": {
-        "done": 31,
-        "total": 66
-      },
-      "goal_ids": [
-        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
-      ]
-    },
-    {
-      "id": "3ab367a5-461c-8174-913f-f1423f473448",
+      "id": "3ab367a5461c8174913ff1423f473448",
       "name": "Accuracy Number (WGSN)",
-      "status": "In Progress",
+      "status": "Blocked",
       "stage": "Now",
       "pillar": "Proof",
-      "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative.",
-      "completion": 40,
-      "task_counts": {
-        "done": 2,
-        "total": 5
-      },
-      "goal_ids": [
-        "3b1367a5-461c-8145-8219-c297b2626ae2"
-      ]
+      "summary": "Data team exploring further on the number. Commercial narrative on hold until that concludes.",
+      "completion": null
     },
     {
-      "id": "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
-      "name": "Onboarding Pack",
-      "status": "Done",
-      "stage": null,
-      "pillar": "Onboarding",
-      "summary": "Project is currently in progress, focusing on the onboarding pack and associated tasks.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": [
-        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
-      ]
-    },
-    {
-      "id": "336367a5-461c-8064-a813-f175603d9065",
-      "name": "Tradeshows cost Stat",
-      "status": "Paused",
-      "stage": null,
-      "pillar": "Proof",
-      "summary": "Project on tradeshows cost is in the planning stage, with tasks outlined for execution.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": []
-    },
-    {
-      "id": "336367a5-461c-8022-afb3-dbaae818ba06",
-      "name": "Brand Videos",
-      "status": "Not started",
-      "stage": null,
-      "pillar": "Collateral",
-      "summary": "Project named \"Brand Videos\" is currently in the planning stage, with tasks outlined for execution.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": [
-        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
-      ]
-    },
-    {
-      "id": "2f5367a5-461c-808c-a448-dd421d916570",
-      "name": "What do to with trends",
-      "status": "Backlog",
-      "stage": null,
-      "pillar": null,
-      "summary": "Faltam profissionais para analisar criticamente as tend\u00eancias e criar algo novo a partir delas. O Programa Trendhackers foi criado para identificar as dores das marcas em rela\u00e7\u00e3o \u00e0s tend\u00eancias e sistematizar um pensamento estrat\u00e9gico para impulsionar resultados de neg\u00f3cios. A WGSN oferece intelig\u00eancia de previs\u00e3o para ajudar as equipes a construir produtos com sucesso, decodificando sinais culturais e comportamentais dos consumidores. Com o lan\u00e7amento do Trend Forecast Database, as estrat\u00e9gias s\u00e3o criadas para garantir o sucesso no mercado em r\u00e1pida mudan\u00e7a.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": []
-    },
-    {
-      "id": "2f5367a5-461c-80ba-b4bc-ceec4ae58f96",
-      "name": "Trend Confirmations",
-      "status": "Blocked",
-      "stage": null,
-      "pillar": "Proof",
-      "summary": "No content",
-      "completion": 0,
-      "task_counts": {
-        "done": 0,
-        "total": 1
-      },
-      "goal_ids": []
-    },
-    {
-      "id": "2f5367a5-461c-808c-9866-e91f126035e5",
-      "name": "Proof Points",
-      "status": "Paused",
-      "stage": null,
-      "pillar": "Proof",
-      "summary": "Sub-projects are listed under the project name \"Proof Points,\" which is currently in progress with a low priority, scheduled from April 1, 2026, to June 30, 2026. Project tasks are referenced but not detailed.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": [
-        "3b1367a5-461c-8145-8219-c297b2626ae2"
-      ]
-    },
-    {
-      "id": "2f5367a5-461c-80a3-88a6-cbb6700a3545",
-      "name": "Sales Hub",
-      "status": "Done",
-      "stage": null,
-      "pillar": null,
-      "summary": "Sales Hub project is planned with high priority, currently in progress from January 27, 2026, to April 13, 2026. Specific tasks are listed but not detailed.",
-      "completion": 100,
-      "task_counts": {
-        "done": 6,
-        "total": 6
-      },
-      "goal_ids": []
-    },
-    {
-      "id": "2f5367a5-461c-80e8-a14c-f73a0d970622",
-      "name": "Customer Stories Program",
-      "status": "Paused",
-      "stage": null,
-      "pillar": "Collateral",
-      "summary": "The Customer Stories Program is a high-priority project planned from January 25, 2026, to June 30, 2026, with various tasks outlined. Key outputs and references related to customer stories are included for project work.",
-      "completion": 13,
-      "task_counts": {
-        "done": 3,
-        "total": 23
-      },
-      "goal_ids": [
-        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
-      ]
-    },
-    {
-      "id": "2f5367a5-461c-8015-9b28-d27b6e073f60",
-      "name": "Metric Survey",
-      "status": "Backlog",
-      "stage": null,
-      "pillar": null,
-      "summary": "Admin project for a Metric Survey scheduled from April 1 to April 16, 2026, with a low priority and currently in the planning phase. Tasks are yet to be defined.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": []
-    },
-    {
-      "id": "2f5367a5-461c-80b0-8d3d-cce1bff408d5",
+      "id": "2f5367a5461c80b08d3dcce1bff408d5",
       "name": "Admin",
       "status": "Backlog",
       "stage": null,
       "pillar": null,
-      "summary": "Project \"Admin\" is in the planning stage with a low priority, scheduled from January 1, 2026, to December 31, 2026. Specific tasks are yet to be defined.",
-      "completion": 33,
-      "task_counts": {
-        "done": 1,
-        "total": 3
-      },
-      "goal_ids": []
+      "summary": "Low-priority admin bucket for 2026.",
+      "completion": null
     },
     {
-      "id": "2f5367a5-461c-802b-bd95-d6a9561a8716",
+      "id": "2f5367a5461c80959e9ed79d0847c9b9",
+      "name": "Align Social Team",
+      "status": "Done",
+      "stage": null,
+      "pillar": null,
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "33c367a5461c803ab9c0f34c4106ea00",
+      "name": "Best Kept Secret",
+      "status": "Planning",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "In planning; ownership, priority and timelines still to be defined.",
+      "completion": null
+    },
+    {
+      "id": "3ba367a5461c81eba3f5c96a66fe0475",
+      "name": "Brand Narrative",
+      "status": "Paused",
+      "stage": "Later",
+      "pillar": "Collateral",
+      "summary": "Requested by David. Paused until Wendy is back from annual leave.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c8022afb3dbaae818ba06",
+      "name": "Brand Videos",
+      "status": "Not started",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "In planning, tasks outlined for execution.",
+      "completion": null
+    },
+    {
+      "id": "3ab367a5461c811a8de9f1bb4ecf137d",
+      "name": "Client Crawler (AI)",
+      "status": "Not started",
+      "stage": "Next",
+      "pillar": "Knowledge",
+      "summary": "Originally planned for November, accelerated due to leadership interest. Data team suggests much of the groundwork may already exist — possible quick win. Needs scoping.",
+      "completion": null
+    },
+    {
+      "id": "3ab367a5461c81079761dc9fe40d9709",
+      "name": "Client Endorsements (Gong)",
+      "status": "Not started",
+      "stage": "Later",
+      "pillar": "Proof",
+      "summary": "Paused on capacity — Garry, Methodology, Accuracy Number and Client Follower took priority. 20-testimonial mapping with Marion on hold, not cancelled.",
+      "completion": null
+    },
+    {
+      "id": "309367a5461c807c9360f3766045bd98",
+      "name": "Content Leaders buy-in",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Completed February, week 4.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c8009b7b8f273bc56a0d4",
+      "name": "Cost of wrong Stat",
+      "status": "Blocked",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "On hold.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c80a39f1df205a80bc4ca",
+      "name": "Customer Journey Collateral Map",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Knowledge",
+      "summary": "Completed.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c80e8a14cf73a0d970622",
+      "name": "Customer Stories Program",
+      "status": "Paused",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "High-priority programme planned Jan 25 – Jun 30 2026.",
+      "completion": null
+    },
+    {
+      "id": "309367a5461c80338ee3ed1b3ce12879",
+      "name": "Design Brief",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "33c367a5461c805fb6d7dd90a393c145",
+      "name": "Detailed Quotes",
+      "status": "Planning",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "In planning.",
+      "completion": null
+    },
+    {
+      "id": "3b1367a5461c809490e2e319c14ceb9a",
+      "name": "Ex-Com Interview Series",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Knowledge",
+      "summary": "First three videos revised and ready. API video launches first, via Carla's C-suite newsletter on 21 Aug. Remaining video recordings paused until Nana and Wendy discuss the topic.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c8030a366f77ddf69fb39",
+      "name": "Fandom",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c807ba80ed4ad28295419",
+      "name": "Foodie Beauty",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c80c7954dff76731cea3a",
+      "name": "Get IG confirmations into a steady roll out",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Completed February, week 4.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c80de9ebdcc57db9e8f25",
+      "name": "Ideation",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Completed.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c80c28827c715dacc97fe",
+      "name": "LATAM Feaver",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "3ab367a5461c81318f83c11b94897a00",
+      "name": "Methodology Narrative (Layer 2)",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Proof",
+      "summary": "Layer 3 presented and approved, signed off by Wendy. Master now waiting on Cesca's return from annual leave; once filled out it surfaces the client FAQs, due by end of month. Briefing design this week on the visual slide going into Garry.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c8042982feddb17fd0a88",
+      "name": "Methodology Video",
+      "status": "Not started",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "In planning.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c80159b28d27b6e073f60",
+      "name": "Metric Survey",
+      "status": "Backlog",
+      "stage": null,
+      "pillar": null,
+      "summary": "Scheduled 1–16 Apr 2026, low priority.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c8090a772f11a74d82767",
+      "name": "Nostalgia",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c80f5b3e8f5288dbe1c1d",
+      "name": "Onboarding Pack",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Onboarding",
+      "summary": "Completed.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c809c9c7dc23fac2fef41",
+      "name": "Plan Structure to confirm product",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Confirming product structure.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c80a98a78e1a468edafaf",
+      "name": "Product Proof",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Completed February, week 4.",
+      "completion": null
+    },
+    {
+      "id": "3ab367a5461c816ca30ed1cd10c1df22",
+      "name": "Project Garry",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Garry",
+      "summary": "Final adjustments to catalogues and images before launch — in a very good place. Localisation kicked off today; Calum working on the Salesforce connection. Met Mindset on rollout for their team. Meeting with Lou tomorrow on Garry's evolution.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c808c9866e91f126035e5",
+      "name": "Proof Points",
+      "status": "Paused",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Sub-projects scheduled Apr 1 – Jun 30 2026.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c80c3bd02cf16ce1ba526",
+      "name": "Reply Cesca",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c8038a8c7f02bf80b6f3b",
+      "name": "Review Sam's work",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c802bbd95d6a9561a8716",
       "name": "ROI",
       "status": "Canceled",
       "stage": null,
       "pillar": null,
-      "summary": "The project named ROI has a low priority and is currently canceled, with a timeline from January 27, 2026, to December 31, 2026. There are tasks associated with the project, but details are not provided.",
-      "completion": 100,
-      "task_counts": {
-        "done": 1,
-        "total": 1
-      },
-      "goal_ids": []
+      "summary": "Cancelled.",
+      "completion": null
     },
     {
-      "id": "2f5367a5-461c-80ac-8c1b-ce466f6b473b",
-      "name": "TFD",
-      "status": "Done",
-      "stage": null,
-      "pillar": null,
-      "summary": "Project TFD is a high-priority initiative currently in progress, scheduled from January 4, 2026, to April 30, 2026. Specific tasks are yet to be detailed.",
-      "completion": 82,
-      "task_counts": {
-        "done": 9,
-        "total": 11
-      },
-      "goal_ids": []
-    },
-    {
-      "id": "2e1367a5-461c-805b-a7cc-ddc0db2e6d26",
-      "name": "Sales Deck V1",
-      "status": "Paused",
-      "stage": null,
-      "pillar": "Collateral",
-      "summary": "O Programa Trendhackers foi criado para ajudar marcas a analisar criticamente as tend\u00eancias atuais, priorizando e sistematizando a aplica\u00e7\u00e3o estrat\u00e9gica delas para impulsionar resultados de neg\u00f3cios. O foco \u00e9 equalizar conhecimentos entre \u00e1reas e pensar estrategicamente al\u00e9m das tend\u00eancias.",
-      "completion": 9,
-      "task_counts": {
-        "done": 1,
-        "total": 11
-      },
-      "goal_ids": [
-        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
-      ]
-    },
-    {
-      "id": "2de367a5-461c-8033-922f-d42cdc65f1a2",
+      "id": "2de367a5461c8033922fd42cdc65f1a2",
       "name": "ROI Survey",
       "status": "Backlog",
       "stage": null,
       "pillar": null,
-      "summary": "The project focuses on researching ROI, with tasks outlined in the backlog. A link to additional resources is provided for further information.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": []
+      "summary": "Research into ROI, tasks in backlog.",
+      "completion": null
+    },
+    {
+      "id": "2e1367a5461c805ba7ccddc0db2e6d26",
+      "name": "Sales Deck V1",
+      "status": "Paused",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "Trendhackers programme framing.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c80a388a6cbb6700a3545",
+      "name": "Sales Hub",
+      "status": "Done",
+      "stage": null,
+      "pillar": null,
+      "summary": "Ran Jan 27 – Apr 13 2026.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c801ca49bdd717afb5ea2",
+      "name": "Scentification of Beauty",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c80b990b6f2b490d5ac33",
+      "name": "Sports Marketing",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c80f9a846edd9a2f69c3a",
+      "name": "Structure IG Trend Confirmation",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "309367a5461c80989dede143519ed2fd",
+      "name": "Test 01 - Kidult",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Completed February, week 4.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c80ac8c1bce466f6b473b",
+      "name": "TFD",
+      "status": "Done",
+      "stage": null,
+      "pillar": null,
+      "summary": "Ran Jan 4 – Apr 30 2026.",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c8032a6b6f091b85b0140",
+      "name": "Top 50 Stat",
+      "status": "Blocked",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c8064a813f175603d9065",
+      "name": "Tradeshows cost Stat",
+      "status": "Paused",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "In planning.",
+      "completion": null
+    },
+    {
+      "id": "33c367a5461c80ee8246de290438b2c8",
+      "name": "Traditional Case Studies",
+      "status": "Planning",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "In planning.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c80bab4bcceec4ae58f96",
+      "name": "Trend Confirmations",
+      "status": "Blocked",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "",
+      "completion": null
+    },
+    {
+      "id": "336367a5461c802c8a58e58573f4f0e0",
+      "name": "US client Ashtrad",
+      "status": "Done",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "Completed.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c8072abf0c776ec6024d8",
+      "name": "Usability Stat",
+      "status": "Planning",
+      "stage": null,
+      "pillar": "Proof",
+      "summary": "Scheduled Apr 1 – Jun 30 2026.",
+      "completion": null
+    },
+    {
+      "id": "2de367a5461c8042b886eb23b2cd2691",
+      "name": "Use Cases Library",
+      "status": "Blocked",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "Waiting on Laila's final work.",
+      "completion": null
+    },
+    {
+      "id": "3ba367a5461c81edac72e6cb39b8d52f",
+      "name": "WGSN Pain & Benefits",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Garry",
+      "summary": "Secondary project inside Garry. Proposed structure shared with Wendy. Next: overlay Laila's Personas project, then Product Marketing on linking pain/benefits to products and features.",
+      "completion": null
+    },
+    {
+      "id": "2f5367a5461c808ca448dd421d916570",
+      "name": "What do to with trends",
+      "status": "Backlog",
+      "stage": null,
+      "pillar": null,
+      "summary": "Trendhackers framing.",
+      "completion": null
     }
   ],
   "history": [
     {
-      "date": "2026-08-04",
+      "date": "2026-08-14",
+      "week_key": "2026-W33",
+      "headline": "Garry in final pre-launch adjustments; Methodology Layer 3 approved; three threads parked on annual leave.",
       "projects": [
         {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "3 of 6 interviews recorded (Andrea Q, Isiah, plus a well-received AI-topic video). David/Chesca filming blocked until Justin returns Aug 7. Warren/Claire and Chris/Xan scripts in progress. Distribution plan set: Vimeo hosting, drip campaign, dedicated landing page (Knowledge Center can't take direct links). First 2 drafts going to Jenna this week to shape newsletter placement."
+          "name": "Project Garry",
+          "status": "On track",
+          "summary": "Final adjustments to catalogues and images before launch. Localisation kicked off; Calum on the Salesforce connection. Met Mindset on rollout. Lou tomorrow on Garry's evolution."
         },
         {
           "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Methodology reframing approved and pushed live on the new website. Design brief for the public page sent. Remaining: upload images to site, review Layer 3 with Cesca, and work through Layer 1 with Krystyna (Aug 5)."
+          "status": "Watch",
+          "summary": "Layer 3 presented and approved, signed off by Wendy. Master waiting on Cesca's return; client FAQs due end of month. Briefing design on the Garry visual slide."
         },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Investor demo delivered end of July; presented to full commercial team at Town Hall. Design largely implemented; hierarchy bugs being ironed out. 10 working days to launch, daily syncs running with Oleg/Eline. Current top blocker: product/feature catalog and image library. Also open: production subdomain (still on dev URL), approval workflow definition, and post-launch handover to Callum/Lou's team (pending Charlie's return)."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "In Progress",
-          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
-        }
-      ]
-    },
-    {
-      "date": "2026-08-05",
-      "projects": [
         {
           "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
+          "status": "Watch",
+          "summary": "First three videos revised and ready. API video launches first via Carla's C-suite newsletter on 21 Aug. Other recordings paused pending Nana/Wendy."
         },
         {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
+          "name": "WGSN Pain & Benefits",
+          "status": "New",
+          "summary": "Structure shared with Wendy. Next: overlay Laila's Personas project, then Product Marketing on linking to products and features."
         },
         {
           "name": "Accuracy Number (WGSN)",
-          "status": "In Progress",
-          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
-        }
-      ]
-    },
-    {
-      "date": "2026-08-06",
-      "projects": [
-        {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
+          "status": "Blocked",
+          "summary": "Data team exploring further on the number; commercial narrative on hold until it concludes."
         },
         {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "In Progress",
-          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
-        }
-      ]
-    },
-    {
-      "date": "2026-08-07",
-      "projects": [
-        {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
-        },
-        {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "In Progress",
-          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
-        }
-      ]
-    },
-    {
-      "date": "2026-08-08",
-      "projects": [
-        {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
-        },
-        {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "In Progress",
-          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
-        }
-      ]
-    },
-    {
-      "date": "2026-08-09",
-      "projects": [
-        {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
-        },
-        {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "In Progress",
-          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
-        }
-      ]
-    },
-    {
-      "date": "2026-08-10",
-      "projects": [
-        {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
-        },
-        {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "In Progress",
-          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
-        }
-      ]
-    },
-    {
-      "date": "2026-08-11",
-      "projects": [
-        {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
-        },
-        {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "In Progress",
-          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
-        }
-      ]
-    },
-    {
-      "date": "2026-08-12",
-      "projects": [
-        {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "Names closed for all videos. Launch plan decided with Jenna, presenting to Wendy Aug 6 \u2014 also need to align with Wendy on budget after a related conversation with Nana. Video review is running behind. Next presenters organized; Cesca and David's scripts finalized (to be sent to them), Warren and Chris's scripts up next."
-        },
-        {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Methodology reframing approved and live on the new website. Layer 3 received from Cesca; decided what needs to be built, presentation with her still to come to close it out. Reframed Layer 1 + talking track sent to Krystyna last week; meeting to close Layer 1 now set for Aug 6. Remaining: upload images to site."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Localisation next-steps plan confirmed for other languages; approved by localisation team. Design confirmed and now in Oleg's hands for implementation, incl. new \"read more\" section. Catalog naming taxonomy rethought \u2014 new taxonomy created, catalogues being redone. Benefits & pain points catalog drafted (SPIN sections), pending Wendy's review. WHAM access requested for all sales reps. Salesforce trigger/tracking approach confirmed with Callum, targeting Aug 17 alongside Oleg (not promised). Champion proposals and feedback reviewed."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "In Progress",
-          "summary": "Commercial pitch for the accuracy number presented to David \u2014 not approved as-is. Methodology contested: trend classification errors, consumer-vs-business trend measurement issue, peak-timing logic unclear. Video for this segment is blocked pending resolution. Next: alignment meeting with Sam, Cheska, David, Kieran (+ maybe Jessica) to agree measurement methodology and commercial narrative."
+          "name": "Brand Narrative",
+          "status": "Paused",
+          "summary": "Request from David, paused until Wendy is back from annual leave."
         }
       ]
     }
   ],
-  "monthly_recap": ""
+  "monthly_recap": null
 }
