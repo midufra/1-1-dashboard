@@ -15,6 +15,7 @@ NOTION_VERSION = "2025-09-03"
 PROJECTS_DS = "2de367a5-461c-813b-9afb-000b14a010e2"
 TASKS_DS = "2de367a5-461c-81dd-9653-000b49cbcae1"
 GOALS_DS = "e877714e-d11e-418c-aecd-e104cbec6c4c"
+WEEKLY_FOCUS_DS = "d5005c3a-1d4f-46a0-b792-2899c0569f3f"
 
 HEADERS = {
     "Authorization": f"Bearer {NOTION_TOKEN}",
@@ -72,6 +73,13 @@ def get_status(props, key):
         return props[key]["status"]["name"]
     except (KeyError, TypeError):
         return None
+
+
+def get_checkbox(props, key):
+    try:
+        return bool(props[key]["checkbox"])
+    except (KeyError, TypeError):
+        return False
 
 
 def get_relation_ids(props, key):
@@ -139,6 +147,21 @@ def main():
             "project_ids": linked_ids,
         })
 
+    print("Fetching Weekly Focus...")
+    focus_filter = {"filter": {"property": "Active", "checkbox": {"equals": True}}}
+    focus_raw = query_all(WEEKLY_FOCUS_DS, focus_filter)
+    weekly_focus = []
+    for f in focus_raw:
+        props = f["properties"]
+        text = get_title(props, "Text")
+        raw_type = get_select(props, "Type") or "Topic"
+        if not text:
+            continue
+        weekly_focus.append({
+            "type": "help" if raw_type.lower().startswith("help") else "topic",
+            "text": text,
+        })
+
     # --- History log + monthly recap ---
     # Read whatever already exists so we accumulate real weekly snapshots
     # over time, and preserve any recap text a person has written in.
@@ -172,6 +195,7 @@ def main():
         "generated_at": __import__("datetime").datetime.utcnow().isoformat() + "Z",
         "goals": goals,
         "projects": projects,
+        "weekly_focus": weekly_focus,
         "history": existing_history,
         "monthly_recap": monthly_recap,
     }
@@ -180,7 +204,7 @@ def main():
     with open("docs/data.json", "w") as f:
         json.dump(out, f, indent=2)
 
-    print(f"Wrote docs/data.json — {len(goals)} goals, {len(projects)} projects")
+    print(f"Wrote docs/data.json — {len(goals)} goals, {len(projects)} projects, {len(weekly_focus)} focus items")
 
 
 if __name__ == "__main__":
