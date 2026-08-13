@@ -137,19 +137,9 @@
 </div>
 
 <script>
-// ── WEEKLY FOCUS — edit this by hand each week. Not synced from Notion. ──
-// type: 'topic' (things to cover) or 'help' (things you need help with).
-// Keep each "text" to one short line — these render as small cards.
-const WEEKLY_FOCUS = [
-  { type: 'topic', text: 'New onboarding flow — walkthrough' },
-  { type: 'topic', text: 'Q3 collateral review status' },
-  { type: 'help',  text: 'Need sign-off on Proof deck timeline' },
-  { type: 'help',  text: 'Stuck on Garry access permissions' },
-];
-
 function renderFocus(items) {
   if (!items || !items.length) {
-    return '<div class="focus-empty">Nothing set for this week — edit WEEKLY_FOCUS in index.html.</div>';
+    return '<div class="focus-empty">Nothing set for this week — add items to the Weekly Focus database in Notion and mark them Active.</div>';
   }
   return items.map(it => {
     const isHelp = it.type === 'help';
@@ -205,9 +195,6 @@ function isoWeekKey(dateStr) {
 }
 
 async function render() {
-  // Weekly focus is manual and independent of the Notion sync — render first.
-  document.getElementById('focus-panel').innerHTML = renderFocus(WEEKLY_FOCUS);
-
   let data;
   try {
     const res = await fetch('data.json?_=' + Date.now());
@@ -216,6 +203,9 @@ async function render() {
     document.getElementById('goals-panel').innerHTML = '<div class="error">Status data is currently unavailable.</div>';
     return;
   }
+
+  // Weekly focus now comes from the Weekly Focus Notion database via sync.py.
+  document.getElementById('focus-panel').innerHTML = renderFocus(data.weekly_focus || []);
 
   const genDate = new Date(data.generated_at);
   document.getElementById('subhead').textContent = 'Live from Notion · last synced ' + genDate.toLocaleString();
