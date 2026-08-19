@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T20:02:55.102703Z",
+  "generated_at": "2026-08-19T09:06:29.981376Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 23,
+      "completion": 24,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -122,9 +122,9 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Final adjustments to catalogues and images before launch \u2014 in a very good place. Localisation kicked off today; Calum working on the Salesforce connection. Met Mindset on rollout for their team. Meeting with Lou tomorrow on Garry's evolution.",
-      "completion": 47,
+      "completion": 50,
       "task_counts": {
-        "done": 31,
+        "done": 33,
         "total": 66
       },
       "goal_ids": [
@@ -458,6 +458,31 @@
     },
     {
       "date": "2026-08-18",
+      "projects": [
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "First three videos revised and ready. API video launches first, via Carla's C-suite newsletter on 21 Aug. Remaining video recordings paused until Nana and Wendy discuss the topic."
+        },
+        {
+          "name": "Methodology Narrative (Layer 2)",
+          "status": "In Progress",
+          "summary": "Layer 3 presented and approved, signed off by Wendy. Master now waiting on Cesca's return from annual leave; once filled out it surfaces the client FAQs, due by end of month. Briefing design this week on the visual slide going into Garry."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Final adjustments to catalogues and images before launch \u2014 in a very good place. Localisation kicked off today; Calum working on the Salesforce connection. Met Mindset on rollout for their team. Meeting with Lou tomorrow on Garry's evolution."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "Blocked",
+          "summary": "Data team exploring further on the number. Commercial narrative on hold until that concludes."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-19",
       "projects": [
         {
           "name": "Ex-Com Interview Series",
