@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T09:09:46.082616Z",
+  "generated_at": "2026-08-22T07:58:18.706661Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -14,7 +14,7 @@
     {
       "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 48,
+      "completion": 58,
       "project_ids": [
         "3ab367a5-461c-8131-8f83-c11b94897a00",
         "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 24,
+      "completion": 25,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -37,6 +37,20 @@
     }
   ],
   "projects": [
+    {
+      "id": "3c3367a5-461c-807f-a543-fe1c2e0d332e",
+      "name": "Nestl\u00e9 Methodology Collateral",
+      "status": "Done",
+      "stage": "Now",
+      "pillar": null,
+      "summary": "Requested by David, Harry, and Felix to present Nestl\u00e9\u2019s methodology, the team invested significant time creating the needed material, which proved valuable as an exercise in effectively presenting the methodology.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
     {
       "id": "3ba367a5-461c-81eb-a3f5-c96a66fe0475",
       "name": "Brand Narrative",
@@ -58,10 +72,10 @@
       "stage": "Now",
       "pillar": "Knowledge",
       "summary": "First three videos revised and ready. API video launches first, via Carla's C-suite newsletter on 21 Aug. Remaining video recordings paused until Nana and Wendy discuss the topic.",
-      "completion": 52,
+      "completion": 73,
       "task_counts": {
-        "done": 11,
-        "total": 21
+        "done": 16,
+        "total": 22
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -122,9 +136,9 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Final adjustments to catalogues and images before launch \u2014 in a very good place. Localisation kicked off today; Calum working on the Salesforce connection. Met Mindset on rollout for their team. Meeting with Lou tomorrow on Garry's evolution.",
-      "completion": 50,
+      "completion": 52,
       "task_counts": {
-        "done": 33,
+        "done": 34,
         "total": 66
       },
       "goal_ids": [
@@ -357,15 +371,19 @@
   "weekly_focus": [
     {
       "type": "topic",
-      "text": "Methodology Layer 3 approved by David"
+      "text": "Launched ExCom API video"
     },
     {
       "type": "topic",
-      "text": "Garry launch while Wendy is away"
+      "text": "Nestl\u00e9 Methodology Collateral "
     },
     {
-      "type": "help",
-      "text": "Ex-Com next videos paused"
+      "type": "topic",
+      "text": "New trend confirmation format"
+    },
+    {
+      "type": "topic",
+      "text": "Preparing Garry for launch next week"
     }
   ],
   "history": [
@@ -534,6 +552,36 @@
     {
       "date": "2026-08-21",
       "projects": [
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "First three videos revised and ready. API video launches first, via Carla's C-suite newsletter on 21 Aug. Remaining video recordings paused until Nana and Wendy discuss the topic."
+        },
+        {
+          "name": "Methodology Narrative (Layer 2)",
+          "status": "In Progress",
+          "summary": "Layer 3 presented and approved, signed off by Wendy. Master now waiting on Cesca's return from annual leave; once filled out it surfaces the client FAQs, due by end of month. Briefing design this week on the visual slide going into Garry."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Final adjustments to catalogues and images before launch \u2014 in a very good place. Localisation kicked off today; Calum working on the Salesforce connection. Met Mindset on rollout for their team. Meeting with Lou tomorrow on Garry's evolution."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "Blocked",
+          "summary": "Data team exploring further on the number. Commercial narrative on hold until that concludes."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "projects": [
+        {
+          "name": "Nestl\u00e9 Methodology Collateral",
+          "status": "Done",
+          "summary": "Requested by David, Harry, and Felix to present Nestl\u00e9\u2019s methodology, the team invested significant time creating the needed material, which proved valuable as an exercise in effectively presenting the methodology."
+        },
         {
           "name": "Ex-Com Interview Series",
           "status": "In Progress",
