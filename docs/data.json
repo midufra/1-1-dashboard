@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T07:59:12.979864Z",
+  "generated_at": "2026-08-24T09:31:37.522069Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 25,
+      "completion": 22,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -136,10 +136,10 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Final launch tasks underway: redesigned sections, security checks, and deployment prep. Roadmap meetings held to shape next steps. Worked with Product Marketing on WGSN architecture. Oleg handing over IT ownership as he moves off the project post-launch. Launch is ready for next week. Next: sales launch meeting Thu 27 Aug, draft launch comms, prep for rep feedback on first 10 customer proposals.",
-      "completion": 52,
+      "completion": 45,
       "task_counts": {
         "done": 34,
-        "total": 66
+        "total": 75
       },
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
@@ -606,6 +606,36 @@
     },
     {
       "date": "2026-08-23",
+      "projects": [
+        {
+          "name": "Nestl\u00e9 Methodology Collateral",
+          "status": "Done",
+          "summary": "Requested by David, Harry, and Felix to present Nestl\u00e9's methodology. I invested significant time creating the needed material solo, which proved valuable as an exercise in effectively presenting the methodology."
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "API video launched \u2014 live on YouTube and blog, shared via Carla's C-suite newsletter on 21 Aug. David and Cesca's methodology video scheduled and script shared with them. Next: share with wider company and add to the knowledge centre (slipped this week due to Nestl\u00e9/Garry)."
+        },
+        {
+          "name": "Methodology Narrative (Layer 2)",
+          "status": "In Progress",
+          "summary": "Design briefing on the Garry visual slide slipped again this week (Nestl\u00e9 + Garry took priority). Assembling the official doc combining Layers 1 and 2; shared the Layer 3 closing doc with Cesca to fill out. Next: brief design, then work the video script for the org-wide launch. Krystyna training conversation continuing \u2014 recommend postponing a few weeks past the Catwalks launch (1 Sept)."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Final launch tasks underway: redesigned sections, security checks, and deployment prep. Roadmap meetings held to shape next steps. Worked with Product Marketing on WGSN architecture. Oleg handing over IT ownership as he moves off the project post-launch. Launch is ready for next week. Next: sales launch meeting Thu 27 Aug, draft launch comms, prep for rep feedback on first 10 customer proposals."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "Blocked",
+          "summary": "Completed the analysis this week and finalised the recommendation to Cesca: keep developing rather than launch now, since the current numbers wouldn't hold up under scrutiny. Exec team is looking to add headcount to the data team so that work can continue. Commercial narrative remains on hold until that concludes."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24",
       "projects": [
         {
           "name": "Nestl\u00e9 Methodology Collateral",
