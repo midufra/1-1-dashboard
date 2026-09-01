@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T19:36:04.703469Z",
+  "generated_at": "2026-09-01T20:08:01.578678Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -14,7 +14,7 @@
     {
       "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 58,
+      "completion": 64,
       "project_ids": [
         "3ab367a5-461c-8131-8f83-c11b94897a00",
         "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 24,
+      "completion": 28,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -115,15 +115,15 @@
     },
     {
       "id": "3ab367a5-461c-8131-8f83-c11b94897a00",
-      "name": "Methodology Narrative (Layer 2)",
+      "name": "Methodology Narrative ",
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Proof",
       "summary": "Synced with Andrea; continued building Layer 3, making the customer-facing page bolder and answering more questions. Filled-out master fed to Cesca to check \u2014 last step before finalising the master that feeds Layer 3 (client FAQs targeted end of month). Started the design brief for visuals, video, and brand guideline to add to the recently built client page.",
-      "completion": 43,
+      "completion": 54,
       "task_counts": {
-        "done": 10,
-        "total": 23
+        "done": 14,
+        "total": 26
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -136,10 +136,10 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Post-launch adoption ramping: heavy run of 1:1s supporting teams onto Garry. 40 proposals created since launch, 4 customers have clicked into/viewed their proposal, and one client booked a follow-up meeting directly via the CTA. New since launch: simplified SMB proposal format, simplified packaging for the team, and continued roadmap/next-steps work plus one-pagers with Laila.",
-      "completion": 50,
+      "completion": 62,
       "task_counts": {
-        "done": 38,
-        "total": 76
+        "done": 50,
+        "total": 81
       },
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
@@ -371,19 +371,19 @@
   "weekly_focus": [
     {
       "type": "topic",
-      "text": "Launched ExCom API video"
+      "text": "Layer 3 Methodology with Cesca"
     },
     {
       "type": "topic",
-      "text": "Nestl\u00e9 Methodology Collateral "
+      "text": "Clients already opening Garry"
     },
     {
       "type": "topic",
-      "text": "New trend confirmation format"
+      "text": "SMB Proposal Garry"
     },
     {
       "type": "topic",
-      "text": "Preparing Garry for launch next week"
+      "text": "Garry Updates"
     }
   ],
   "history": [
@@ -858,7 +858,7 @@
           "summary": "API video launched \u2014 live on YouTube and blog, shared via Carla's C-suite newsletter on 21 Aug. David and Cesca's methodology video scheduled and script shared with them. Next: share with wider company and add to the knowledge centre (slipped this week due to Nestl\u00e9/Garry)."
         },
         {
-          "name": "Methodology Narrative (Layer 2)",
+          "name": "Methodology Narrative ",
           "status": "In Progress",
           "summary": "Synced with Andrea; continued building Layer 3, making the customer-facing page bolder and answering more questions. Filled-out master fed to Cesca to check \u2014 last step before finalising the master that feeds Layer 3 (client FAQs targeted end of month). Started the design brief for visuals, video, and brand guideline to add to the recently built client page."
         },
