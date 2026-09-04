@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T12:01:51.832433Z",
+  "generated_at": "2026-09-04T12:03:45.307120Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -876,6 +876,21 @@
     },
     {
       "date": "2026-09-03",
+      "projects": [
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Synced with Andrea; continued building Layer 3, making the customer-facing page bolder and answering more questions. Filled-out master fed to Cesca to check \u2014 last step before finalising the master that feeds Layer 3 (client FAQs targeted end of month). Started the design brief for visuals, video, and brand guideline to add to the recently built client page."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Post-launch adoption ramping: heavy run of 1:1s supporting teams onto Garry. 40 proposals created since launch, 4 customers have clicked into/viewed their proposal, and one client booked a follow-up meeting directly via the CTA. New since launch: simplified SMB proposal format, simplified packaging for the team, and continued roadmap/next-steps work plus one-pagers with Laila."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
       "projects": [
         {
           "name": "Methodology Narrative ",
