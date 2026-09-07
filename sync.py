@@ -93,7 +93,7 @@ def main():
     print("Fetching Tasks...")
     tasks = query_all(TASKS_DS)
 
-    # Build project_id -> {done, total} from tasks
+    # Build project_id -> {done, total} from tasks linked directly to that project.
     task_stats = {}
     for t in tasks:
         props = t["properties"]
@@ -105,31 +105,70 @@ def main():
                 stats["done"] += 1
 
     print("Fetching Projects...")
-    project_filter = {
-        "filter": {"property": "Parent project", "relation": {"is_empty": True}}
-    }
-    projects_raw = query_all(PROJECTS_DS, project_filter)
+    # Fetch every project (not just top-level ones) so mini-projects/sub-projects
+    # can be rolled up into their parent's completion percentage. Without this,
+    # a top-level project's % only reflected tasks filed directly on it, so it
+    # kept climbing back down every time new work landed there directly instead
+    # of ever reaching 100 - splitting work into mini-projects is what lets a
+    # parent project actually finish.
+    all_projects_raw = query_all(PROJECTS_DS)
 
-    projects = []
-    project_lookup = {}
-    for p in projects_raw:
+    all_lookup = {}
+    for p in all_projects_raw:
         props = p["properties"]
         pid = p["id"]
         stats = task_stats.get(pid, {"done": 0, "total": 0})
-        pct = round(100 * stats["done"] / stats["total"]) if stats["total"] else None
-        entry = {
+        own_pct = round(100 * stats["done"] / stats["total"]) if stats["total"] else None
+        all_lookup[pid] = {
             "id": pid,
             "name": get_title(props, "Project name"),
             "status": get_status(props, "Status"),
             "stage": get_select(props, "Stage"),
             "pillar": get_select(props, "Pillar"),
             "summary": get_rich_text(props, "Summary"),
-            "completion": pct,
+            "own_completion": own_pct,
             "task_counts": stats,
             "goal_ids": get_relation_ids(props, "Goal"),
+            "parent_ids": get_relation_ids(props, "Parent project"),
+            "sub_ids": get_relation_ids(props, "Sub-project"),
         }
-        projects.append(entry)
-        project_lookup[pid] = entry
+
+    def rolled_up_completion(pid, seen=None):
+        """A project with mini-projects underneath finishes by finishing them:
+        its completion is the average of its sub-projects' completion (recursing
+        for grandchildren). A project with no sub-projects falls back to its own
+        directly-linked tasks, same as before."""
+        seen = seen or set()
+        if pid in seen or pid not in all_lookup:
+            return all_lookup.get(pid, {}).get("own_completion")
+        seen.add(pid)
+        entry = all_lookup[pid]
+        subs = [sid for sid in entry["sub_ids"] if sid in all_lookup]
+        if not subs:
+            return entry["own_completion"]
+        child_pcts = [rolled_up_completion(sid, seen) for sid in subs]
+        child_pcts = [c for c in child_pcts if c is not None]
+        return round(sum(child_pcts) / len(child_pcts)) if child_pcts else entry["own_completion"]
+
+    projects = []
+    project_lookup = {}
+    for pid, entry in all_lookup.items():
+        if entry["parent_ids"]:
+            continue  # only top-level projects surface on the dashboard
+        pct = rolled_up_completion(pid)
+        out_entry = {
+            "id": pid,
+            "name": entry["name"],
+            "status": entry["status"],
+            "stage": entry["stage"],
+            "pillar": entry["pillar"],
+            "summary": entry["summary"],
+            "completion": pct,
+            "task_counts": entry["task_counts"],
+            "goal_ids": entry["goal_ids"],
+        }
+        projects.append(out_entry)
+        project_lookup[pid] = out_entry
 
     print("Fetching Goals...")
     goals_raw = query_all(GOALS_DS)
