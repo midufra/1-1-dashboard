@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-07T13:26:04.704414Z",
+  "generated_at": "2026-09-08T12:04:23.098265Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
       "name": "Arm every deal with proof",
-      "completion": 12,
+      "completion": 15,
       "project_ids": [
         "2f5367a5-461c-808c-9866-e91f126035e5",
         "3ab367a5-461c-8174-913f-f1423f473448",
@@ -89,7 +89,7 @@
       "completion": 0,
       "task_counts": {
         "done": 16,
-        "total": 22
+        "total": 21
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -98,7 +98,7 @@
     {
       "id": "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
       "name": "Client Crawler (AI)",
-      "status": "Not started",
+      "status": "Canceled",
       "stage": "Later",
       "pillar": "Knowledge",
       "summary": "Originally planned for November, accelerated to now due to leadership interest. Data team conversation (Fri) suggests much of the groundwork may already exist -- possible quick win. Needs scoping to confirm effort.",
@@ -150,10 +150,10 @@
       "stage": "Next",
       "pillar": "Proof",
       "summary": "Completed the analysis this week and finalised the recommendation to Cesca: keep developing rather than launch now, since the current numbers wouldn't hold up under scrutiny. Exec team is looking to add headcount to the data team so that work can continue. Commercial narrative remains on hold until that concludes.",
-      "completion": 25,
+      "completion": 30,
       "task_counts": {
-        "done": 2,
-        "total": 8
+        "done": 3,
+        "total": 10
       },
       "goal_ids": [
         "3b1367a5-461c-8145-8219-c297b2626ae2"
@@ -178,7 +178,7 @@
     {
       "id": "336367a5-461c-8022-afb3-dbaae818ba06",
       "name": "Brand Videos",
-      "status": "Not started",
+      "status": "Canceled",
       "stage": null,
       "pillar": "Collateral",
       "summary": "Project named \"Brand Videos\" is currently in the planning stage, with tasks outlined for execution.",
@@ -194,7 +194,7 @@
     {
       "id": "2f5367a5-461c-808c-a448-dd421d916570",
       "name": "What do to with trends",
-      "status": "Backlog",
+      "status": "Canceled",
       "stage": null,
       "pillar": null,
       "summary": "Faltam profissionais para analisar criticamente as tend\u00eancias e criar algo novo a partir delas. O Programa Trendhackers foi criado para identificar as dores das marcas em rela\u00e7\u00e3o \u00e0s tend\u00eancias e sistematizar um pensamento estrat\u00e9gico para impulsionar resultados de neg\u00f3cios. A WGSN oferece intelig\u00eancia de previs\u00e3o para ajudar as equipes a construir produtos com sucesso, decodificando sinais culturais e comportamentais dos consumidores. Com o lan\u00e7amento do Trend Forecast Database, as estrat\u00e9gias s\u00e3o criadas para garantir o sucesso no mercado em r\u00e1pida mudan\u00e7a.",
@@ -222,7 +222,7 @@
     {
       "id": "2f5367a5-461c-808c-9866-e91f126035e5",
       "name": "Proof Points",
-      "status": "Paused",
+      "status": "Canceled",
       "stage": null,
       "pillar": "Proof",
       "summary": "Sub-projects are listed under the project name \"Proof Points,\" which is currently in progress with a low priority, scheduled from April 1, 2026, to June 30, 2026. Project tasks are referenced but not detailed.",
@@ -308,7 +308,7 @@
     {
       "id": "2e1367a5-461c-805b-a7cc-ddc0db2e6d26",
       "name": "Sales Deck V1",
-      "status": "Paused",
+      "status": "Canceled",
       "stage": null,
       "pillar": "Collateral",
       "summary": "O Programa Trendhackers foi criado para ajudar marcas a analisar criticamente as tend\u00eancias atuais, priorizando e sistematizando a aplica\u00e7\u00e3o estrat\u00e9gica delas para impulsionar resultados de neg\u00f3cios. O foco \u00e9 equalizar conhecimentos entre \u00e1reas e pensar estrategicamente al\u00e9m das tend\u00eancias.",
@@ -320,20 +320,6 @@
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
       ]
-    },
-    {
-      "id": "2de367a5-461c-8033-922f-d42cdc65f1a2",
-      "name": "ROI Survey",
-      "status": "Backlog",
-      "stage": null,
-      "pillar": null,
-      "summary": "The project focuses on researching ROI, with tasks outlined in the backlog. A link to additional resources is provided for further information.",
-      "completion": null,
-      "task_counts": {
-        "done": 0,
-        "total": 0
-      },
-      "goal_ids": []
     }
   ],
   "weekly_focus": [
@@ -904,6 +890,21 @@
     },
     {
       "date": "2026-09-07",
+      "projects": [
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Synced with Andrea; continued building Layer 3, making the customer-facing page bolder and answering more questions. Filled-out master fed to Cesca to check \u2014 last step before finalising the master that feeds Layer 3 (client FAQs targeted end of month). Started the design brief for visuals, video, and brand guideline to add to the recently built client page."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Post-launch adoption ramping: heavy run of 1:1s supporting teams onto Garry. 40 proposals created since launch, 4 customers have clicked into/viewed their proposal, and one client booked a follow-up meeting directly via the CTA. New since launch: simplified SMB proposal format, simplified packaging for the team, and continued roadmap/next-steps work plus one-pagers with Laila."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
       "projects": [
         {
           "name": "Methodology Narrative ",
