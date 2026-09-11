@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T20:32:01.763171Z",
+  "generated_at": "2026-09-11T12:07:53.847138Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -325,19 +325,23 @@
   "weekly_focus": [
     {
       "type": "topic",
-      "text": "Layer 3 Methodology with Cesca"
+      "text": "IWSR Content Ex-com Video"
     },
     {
       "type": "topic",
-      "text": "Clients already opening Garry"
+      "text": "Started QBR plan Garry"
     },
     {
       "type": "topic",
-      "text": "SMB Proposal Garry"
+      "text": "Launched analytics Garry"
     },
     {
       "type": "topic",
-      "text": "Garry Updates"
+      "text": "Launched client Logos Garry"
+    },
+    {
+      "type": "topic",
+      "text": "Garry 1:1 team"
     }
   ],
   "history": [
@@ -935,6 +939,31 @@
     },
     {
       "date": "2026-09-10",
+      "projects": [
+        {
+          "name": "Knowledge Centre",
+          "status": "Planning",
+          "summary": "New H2 initiative to build the Knowledge Centre, organised into mini-projects for trackable progress at each stage. Need spec written this week so the RevOps team understands what needs building."
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "Copy created for the IWSR launch. Next few launches organised with the stakeholders and the video team. API video already live on YouTube, the blog and Carla's C-suite newsletter."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Layer 3 plans advanced this week, but actioning them is waiting on Cesca finishing the master template \u2014 meeting with her next week to close it out. Design brief for visuals, video and brand guideline still open alongside."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Two launches this week: new analytics on customer behaviour, and the client logos section. QBR plan and localisation plan both drafted \u2014 waiting only on Engineering to set up a testing environment before either can be actioned. Next level of personalisation started. Steady run of training with sales reps as questions come in."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
       "projects": [
         {
           "name": "Knowledge Centre",
