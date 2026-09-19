@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-18T12:10:10.664612Z",
+  "generated_at": "2026-09-19T11:52:34.336997Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
       "name": "Arm every deal with proof",
-      "completion": 15,
+      "completion": 16,
       "project_ids": [
         "2f5367a5-461c-808c-9866-e91f126035e5",
         "3ab367a5-461c-8174-913f-f1423f473448",
@@ -14,7 +14,7 @@
     {
       "id": "3b1367a5-461c-8195-a1d9-d7d72963c2df",
       "name": "Make every seller tell the same winning story",
-      "completion": 5,
+      "completion": 38,
       "project_ids": [
         "3ab367a5-461c-8131-8f83-c11b94897a00",
         "3ab367a5-461c-811a-8de9-f1bb4ecf137d",
@@ -132,7 +132,7 @@
       "stage": "Now",
       "pillar": "Proof",
       "summary": "Layer 3 plans advanced this week, but actioning them is waiting on Cesca finishing the master template \u2014 meeting with her next week to close it out. Design brief for visuals, video and brand guideline still open alongside.",
-      "completion": 0,
+      "completion": 67,
       "task_counts": {
         "done": 14,
         "total": 26
@@ -150,8 +150,8 @@
       "summary": "Two launches this week: new analytics on customer behaviour, and the client logos section. QBR plan and localisation plan both drafted \u2014 waiting only on Engineering to set up a testing environment before either can be actioned. Next level of personalisation started. Steady run of training with sales reps as questions come in.",
       "completion": 33,
       "task_counts": {
-        "done": 55,
-        "total": 108
+        "done": 57,
+        "total": 109
       },
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
@@ -164,10 +164,10 @@
       "stage": "Next",
       "pillar": "Proof",
       "summary": "Completed the analysis this week and finalised the recommendation to Cesca: keep developing rather than launch now, since the current numbers wouldn't hold up under scrutiny. Exec team is looking to add headcount to the data team so that work can continue. Commercial narrative remains on hold until that concludes.",
-      "completion": 30,
+      "completion": 33,
       "task_counts": {
         "done": 3,
-        "total": 10
+        "total": 9
       },
       "goal_ids": [
         "3b1367a5-461c-8145-8219-c297b2626ae2"
@@ -226,9 +226,9 @@
       "stage": null,
       "pillar": "Proof",
       "summary": "Redesigned this week as a byproduct of Garry, Accuracy, and Methodology work \u2014 landed really well with Cesca and David, and already in use on the Nestl\u00e9 document. Presenting to Wendy next week.",
-      "completion": 0,
+      "completion": 100,
       "task_counts": {
-        "done": 0,
+        "done": 1,
         "total": 1
       },
       "goal_ids": []
@@ -1153,6 +1153,31 @@
     },
     {
       "date": "2026-09-18",
+      "projects": [
+        {
+          "name": "Knowledge Centre",
+          "status": "Planning",
+          "summary": "New H2 initiative to build the Knowledge Centre, organised into mini-projects for trackable progress at each stage. Need spec written this week so the RevOps team understands what needs building."
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "Copy created for the IWSR launch. Next few launches organised with the stakeholders and the video team. API video already live on YouTube, the blog and Carla's C-suite newsletter."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Layer 3 plans advanced this week, but actioning them is waiting on Cesca finishing the master template \u2014 meeting with her next week to close it out. Design brief for visuals, video and brand guideline still open alongside."
+        },
+        {
+          "name": "Project Garry",
+          "status": "In Progress",
+          "summary": "Two launches this week: new analytics on customer behaviour, and the client logos section. QBR plan and localisation plan both drafted \u2014 waiting only on Engineering to set up a testing environment before either can be actioned. Next level of personalisation started. Steady run of training with sales reps as questions come in."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
       "projects": [
         {
           "name": "Knowledge Centre",
