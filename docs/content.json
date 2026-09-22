@@ -1,0 +1,797 @@
+{
+ "cats": [
+  "Now",
+  "Next",
+  "Later",
+  "Stop"
+ ],
+ "catDesc": {
+  "Now": "Protecting these",
+  "Next": "Plan for the next cycle",
+  "Later": "Parked, with a reason",
+  "Stop": "Say no, or close"
+ },
+ "initiatives": [
+  {
+   "id": "garry",
+   "window": "Sep 2026 → Jan 2027",
+   "now": "Building the personalisation layer and training reps as questions come in.",
+   "need": "Engineering ownership locked with Stef, effective January",
+   "name": "Project Garry",
+   "pillar": "Garry",
+   "status": "In Progress",
+   "cat": "Now",
+   "wait": "Engineering",
+   "ownerNow": "Mirela — execution",
+   "ownerNext": "Engineering — build and run",
+   "when": "January 2027",
+   "ask": "Lock engineering ownership of Garry from January with Stef now, not in December. A handover agreed in December is a handover that does not happen.",
+   "deps": "Engineering (Stef’s team) for the build. The Q&A environment has landed, so QBRs and localisation are unblocked.",
+   "next": "Ship the personalisation layer through Q4, then write the handover spec in November so January is a date, not an intention.",
+   "kids": [
+    {
+     "n": "Data Page",
+     "s": "In Progress",
+     "d": "17 Sep"
+    },
+    {
+     "n": "QBRs",
+     "s": "In Progress",
+     "d": "—",
+     "note": "Unblocked — Q&A environment received."
+    },
+    {
+     "n": "WGSN Pain & Benefits",
+     "s": "In Progress",
+     "d": "—",
+     "note": "Next: Laila’s Personas overlay, then Product Marketing."
+    },
+    {
+     "n": "Use Cases Library",
+     "s": "Blocked",
+     "d": "—",
+     "note": "Waiting on Laila’s final work."
+    },
+    {
+     "n": "Localization",
+     "s": "Not started",
+     "d": "24 Sep",
+     "note": "Unblocked — Q&A environment received."
+    },
+    {
+     "n": "Onboarding",
+     "s": "Planning",
+     "d": "—",
+     "note": "Not in Notion yet. Onboarding collateral as a Garry self-service flow."
+    }
+   ],
+   "notion": "Garry Improvements"
+  },
+  {
+   "id": "methodology",
+   "window": "Sep → Nov 2026",
+   "now": "Chasing Cesca’s master template so the Layer 3 plans can be actioned.",
+   "need": "A date from Cesca on the master template, plus design resource",
+   "name": "Methodology Narrative",
+   "pillar": "Proof",
+   "status": "In Progress",
+   "cat": "Now",
+   "wait": "Cesca",
+   "ownerNow": "Mirela — owns it",
+   "ownerNext": "Mirela — stays",
+   "when": "No handover",
+   "ask": "A date from Cesca on the master template. And design resource for the visuals, video and brand guidelines — that brief has been open since Layer 3 sign-off.",
+   "deps": "Cesca, for the master template. Layer 3 plans are ready but cannot be actioned until it lands.",
+   "next": "Close the template out with Cesca, then pressure-test the narrative with senior sellers before it goes into the core deck.",
+   "kids": [
+    {
+     "n": "Methodology Launch",
+     "s": "In Progress",
+     "d": "15 Oct",
+     "note": "Hard date."
+    },
+    {
+     "n": "Methodology Video",
+     "s": "Not started",
+     "d": "29 Oct"
+    },
+    {
+     "n": "Slide (visual for Garry)",
+     "s": "Not started",
+     "d": "24 Sep",
+     "note": "Briefed on design."
+    }
+   ],
+   "notion": "Methodology Narrative "
+  },
+  {
+   "id": "knowledge",
+   "window": "Sep 2026 → Q1 2027",
+   "now": "Spec is with RevOps to scope and cost.",
+   "need": "RevOps to build it",
+   "name": "Knowledge Centre",
+   "pillar": "Knowledge",
+   "status": "Planning",
+   "cat": "Now",
+   "wait": "RevOps",
+   "ownerNow": "Mirela — spec and strategy",
+   "ownerNext": "RevOps — execution",
+   "when": "From October",
+   "ask": "Sponsor the handover: I write the spec and hold the strategy, RevOps builds it. This is the clearest case in the portfolio for me not being the one executing.",
+   "deps": "RevOps have to build it. Nothing moves until they scope what the spec asks for.",
+   "next": "RevOps scope it this month. I stay on shape and sequencing, not delivery.",
+   "kids": [
+    {
+     "n": "Foundation",
+     "s": "Not started",
+     "d": "—",
+     "note": "First mini-project. High priority."
+    },
+    {
+     "n": "Connection",
+     "s": "Not started",
+     "d": "—"
+    },
+    {
+     "n": "Gong",
+     "s": "Not started",
+     "d": "—"
+    },
+    {
+     "n": "Salesforce Usage Interface",
+     "s": "Not started",
+     "d": "—"
+    }
+   ],
+   "notion": "Knowledge Centre"
+  },
+  {
+   "id": "trend",
+   "window": "Sep → Dec 2026",
+   "now": "Getting Interiors out the door manually with Laila.",
+   "need": "Laila for Interiors, time-boxed",
+   "name": "Trend Confirmations",
+   "pillar": "Proof",
+   "status": "In Progress",
+   "cat": "Now",
+   "wait": "Laila",
+   "ownerNow": "Mirela",
+   "ownerNext": "Laila — Interiors only",
+   "when": "Now, time-boxed",
+   "ask": "Laila for Interiors, the old manual way, time-boxed. The redesigned process is the year-end answer; Interiors cannot wait for it.",
+   "deps": "Clare’s team is overwhelmed — which is why Interiors goes manually rather than waiting for them.",
+   "next": "Interiors out manually in the next few weeks. Present the redesign to you, then scale it from December.",
+   "kids": [
+    {
+     "n": "Interiors",
+     "s": "Planning",
+     "d": "—",
+     "note": "The one that cannot wait. Manual route, with Laila."
+    },
+    {
+     "n": "Nostalgia",
+     "s": "Planning",
+     "d": "—"
+    },
+    {
+     "n": "Sports Marketing",
+     "s": "Planning",
+     "d": "—"
+    }
+   ],
+   "notion": "Trend Confirmations"
+  },
+  {
+   "id": "brandpos",
+   "window": "Oct 2026 → Q1 2027",
+   "now": "Working out what the deliverables actually are before committing to a shape.",
+   "need": "Nothing today",
+   "name": "Brand Positioning",
+   "pillar": "Collateral",
+   "status": "Planning",
+   "cat": "Next",
+   "wait": null,
+   "ownerNow": "Mirela — by choice",
+   "ownerNext": "Marketing — possibly",
+   "when": "Only if it grows",
+   "ask": "Nothing today. If the scope turns out bigger than it looks, the ask later is handing it back to Marketing.",
+   "deps": "Nothing blocking. The unknown is scope.",
+   "next": "Work out what the deliverables actually are before committing to a shape.",
+   "kids": [
+    {
+     "n": "Brand Narrative",
+     "s": "Paused",
+     "d": "—",
+     "note": "Requested by David. Now a child of Brand Positioning."
+    }
+   ],
+   "notion": "Brand Positioning"
+  },
+  {
+   "id": "excom",
+   "window": "Sep → Nov 2026",
+   "now": "Organising the November launches with the stakeholders and the video team.",
+   "need": "Nothing today",
+   "name": "Ex-Com Interview Series",
+   "pillar": "Knowledge",
+   "status": "In Progress",
+   "cat": "Next",
+   "wait": null,
+   "ownerNow": "Mirela — copy and coordination",
+   "ownerNext": "Mirela — stays",
+   "when": "No handover",
+   "ask": "Nothing. Low effort, scripts are done — I would rather move fast on the remaining launches than hand it over.",
+   "deps": "Exec availability and the video team. Mostly self-executable now.",
+   "next": "Push the November launches through while the momentum is there.",
+   "kids": [
+    {
+     "n": "IWSR",
+     "s": "In Progress",
+     "d": "10 Sep",
+     "note": "Launch copy written."
+    },
+    {
+     "n": "Creative Intelligence",
+     "s": "In Progress",
+     "d": "1 Oct"
+    },
+    {
+     "n": "Partnerships Video",
+     "s": "Not started",
+     "d": "5 Nov"
+    },
+    {
+     "n": "Innovation Video",
+     "s": "Not started",
+     "d": "23 Nov"
+    }
+   ],
+   "notion": "Ex-Com Interview Series"
+  },
+  {
+   "id": "clientusage",
+   "window": "Oct 2026 → Q1 2027",
+   "now": "Settling the overlap with the Salesforce usage interface before scoping.",
+   "need": "An owner for the data pipeline, before scoping",
+   "name": "Client Usage Dashboard",
+   "pillar": "Garry",
+   "status": "Planning",
+   "cat": "Next",
+   "wait": "Commercial Data / BI",
+   "ownerNow": "Mirela — scoping",
+   "ownerNext": "Commercial Data / BI",
+   "when": "Set before build",
+   "ask": "Decide who owns the data pipeline before I scope it. Garry is the cautionary tale — I built it, and getting it off my desk is now its own project.",
+   "deps": "Commercial Data and BI for the pipeline. Overlaps the Salesforce Usage Interface and Garry’s own analytics.",
+   "next": "Settle the overlap, then scope it with Commercial Data rather than for them.",
+   "kids": [],
+   "notion": null
+  },
+  {
+   "id": "roi",
+   "window": "Oct 2026 → Q1 2027",
+   "now": "Lining up Marion for the endorsements mapping.",
+   "need": "Marion’s time, and a call on Customer Stories",
+   "name": "ROI",
+   "pillar": "Proof",
+   "status": "Planning",
+   "cat": "Next",
+   "wait": "Marion",
+   "ownerNow": "Mirela — nominal",
+   "ownerNext": "Marion — endorsements",
+   "when": "Needs a call",
+   "ask": "Marion’s time for the 20-testimonial mapping. And a view on Customer Stories, which came off pause at High priority.",
+   "deps": "Marion for the mapping. Client approval turnaround on Customer Stories — what made it slow the first time.",
+   "next": "Endorsements first as the faster credibility win. Then decide whether Customer Stories restarts properly.",
+   "kids": [
+    {
+     "n": "Customer Stories Program",
+     "s": "Planning",
+     "d": "—",
+     "note": "Off pause, High priority. The approval cycle is the known risk."
+    },
+    {
+     "n": "Client Endorsements (Gong)",
+     "s": "Planning",
+     "d": "—",
+     "note": "Marion. On hold for capacity, not cancelled."
+    },
+    {
+     "n": "Tradeshows cost Stat",
+     "s": "Planning",
+     "d": "—"
+    },
+    {
+     "n": "Traditional Case Studies",
+     "s": "Planning",
+     "d": "—",
+     "note": "Sits under Customer Stories."
+    }
+   ],
+   "notion": "ROI"
+  },
+  {
+   "id": "onepagers",
+   "window": "Sep → Oct 2026",
+   "now": "Nothing moves until it is defined.",
+   "need": "A view on what it is meant to be",
+   "name": "Client OnePagers Roadblocks",
+   "pillar": "Unassigned",
+   "status": "Planning",
+   "cat": "Next",
+   "wait": null,
+   "ownerNow": "Mirela",
+   "ownerNext": "To be decided",
+   "when": "Needs defining",
+   "ask": "Tell me what this is meant to be. It looks like it belongs under Garry rather than standing on its own.",
+   "deps": "Unknown until it is defined.",
+   "next": "Define the scope, then fold it into Garry or give it a pillar and an owner.",
+   "kids": [],
+   "notion": "Garry One-pagers"
+  },
+  {
+   "id": "accuracy",
+   "window": "Q1 2027, when headcount lands",
+   "now": "Nothing until the data team has capacity.",
+   "need": "Backing for the data team headcount",
+   "name": "Accuracy Number",
+   "pillar": "Proof",
+   "status": "Blocked",
+   "cat": "Later",
+   "wait": "Data team",
+   "ownerNow": "Mirela — on hold",
+   "ownerNext": "Data team",
+   "when": "When headcount lands",
+   "ask": "Back the data team headcount ask. This and the stats bank are parked behind the same constraint.",
+   "deps": "The data team. Exec are looking at headcount; the commercial narrative stays on hold until that concludes.",
+   "next": "Nothing until the data team has capacity. Revisit as soon as headcount is confirmed.",
+   "kids": [],
+   "notion": "Accuracy Number (WGSN)"
+  }
+ ],
+ "weeks": [
+  {
+   "wk": "W37",
+   "dates": "7–11 Sep",
+   "headline": "Garry shipped analytics and the client logos section. QBR and localisation are ready but held on an engineering test environment, and the Knowledge Centre spec is written for RevOps.",
+   "waiting": [
+    {
+     "who": "Engineering",
+     "what": "testing environment — holds Garry QBRs and localisation."
+    },
+    {
+     "who": "Cesca",
+     "what": "master template — holds the Methodology Layer 3 plans."
+    }
+   ],
+   "entries": [
+    {
+     "n": "Project Garry",
+     "p": "garry",
+     "s": "On track",
+     "b": "Launched customer-behaviour analytics and the client logos section. QBR and localisation plans both ready, waiting only on an engineering test environment. Personalisation layer started, plus a steady run of rep training.",
+     "next": "Chase the test environment, keep building personalisation, carry on training."
+    },
+    {
+     "n": "Methodology Narrative",
+     "p": "proof",
+     "s": "Watch",
+     "b": "Layer 3 plans advanced. Can’t action them until Cesca finishes the master template.",
+     "next": "Meet Cesca, close the template, then action Layer 3."
+    },
+    {
+     "n": "Ex-Com · IWSR",
+     "p": "knowledge",
+     "s": "On track",
+     "b": "IWSR launch copy written. Next few launches organised with the stakeholders and the video team.",
+     "next": "Run the IWSR launch, keep the rest moving."
+    },
+    {
+     "n": "Knowledge Centre",
+     "p": "knowledge",
+     "s": "New",
+     "b": "Need spec created so the RevOps team understands what to build.",
+     "next": "Take the spec to RevOps and agree what they build, by when."
+    }
+   ]
+  },
+  {
+   "wk": "W36",
+   "dates": "31 Aug–6 Sep",
+   "headline": "Garry adoption ramping post-launch with the first real proposal engagement; Methodology Layer 3 master moving toward finalisation.",
+   "entries": [
+    {
+     "n": "Project Garry",
+     "p": "garry",
+     "s": "On track",
+     "b": "Heavy run of 1:1s onto Garry. Since launch: 40 proposals created, 4 clients opened theirs, and one booked a follow-up straight from the CTA. Simplified SMB format and packaging added."
+    },
+    {
+     "n": "Methodology Narrative",
+     "p": "proof",
+     "s": "On track",
+     "b": "Layer 3 built out bolder after syncing with Andrea. Filled-out master with Cesca to check — the last step before finalising. Design brief kicked off."
+    }
+   ]
+  },
+  {
+   "wk": "W34",
+   "dates": "17–21 Aug",
+   "headline": "Garry launch ready for the following week; an urgent Nestlé methodology ask landed well; Trend Confirmations redesign unblocked.",
+   "entries": [
+    {
+     "n": "Project Garry",
+     "p": "garry",
+     "s": "On track",
+     "b": "Sections redesigned and security checked ahead of deployment. Roadmap meetings held; Oleg handing over IT ownership post-launch."
+    },
+    {
+     "n": "Nestlé Methodology Collateral",
+     "p": "proof",
+     "s": "Shipped",
+     "b": "Urgent ask, and Layer 3 wasn’t ready — built something new instead. Costly in time, but good practice for the methodology in action."
+    },
+    {
+     "n": "Trend Confirmations",
+     "p": "proof",
+     "s": "On track",
+     "b": "Redesign landed really well with Cesca and David, and is already in use on the Nestlé document."
+    },
+    {
+     "n": "Ex-Com Interview Series",
+     "p": "knowledge",
+     "s": "Watch",
+     "b": "First video launched on YouTube, the blog and Carla’s newsletter. Methodology video scheduled with David and Cesca."
+    },
+    {
+     "n": "Accuracy Number",
+     "p": "proof",
+     "s": "Blocked",
+     "b": "Analysis complete, recommendation to Cesca finalised: keep developing rather than launch. Exec looking at data team headcount."
+    },
+    {
+     "n": "Methodology Narrative",
+     "p": "proof",
+     "s": "Watch",
+     "b": "Layers 1 and 2 combined into the official doc, Layer 3 closing doc shared with Cesca. Design brief slipped behind Nestlé and Garry."
+    }
+   ]
+  },
+  {
+   "wk": "W33",
+   "dates": "10–14 Aug",
+   "headline": "Garry in final pre-launch adjustments; Methodology Layer 3 approved; three threads parked on annual leave.",
+   "entries": [
+    {
+     "n": "Project Garry",
+     "p": "garry",
+     "s": "On track",
+     "b": "Final catalogue and image adjustments before launch. Localisation kicked off and Calum on the Salesforce connection."
+    },
+    {
+     "n": "Methodology Narrative",
+     "p": "proof",
+     "s": "Watch",
+     "b": "Layer 3 presented, approved and signed off. Master document waiting on Cesca’s return."
+    },
+    {
+     "n": "WGSN Pain & Benefits",
+     "p": "garry",
+     "s": "New",
+     "b": "Proposed structure shared. Runs as a secondary project inside Garry."
+    },
+    {
+     "n": "Ex-Com Interview Series",
+     "p": "knowledge",
+     "s": "Watch",
+     "b": "First three videos revised and ready. API video first, 21 August."
+    },
+    {
+     "n": "Accuracy Number",
+     "p": "proof",
+     "s": "Blocked",
+     "b": "Data team exploring the number further. Commercial narrative on hold."
+    },
+    {
+     "n": "Brand Narrative",
+     "p": "collateral",
+     "s": "Paused",
+     "b": "Request from David, paused until you were back."
+    }
+   ]
+  }
+ ],
+ "targets": [
+  {
+   "n": "Arm every deal with proof",
+   "p": [
+    {
+     "n": "Proof Points",
+     "st": "Stalled"
+    },
+    {
+     "n": "Accuracy Number",
+     "st": "Stalled"
+    },
+    {
+     "n": "Client Endorsements (Gong)",
+     "st": "Not started"
+    }
+   ],
+   "note": "All three sit behind the same two constraints: data team capacity and Marion’s time."
+  },
+  {
+   "n": "Make every seller tell the same winning story",
+   "p": [
+    {
+     "n": "Methodology Narrative",
+     "st": "In flight"
+    },
+    {
+     "n": "Ex-Com Interview Series",
+     "st": "In flight"
+    },
+    {
+     "n": "Customer Journey Collateral Map",
+     "st": "Done"
+    },
+    {
+     "n": "Client Crawler (AI)",
+     "st": "Not started"
+    }
+   ],
+   "note": "The strongest of the three. Methodology launches 15 October."
+  },
+  {
+   "n": "Give selling time back to sales",
+   "p": [
+    {
+     "n": "Project Garry",
+     "st": "In flight"
+    },
+    {
+     "n": "Onboarding Pack",
+     "st": "Done"
+    },
+    {
+     "n": "Customer Stories Program",
+     "st": "Stalled"
+    },
+    {
+     "n": "Sales Deck V1",
+     "st": "Stalled"
+    },
+    {
+     "n": "Use Cases Library",
+     "st": "Stalled"
+    },
+    {
+     "n": "Brand Videos",
+     "st": "Not started"
+    }
+   ],
+   "note": "Garry carries this one almost alone, which is the risk in it."
+  }
+ ],
+ "asks": [
+  {
+   "id": "d-customerstories",
+   "grp": "decision",
+   "src": "ROI",
+   "txt": "Customer Stories is back at High priority under ROI, but the approval cycle that stalled it last time has not changed. Restart it properly, or leave it parked behind Client Endorsements?"
+  },
+  {
+   "id": "d-usageowner",
+   "grp": "decision",
+   "src": "Client Usage Dashboard",
+   "txt": "Who owns the data pipeline for the Client Usage Dashboard? I would rather settle that before I scope it — Garry is the cautionary tale."
+  },
+  {
+   "id": "d-orphans",
+   "grp": "decision",
+   "src": "Portfolio hygiene",
+   "txt": "Six active projects still sit under parents that are Cancelled, Done or Backlog. Adopt them under a live initiative, or close them?"
+  },
+  {
+   "id": "a-garry-eng",
+   "grp": "people",
+   "src": "Project Garry",
+   "txt": "Lock engineering ownership of Garry with Stef now, effective January. Agreed in December, it will not happen."
+  },
+  {
+   "id": "a-kc-revops",
+   "grp": "people",
+   "src": "Knowledge Centre",
+   "txt": "RevOps builds the Knowledge Centre. I write the spec and hold the strategy."
+  },
+  {
+   "id": "a-cesca",
+   "grp": "people",
+   "src": "Methodology Narrative",
+   "txt": "A date from Cesca for the master template. Layer 3 is approved and waiting on it."
+  },
+  {
+   "id": "a-laila",
+   "grp": "people",
+   "src": "Trend Confirmations · Garry",
+   "txt": "Laila’s time, in this order: Interiors confirmations manually, her final Use Cases work, then the Personas overlay."
+  },
+  {
+   "id": "a-marion",
+   "grp": "people",
+   "src": "ROI",
+   "txt": "Marion’s time for the 20-testimonial mapping on Client Endorsements."
+  },
+  {
+   "id": "a-design",
+   "grp": "people",
+   "src": "Methodology Narrative",
+   "txt": "Design resource for the methodology visuals, video and brand guidelines."
+  }
+ ],
+ "askGroups": [
+  {
+   "k": "decision",
+   "h": "Decisions for today",
+   "d": "I have a view on each. I need yours."
+  },
+  {
+   "k": "people",
+   "h": "People and ownership",
+   "d": "Named, time-boxed, not open-ended."
+  }
+ ],
+ "flags": [
+  {
+   "h": "Brand Positioning",
+   "t": "Mine by choice, and I do not yet know what it involves in practice. If it grows, the ask later is handing it back to Marketing."
+  },
+  {
+   "h": "Client Usage Dashboard overlap",
+   "t": "It overlaps the Salesforce Usage Interface and Garry’s own analytics. Worth settling whether that is one initiative or three before anyone builds."
+  },
+  {
+   "h": "Client OnePagers Roadblocks",
+   "t": "New in Notion with no pillar and no detail. I think it belongs under Garry’s One-Pagers rather than standing alone."
+  }
+ ],
+ "agenda": {
+  "cover": [
+   "Garry handover — agreeing the January date with <b>Stef</b>",
+   "Knowledge Centre — spec is with <b>RevOps</b> to scope",
+   "Methodology launch, <b>15 October</b>",
+   "Trend Confirmations redesign — walkthrough before it scales"
+  ],
+  "help": [
+   "A date from <b>Cesca</b> for the master template",
+   "<b>Laila</b> for Interiors, the manual route, time-boxed",
+   "<b>Marion</b>’s time for the 20-testimonial mapping",
+   "Backing for the <b>data team headcount</b> — Accuracy is parked behind it"
+  ]
+ },
+ "timeline": [
+  {
+   "id": "garry",
+   "span": [
+    0,
+    3
+   ],
+   "miles": {
+    "0": "Data page 17 Sep",
+    "3": "Handover spec",
+    "4": {
+     "t": "Engineering owns",
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "methodology",
+   "span": [
+    0,
+    2
+   ],
+   "miles": {
+    "0": "Template w/ Cesca",
+    "1": {
+     "t": "Launch 15 Oct",
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "knowledge",
+   "span": [
+    0,
+    4
+   ],
+   "miles": {
+    "0": "Spec",
+    "1": "RevOps build"
+   }
+  },
+  {
+   "id": "trend",
+   "span": [
+    0,
+    1
+   ],
+   "miles": {
+    "0": "Interiors, manual",
+    "3": "Scale redesign"
+   }
+  },
+  {
+   "id": "brandpos",
+   "span": [
+    1,
+    4
+   ],
+   "miles": {
+    "1": "Work out scope"
+   }
+  },
+  {
+   "id": "excom",
+   "span": [
+    0,
+    2
+   ],
+   "miles": {
+    "2": {
+     "t": "Nov 5 & 23",
+     "hard": true
+    }
+   }
+  },
+  {
+   "id": "clientusage",
+   "span": [
+    1,
+    4
+   ],
+   "miles": {
+    "1": "Owner + scope"
+   }
+  },
+  {
+   "id": "onepagers",
+   "span": [
+    0,
+    1
+   ],
+   "miles": {
+    "0": "Define it"
+   }
+  },
+  {
+   "id": "roi",
+   "span": [
+    1,
+    4
+   ],
+   "miles": {
+    "1": "Marion mapping",
+    "3": "Stories: go / park"
+   }
+  },
+  {
+   "id": "accuracy",
+   "span": [
+    4,
+    4
+   ],
+   "miles": {
+    "4": "On headcount"
+   }
+  }
+ ],
+ "tlMonths": [
+  "Sep ’26",
+  "Oct ’26",
+  "Nov ’26",
+  "Dec ’26",
+  "Q1 ’27"
+ ],
+ "generated_note": "Hand-maintained prose for the 1:1 page. sync.py never writes this file — it only touches data.json."
+}
