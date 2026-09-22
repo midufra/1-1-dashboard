@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T13:50:24.537576Z",
+  "generated_at": "2026-09-22T11:01:42.003703Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 22,
+      "completion": 54,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -38,23 +38,177 @@
   ],
   "projects": [
     {
-      "id": "3db367a5-461c-808a-9120-e04a16a5a6a4",
-      "name": "Client OnePagers Roadblocks",
-      "status": "Planning",
-      "stage": null,
-      "pillar": null,
+      "id": "3e2367a5-461c-8123-8f28-ce88ed72ca27",
+      "name": "Garry Improvements",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Garry",
       "summary": "No content",
-      "completion": null,
+      "completion": 35,
+      "task_counts": {
+        "done": 7,
+        "total": 20
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3e2367a5-461c-812d-8d1f-fe5e0c69cec0",
+      "name": "Garry WGSN Map",
+      "status": "Not started",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "No content",
+      "completion": 0,
       "task_counts": {
         "done": 0,
-        "total": 0
+        "total": 1
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3e2367a5-461c-8148-9d1f-e2f0097c2ed7",
+      "name": "Garry Skills",
+      "status": "Not started",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "No content",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 9
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3e2367a5-461c-81a8-a784-ceba74ecaf5c",
+      "name": "Garry One-pagers",
+      "status": "Planning",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "No content",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 1
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3e2367a5-461c-81c1-8ef2-efe264d04baf",
+      "name": "Garry Sample Reports",
+      "status": "Not started",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "No content",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 1
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3e2367a5-461c-81f7-a71f-fb832fa980c8",
+      "name": "Garry Salesforce Integration",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Garry",
+      "summary": "No content",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 1
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3e2367a5-461c-81fd-9e0d-cde619c7ed7c",
+      "name": "Garry Personalisation",
+      "status": "Planning",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "No content",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 1
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3d4367a5-461c-811f-a10c-f63f9e5d1dd7",
+      "name": "Garry Localization",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "Garry mini\u2011project focuses on localization and is currently not started.",
+      "completion": 50,
+      "task_counts": {
+        "done": 2,
+        "total": 4
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3d4367a5-461c-8189-9593-c29e95bb7359",
+      "name": "Garry Discovery",
+      "status": "Not started",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "Garry mini-project focused on discovery, currently not started.",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 1
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3d4367a5-461c-8197-8423-c52ef22dbc50",
+      "name": "Garry Data",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "Garry mini\u2011project data page, currently not started.",
+      "completion": 66,
+      "task_counts": {
+        "done": 0,
+        "total": 2
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3d4367a5-461c-81d9-bd43-f2ea1d40d8da",
+      "name": "Garry Mindset",
+      "status": "Not started",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "Garry mini-project: mindset.",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 3
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "3d4367a5-461c-81e8-9505-d4c7b4442f45",
+      "name": "Garry QBR & Stakeholder Onboarding",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Garry",
+      "summary": "Garry mini-project QBRs is not started.",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 3
       },
       "goal_ids": []
     },
     {
       "id": "3d4367a5-461c-81bb-bfaf-e5c0968ac645",
       "name": "Knowledge Centre",
-      "status": "Planning",
+      "status": "Not started",
       "stage": "Now",
       "pillar": "Knowledge",
       "summary": "New H2 initiative to build the Knowledge Centre, organised into mini-projects for trackable progress at each stage. Need spec written this week so the RevOps team understands what needs building.",
@@ -68,7 +222,7 @@
     {
       "id": "3d4367a5-461c-81c8-b991-e844410c615a",
       "name": "Brand Positioning",
-      "status": "Planning",
+      "status": "Not started",
       "stage": "Next",
       "pillar": "Collateral",
       "summary": "New umbrella project separates Brand Positioning from Brand Narrative, creating its own trackable initiative with mini\u2011projects underneath.",
@@ -94,6 +248,20 @@
       "goal_ids": []
     },
     {
+      "id": "3ba367a5-461c-81ed-ac72-e6cb39b8d52f",
+      "name": "Use Cases & Pain Points",
+      "status": "In Progress",
+      "stage": "Now",
+      "pillar": "Collateral",
+      "summary": "Secondary project inside Garry. Proposed structure shared with Wendy. Next: work with Laila to overlay her Personas project on top, then with Product Marketing on the next phase \u2014 linking pain/benefits to products and features.",
+      "completion": 20,
+      "task_counts": {
+        "done": 1,
+        "total": 5
+      },
+      "goal_ids": []
+    },
+    {
       "id": "3b1367a5-461c-8094-90e2-e319c14ceb9a",
       "name": "Ex-Com Interview Series",
       "status": "In Progress",
@@ -107,6 +275,22 @@
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
+      ]
+    },
+    {
+      "id": "3ab367a5-461c-8107-9761-dc9fe40d9709",
+      "name": "Client Endorsements (Gong)",
+      "status": "Not started",
+      "stage": "Later",
+      "pillar": "Proof",
+      "summary": "Paused due to capacity -- Garry, Methodology, Accuracy Number, and Client Follower took priority. Was the 'easy win' pivot away from slow Customer Stories process; 20-testimonial mapping with Marion on hold, not cancelled.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": [
+        "3b1367a5-461c-8145-8219-c297b2626ae2"
       ]
     },
     {
@@ -143,15 +327,15 @@
     },
     {
       "id": "3ab367a5-461c-816c-a30e-d1cd10c1df22",
-      "name": "Project Garry",
-      "status": "In Progress",
-      "stage": "Now",
+      "name": "Garry Build \u2013 Launch",
+      "status": "Done",
+      "stage": null,
       "pillar": "Garry",
-      "summary": "Two launches this week: new analytics on customer behaviour, and the client logos section. QBR plan and localisation plan both drafted \u2014 waiting only on Engineering to set up a testing environment before either can be actioned. Next level of personalisation started. Steady run of training with sales reps as questions come in.",
-      "completion": 33,
+      "summary": "No content",
+      "completion": 97,
       "task_counts": {
-        "done": 60,
-        "total": 114
+        "done": 65,
+        "total": 67
       },
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
@@ -163,7 +347,7 @@
       "status": "Blocked",
       "stage": "Next",
       "pillar": "Proof",
-      "summary": "Completed the analysis this week and finalised the recommendation to Cesca: keep developing rather than launch now, since the current numbers wouldn't hold up under scrutiny. Exec team is looking to add headcount to the data team so that work can continue. Commercial narrative remains on hold until that concludes.",
+      "summary": "No content",
       "completion": 33,
       "task_counts": {
         "done": 3,
@@ -266,7 +450,7 @@
     {
       "id": "2f5367a5-461c-8015-9b28-d27b6e073f60",
       "name": "Metric Survey",
-      "status": "Backlog",
+      "status": "Canceled",
       "stage": null,
       "pillar": null,
       "summary": "Admin project for a Metric Survey scheduled from April 1 to April 16, 2026, with a low priority and currently in the planning phase. Tasks are yet to be defined.",
@@ -330,6 +514,22 @@
       "task_counts": {
         "done": 1,
         "total": 10
+      },
+      "goal_ids": [
+        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
+      ]
+    },
+    {
+      "id": "2de367a5-461c-8042-b886-eb23b2cd2691",
+      "name": "Use Cases Library (merged into Use Cases & Pain Points)",
+      "status": "Canceled",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "Waiting on Laila\u2019s final work",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
       },
       "goal_ids": [
         "3b1367a5-461c-81b4-9305-f7c613ba38ed"
@@ -1248,6 +1448,41 @@
           "name": "Project Garry",
           "status": "In Progress",
           "summary": "Two launches this week: new analytics on customer behaviour, and the client logos section. QBR plan and localisation plan both drafted \u2014 waiting only on Engineering to set up a testing environment before either can be actioned. Next level of personalisation started. Steady run of training with sales reps as questions come in."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "projects": [
+        {
+          "name": "Garry Improvements",
+          "status": "In Progress",
+          "summary": "No content"
+        },
+        {
+          "name": "Garry Salesforce Integration",
+          "status": "In Progress",
+          "summary": "No content"
+        },
+        {
+          "name": "Knowledge Centre",
+          "status": "Not started",
+          "summary": "New H2 initiative to build the Knowledge Centre, organised into mini-projects for trackable progress at each stage. Need spec written this week so the RevOps team understands what needs building."
+        },
+        {
+          "name": "Use Cases & Pain Points",
+          "status": "In Progress",
+          "summary": "Secondary project inside Garry. Proposed structure shared with Wendy. Next: work with Laila to overlay her Personas project on top, then with Product Marketing on the next phase \u2014 linking pain/benefits to products and features."
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "Copy created for the IWSR launch. Next few launches organised with the stakeholders and the video team. API video already live on YouTube, the blog and Carla's C-suite newsletter."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Layer 3 plans advanced this week, but actioning them is waiting on Cesca finishing the master template \u2014 meeting with her next week to close it out. Design brief for visuals, video and brand guideline still open alongside."
         }
       ]
     }
