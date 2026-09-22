@@ -20,11 +20,10 @@
   --surface-2:#F5F7F8;
   --ink:#111A20;
   --ink-2:#485964;
-  --ink-3:#7C8B95;
+  --ink-3:#5E6E78;
   --line:#D7DDE0;
   --line-2:#E6EAEC;
   --accent:#0E5A61;
-  --accent-soft:#E2EEEE;
   --now:#A32E22;
   --next:#8A5E08;
   --later:#3C5F7E;
@@ -32,11 +31,8 @@
   --now-bg:#F7E8E6;
   --next-bg:#F6F0DD;
   --later-bg:#E6EDF3;
-  --stop-bg:#ECEFF1;
   --ok:#2C7A57;
-  --ok-bg:#E1EEE8;
   --ship:#5A3E9B;
-  --ship-bg:#ECE7F6;
   --track:#DBE3E4;
   --shadow:0 1px 1px rgba(17,26,32,.04), 0 10px 26px -18px rgba(17,26,32,.35);
   --f-display:"Newsreader",Georgia,"Times New Roman",serif;
@@ -48,10 +44,10 @@
     --ground:#0E1317; --surface:#161D22; --surface-2:#1B2329;
     --ink:#E8EEF0; --ink-2:#A1AFB8; --ink-3:#74838D;
     --line:#28323A; --line-2:#202930;
-    --accent:#5FB2B5; --accent-soft:#16333600;
+    --accent:#5FB2B5;
     --now:#E28377; --next:#D5A85C; --later:#8DAFCC; --stop:#93A0A9;
-    --now-bg:#32201D; --next-bg:#2F2616; --later-bg:#1B2937; --stop-bg:#232A30;
-    --ok:#6DC199; --ok-bg:#1B3128; --ship:#B197E3; --ship-bg:#251F35;
+    --now-bg:#32201D; --next-bg:#2F2616; --later-bg:#1B2937;
+    --ok:#6DC199; --ship:#B197E3;
     --track:#26313A;
     --shadow:0 1px 1px rgba(0,0,0,.4), 0 12px 28px -20px rgba(0,0,0,.8);
   }
@@ -60,10 +56,10 @@
   --ground:#0E1317; --surface:#161D22; --surface-2:#1B2329;
   --ink:#E8EEF0; --ink-2:#A1AFB8; --ink-3:#74838D;
   --line:#28323A; --line-2:#202930;
-  --accent:#5FB2B5; --accent-soft:#16333600;
+  --accent:#5FB2B5;
   --now:#E28377; --next:#D5A85C; --later:#8DAFCC; --stop:#93A0A9;
-  --now-bg:#32201D; --next-bg:#2F2616; --later-bg:#1B2937; --stop-bg:#232A30;
-  --ok:#6DC199; --ok-bg:#1B3128; --ship:#B197E3; --ship-bg:#251F35;
+  --now-bg:#32201D; --next-bg:#2F2616; --later-bg:#1B2937;
+  --ok:#6DC199; --ship:#B197E3;
   --track:#26313A;
   --shadow:0 1px 1px rgba(0,0,0,.4), 0 12px 28px -20px rgba(0,0,0,.8);
 }
@@ -83,9 +79,9 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .lede{font-family:var(--f-display);font-weight:400;font-size:clamp(19px,2.1vw,23px);line-height:1.36;letter-spacing:-.008em;margin:0;max-width:34em;text-wrap:balance}
 .h{font-family:var(--f-display);font-weight:500;font-size:19px;line-height:1.25;letter-spacing:-.01em;margin:0}
 .k{font-family:var(--f-mono);font-size:10px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
-.body{font-size:14px;line-height:1.6;color:var(--ink-2);margin:0;max-width:60ch}
+.body{font-size:14px;line-height:1.6;color:var(--ink-2);margin:0;max-width:60ch;text-wrap:pretty}
 .small{font-size:12.5px;line-height:1.5;color:var(--ink-3);margin:0}
-.fig{font-size:30px;font-weight:600;letter-spacing:-.03em;line-height:1}
+.fig{font-size:30px;font-weight:600;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
 
 .wrap{max-width:1180px;margin:0 auto;padding-inline:22px}
 
@@ -100,8 +96,9 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .savechip[data-state="local"] .dot{background:var(--next)}
 .tabs{display:flex;gap:26px;margin-top:24px;flex-wrap:wrap}
 .tab{
-  padding:0 0 12px;font-family:var(--f-mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+  padding:8px 0 12px;font-family:var(--f-mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
   color:var(--ink-3);border-bottom:1px solid transparent;margin-bottom:-1px;
+  transition:color .15s ease,border-color .15s ease;
 }
 .tab:hover{color:var(--ink-2)}
 .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
@@ -150,7 +147,7 @@ main{padding-block:0 72px}
 .foc{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:6px 34px;padding-block:18px;border-top:1px dotted var(--line);align-items:baseline}
 .foc:first-child{padding-top:0;border-top:none}
 .foc h3{font-family:var(--f-display);font-weight:500;font-size:17px;letter-spacing:-.01em;margin:0 0 5px}
-.foc p{font-size:13.5px;line-height:1.55;color:var(--ink-2);margin:0;max-width:46ch}
+.foc p{font-size:13.5px;line-height:1.55;color:var(--ink-2);margin:0;max-width:46ch;text-wrap:pretty}
 .foc .need{font-size:13.5px;color:var(--ink)}
 .foc .need .k{display:block;margin-bottom:5px}
 
@@ -173,7 +170,7 @@ main{padding-block:0 72px}
 .s-shipped{color:var(--ship)}
 .s-new{color:var(--accent)}
 .s-none{color:var(--ink-3)}
-.wc-b{font-size:13.5px;line-height:1.6;color:var(--ink-2);margin:0}
+.wc-b{font-size:13.5px;line-height:1.6;color:var(--ink-2);margin:0;text-wrap:pretty}
 .wc-next{margin-top:12px;padding-top:11px;border-top:1px dotted var(--line)}
 .wc-next .k{display:block;margin-bottom:5px}
 .wc-next-t{font-size:13px;color:var(--ink);line-height:1.5}
@@ -228,9 +225,10 @@ main{padding-block:0 72px}
 }
 .asktext:focus{outline:none;background:var(--surface-2)}
 .pc-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 18px 15px}
-.expand,.movebtn{font-family:var(--f-mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
+.expand,.movebtn{font-family:var(--f-mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);padding:6px 2px;margin:-6px -2px;transition:color .15s ease,transform .1s ease}
 .expand{display:inline-flex;align-items:center;gap:6px}
 .expand:hover,.movebtn:hover{color:var(--accent)}
+.expand:active,.movebtn:active{transform:scale(.97)}
 .caret{transition:transform .16s ease;display:inline-block}
 .pcard[data-open="1"] .caret{transform:rotate(90deg)}
 .detail{border-top:1px solid var(--line-2);padding:2px 18px 18px;background:var(--surface-2)}
@@ -240,7 +238,7 @@ main{padding-block:0 72px}
 .kid-n{font-size:13px;color:var(--ink)}
 .kid-due{font-family:var(--f-mono);font-size:10px;color:var(--ink-3);font-variant-numeric:tabular-nums}
 .kid-note{grid-column:1/-1;font-size:12.5px;color:var(--ink-3);line-height:1.5}
-.dtext{font-size:13px;line-height:1.6;color:var(--ink-2);margin:0}
+.dtext{font-size:13px;line-height:1.6;color:var(--ink-2);margin:0;text-wrap:pretty}
 .dtext.block{border-left:2px solid var(--now);padding-left:12px}
 .decide{margin-top:16px}
 .decide label{font-family:var(--f-mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);display:block;margin-bottom:7px}
@@ -254,8 +252,9 @@ main{padding-block:0 72px}
 .a-txt{font-family:var(--f-display);font-size:18px;line-height:1.42;letter-spacing:-.005em;margin:0 0 7px;color:var(--ink);max-width:44em}
 .a-src{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
 .a-out{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
-.outbtn{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;padding:6px 10px;border:1px solid var(--line);color:var(--ink-3);background:var(--surface)}
+.outbtn{font-family:var(--f-mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;padding:9px 12px;border:1px solid var(--line);color:var(--ink-3);background:var(--surface);transition:color .15s ease,border-color .15s ease,background .15s ease,transform .1s ease}
 .outbtn:hover{border-color:var(--ink-3);color:var(--ink-2)}
+.outbtn:active{transform:scale(.97)}
 .outbtn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface);font-weight:500}
 .a-note{grid-column:1/-1}
 .a-note textarea{width:100%;font-family:var(--f-display);font-size:14.5px;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line);padding:5px 0;min-height:2em;resize:vertical;line-height:1.5}
@@ -263,7 +262,7 @@ main{padding-block:0 72px}
 .a-note textarea::placeholder{color:var(--ink-3)}
 .flags{display:flex;flex-direction:column;gap:16px}
 .flag h4{font-family:var(--f-display);font-weight:500;font-size:16px;margin:0 0 3px;letter-spacing:-.005em}
-.flag p{font-size:13.5px;line-height:1.6;color:var(--ink-2);margin:0;max-width:62ch}
+.flag p{font-size:13.5px;line-height:1.6;color:var(--ink-2);margin:0;max-width:62ch;text-wrap:pretty}
 
 /* ── timeline ─────────────────────────────────────────────── */
 .tlscroll{overflow-x:auto;padding-block:26px 0}
@@ -294,7 +293,7 @@ main{padding-block:0 72px}
 .prow summary:hover .pn{color:var(--accent)}
 .prow .pn{display:flex;align-items:baseline;gap:10px;min-width:0;font-size:14px}
 .prow .pdot{width:6px;height:6px;border-radius:50%;flex:none;transform:translateY(-1px)}
-.prow .pd{padding:0 2px 16px 18px;font-size:13px;line-height:1.6;color:var(--ink-2);max-width:74ch}
+.prow .pd{padding:0 2px 16px 18px;font-size:13px;line-height:1.6;color:var(--ink-2);max-width:74ch;text-wrap:pretty}
 .prow .pd ul{margin:0;padding:0;list-style:none}
 .prow .pd li{padding-left:16px;position:relative;margin-bottom:3px}
 .prow .pd li::before{content:"\2014";position:absolute;left:0;color:var(--ink-3)}
@@ -335,7 +334,7 @@ main{padding-block:0 72px}
 .drift p{font-size:13px;line-height:1.6;color:var(--ink-2);margin:0}
 .drift b{font-weight:500;color:var(--ink)}
 .pc-live{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:12px;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3)}
-.pc-live .pct{color:var(--accent)}
+.pc-live .pct{color:var(--accent);font-variant-numeric:tabular-nums}
 .bar{display:block;height:2px;background:var(--track);margin-top:9px}
 .bar i{display:block;height:100%;background:var(--accent)}
 </style>
@@ -352,12 +351,12 @@ main{padding-block:0 72px}
       <div class="savechip" id="savechip" data-state="off"><span class="dot"></span><span id="savetext">Loading</span></div>
     </div>
     <div class="tabs" role="tablist">
-      <button class="tab" role="tab" id="tab-ov" aria-selected="true" aria-controls="p-ov">Overview</button>
-      <button class="tab" role="tab" id="tab-515" aria-selected="false" aria-controls="p-515">The 5:15<span class="n"></span></button>
-      <button class="tab" role="tab" id="tab-board" aria-selected="false" aria-controls="p-board">Matrix<span class="n"></span></button>
-      <button class="tab" role="tab" id="tab-asks" aria-selected="false" aria-controls="p-asks">What I need<span class="n"></span></button>
-      <button class="tab" role="tab" id="tab-tl" aria-selected="false" aria-controls="p-tl">Timeline</button>
-      <button class="tab" role="tab" id="tab-all" aria-selected="false" aria-controls="p-all">All projects<span class="n"></span></button>
+      <button class="tab" role="tab" id="tab-ov" aria-selected="true" aria-controls="p-ov" tabindex="0">Overview</button>
+      <button class="tab" role="tab" id="tab-515" aria-selected="false" aria-controls="p-515" tabindex="-1">The 5:15<span class="n"></span></button>
+      <button class="tab" role="tab" id="tab-board" aria-selected="false" aria-controls="p-board" tabindex="-1">Matrix<span class="n"></span></button>
+      <button class="tab" role="tab" id="tab-asks" aria-selected="false" aria-controls="p-asks" tabindex="-1">What I need<span class="n"></span></button>
+      <button class="tab" role="tab" id="tab-tl" aria-selected="false" aria-controls="p-tl" tabindex="-1">Timeline</button>
+      <button class="tab" role="tab" id="tab-all" aria-selected="false" aria-controls="p-all" tabindex="-1">All projects<span class="n"></span></button>
     </div>
   </div>
 </header>
@@ -796,10 +795,24 @@ function selectTab(id){
   document.querySelectorAll(".tab").forEach(function(b){
     var on = b.id === id;
     b.setAttribute("aria-selected", on ? "true" : "false");
+    b.tabIndex = on ? 0 : -1;
     document.getElementById(b.getAttribute("aria-controls")).hidden = !on;
   });
   autosizeAll();
 }
+
+document.addEventListener("keydown", function(e){
+  var t = e.target.closest(".tab");
+  if(!t) return;
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+  var i = tabs.indexOf(t);
+  var next = null;
+  if(e.key === "ArrowRight") next = tabs[(i + 1) % tabs.length];
+  else if(e.key === "ArrowLeft") next = tabs[(i - 1 + tabs.length) % tabs.length];
+  else if(e.key === "Home") next = tabs[0];
+  else if(e.key === "End") next = tabs[tabs.length - 1];
+  if(next){ e.preventDefault(); selectTab(next.id); next.focus(); }
+});
 
 document.addEventListener("click", function(e){
   var t;
