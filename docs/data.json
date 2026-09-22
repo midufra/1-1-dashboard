@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T11:01:42.003703Z",
+  "generated_at": "2026-09-22T12:30:31.196981Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -43,7 +43,7 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Garry",
-      "summary": "No content",
+      "summary": "Garry is implementing small improvements to continuously enhance his work.",
       "completion": 35,
       "task_counts": {
         "done": 7,
@@ -57,7 +57,7 @@
       "status": "Not started",
       "stage": null,
       "pillar": "Garry",
-      "summary": "No content",
+      "summary": "Create a map section that visualizes global reach by displaying where team members and offices are located worldwide.",
       "completion": 0,
       "task_counts": {
         "done": 0,
@@ -85,7 +85,7 @@
       "status": "Planning",
       "stage": null,
       "pillar": "Garry",
-      "summary": "No content",
+      "summary": "This mini project creates personalized product collateral to introduce offerings to prospects and customers, making products discoverable, generating FOMO, and helping sales and account teams quickly present tailored product information.",
       "completion": 0,
       "task_counts": {
         "done": 0,
@@ -99,7 +99,7 @@
       "status": "Not started",
       "stage": null,
       "pillar": "Garry",
-      "summary": "No content",
+      "summary": "Create sample reports to generate FOMO and encourage subscriptions by limiting free content, define and approve the report format and access controls, and address engineering considerations for controlling prospect and customer visibility.",
       "completion": 0,
       "task_counts": {
         "done": 0,
@@ -113,7 +113,7 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Garry",
-      "summary": "No content",
+      "summary": "A microproject to integrate Garry with Salesforce.",
       "completion": 0,
       "task_counts": {
         "done": 0,
@@ -127,7 +127,7 @@
       "status": "Planning",
       "stage": null,
       "pillar": "Garry",
-      "summary": "No content",
+      "summary": "This microproject deepens Garry personalization by expanding beyond initial guardrails to explore and refine offered personalized features.",
       "completion": 0,
       "task_counts": {
         "done": 0,
@@ -141,7 +141,7 @@
       "status": "In Progress",
       "stage": null,
       "pillar": "Garry",
-      "summary": "Garry mini\u2011project focuses on localization and is currently not started.",
+      "summary": "Garry mini\u2011project focuses on localizing Gary into supported languages, enabling regional teams to personalize proposals and sales materials.",
       "completion": 50,
       "task_counts": {
         "done": 2,
@@ -155,7 +155,7 @@
       "status": "Not started",
       "stage": null,
       "pillar": "Garry",
-      "summary": "Garry mini-project focused on discovery, currently not started.",
+      "summary": "A new, personalizable collateral for the discovery stage will introduce WJSN, present the company, its products, and the benefits of its trend\u2011forecasting services.",
       "completion": 0,
       "task_counts": {
         "done": 0,
@@ -169,7 +169,7 @@
       "status": "In Progress",
       "stage": null,
       "pillar": "Garry",
-      "summary": "Garry mini\u2011project data page, currently not started.",
+      "summary": "The project launches a new Garry mini\u2011project page to showcase the data formats, types, and sources available to WGSN subscribers, highlighting how this data supports forecasts and demonstrating subscription benefits while reducing questions about data sources and shifting focus from \u201cHow do we forecast?\u201d to \u201cHow is the data presented in reports?\u201d",
       "completion": 66,
       "task_counts": {
         "done": 0,
@@ -183,7 +183,7 @@
       "status": "Not started",
       "stage": null,
       "pillar": "Garry",
-      "summary": "Garry mini-project: mindset.",
+      "summary": "Introduces new collateral for Garry to present mindset consultancy and proposal materials.",
       "completion": 0,
       "task_counts": {
         "done": 0,
@@ -197,7 +197,7 @@
       "status": "In Progress",
       "stage": null,
       "pillar": "Garry",
-      "summary": "Garry mini-project QBRs is not started.",
+      "summary": "Garry QBR & Stakeholder Onboarding launches a new QBR collateral for account managers and CSSs, enabling faster creation of personalized documents, accelerating renewal conversations, and reducing churn.",
       "completion": 0,
       "task_counts": {
         "done": 0,
@@ -211,7 +211,7 @@
       "status": "Not started",
       "stage": "Now",
       "pillar": "Knowledge",
-      "summary": "New H2 initiative to build the Knowledge Centre, organised into mini-projects for trackable progress at each stage. Need spec written this week so the RevOps team understands what needs building.",
+      "summary": "A sales rep workspace that consolidates insights from calls, accounts, and past value demonstrations, linking systems like Gong, Salesforce, usage data, and product catalog into a unified knowledge bank to help craft tailored, evidence\u2011based sales pitches.",
       "completion": null,
       "task_counts": {
         "done": 0,
@@ -225,7 +225,7 @@
       "status": "Not started",
       "stage": "Next",
       "pillar": "Collateral",
-      "summary": "New umbrella project separates Brand Positioning from Brand Narrative, creating its own trackable initiative with mini\u2011projects underneath.",
+      "summary": "Project initiated by David to develop brand positioning and its activation, now progressing through group collaboration.",
       "completion": null,
       "task_counts": {
         "done": 0,
@@ -253,7 +253,7 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Collateral",
-      "summary": "Secondary project inside Garry. Proposed structure shared with Wendy. Next: work with Laila to overlay her Personas project on top, then with Product Marketing on the next phase \u2014 linking pain/benefits to products and features.",
+      "summary": "No content",
       "completion": 20,
       "task_counts": {
         "done": 1,
@@ -267,7 +267,7 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Knowledge",
-      "summary": "Copy created for the IWSR launch. Next few launches organised with the stakeholders and the video team. API video already live on YouTube, the blog and Carla's C-suite newsletter.",
+      "summary": "A video series with XCOM leadership discussing WGSN innovations, recent changes, and initiatives supporting GEO.",
       "completion": 10,
       "task_counts": {
         "done": 16,
@@ -283,7 +283,7 @@
       "status": "Not started",
       "stage": "Later",
       "pillar": "Proof",
-      "summary": "Paused due to capacity -- Garry, Methodology, Accuracy Number, and Client Follower took priority. Was the 'easy win' pivot away from slow Customer Stories process; 20-testimonial mapping with Marion on hold, not cancelled.",
+      "summary": "Create a collection of client\u2011sourced quotes from Gong and NPS, organize them for quick access, and enable fast, reusable proof points for sales collateral, replacing the slower, manual process of producing full customer stories.",
       "completion": null,
       "task_counts": {
         "done": 0,
@@ -315,7 +315,7 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Proof",
-      "summary": "Layer 3 plans advanced this week, but actioning them is waiting on Cesca finishing the master template \u2014 meeting with her next week to close it out. Design brief for visuals, video and brand guideline still open alongside.",
+      "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy.",
       "completion": 67,
       "task_counts": {
         "done": 14,
@@ -347,7 +347,7 @@
       "status": "Blocked",
       "stage": "Next",
       "pillar": "Proof",
-      "summary": "No content",
+      "summary": "Project with the data team to calculate the accuracy percentage of WGSN forecasts.",
       "completion": 33,
       "task_counts": {
         "done": 3,
@@ -1457,32 +1457,32 @@
         {
           "name": "Garry Improvements",
           "status": "In Progress",
-          "summary": "No content"
+          "summary": "Garry is implementing small improvements to continuously enhance his work."
         },
         {
           "name": "Garry Salesforce Integration",
           "status": "In Progress",
-          "summary": "No content"
+          "summary": "A microproject to integrate Garry with Salesforce."
         },
         {
           "name": "Knowledge Centre",
           "status": "Not started",
-          "summary": "New H2 initiative to build the Knowledge Centre, organised into mini-projects for trackable progress at each stage. Need spec written this week so the RevOps team understands what needs building."
+          "summary": "A sales rep workspace that consolidates insights from calls, accounts, and past value demonstrations, linking systems like Gong, Salesforce, usage data, and product catalog into a unified knowledge bank to help craft tailored, evidence\u2011based sales pitches."
         },
         {
           "name": "Use Cases & Pain Points",
           "status": "In Progress",
-          "summary": "Secondary project inside Garry. Proposed structure shared with Wendy. Next: work with Laila to overlay her Personas project on top, then with Product Marketing on the next phase \u2014 linking pain/benefits to products and features."
+          "summary": "No content"
         },
         {
           "name": "Ex-Com Interview Series",
           "status": "In Progress",
-          "summary": "Copy created for the IWSR launch. Next few launches organised with the stakeholders and the video team. API video already live on YouTube, the blog and Carla's C-suite newsletter."
+          "summary": "A video series with XCOM leadership discussing WGSN innovations, recent changes, and initiatives supporting GEO."
         },
         {
           "name": "Methodology Narrative ",
           "status": "In Progress",
-          "summary": "Layer 3 plans advanced this week, but actioning them is waiting on Cesca finishing the master template \u2014 meeting with her next week to close it out. Design brief for visuals, video and brand guideline still open alongside."
+          "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy."
         }
       ]
     }
