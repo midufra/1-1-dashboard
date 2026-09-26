@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T12:41:07.792826Z",
+  "generated_at": "2026-09-26T12:08:56.968634Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -1558,6 +1558,41 @@
     },
     {
       "date": "2026-09-25",
+      "projects": [
+        {
+          "name": "Garry Improvements",
+          "status": "In Progress",
+          "summary": "Garry is implementing small improvements to continuously enhance his work."
+        },
+        {
+          "name": "Garry Salesforce Integration",
+          "status": "In Progress",
+          "summary": "A microproject to integrate Garry with Salesforce."
+        },
+        {
+          "name": "Knowledge Centre",
+          "status": "Not started",
+          "summary": "A sales rep workspace that consolidates insights from calls, accounts, and past value demonstrations, linking systems like Gong, Salesforce, usage data, and product catalog into a unified knowledge bank to help craft tailored, evidence\u2011based sales pitches."
+        },
+        {
+          "name": "Use Cases & Pain Points",
+          "status": "In Progress",
+          "summary": "No content"
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "A video series with XCOM leadership discussing WGSN innovations, recent changes, and initiatives supporting GEO."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
       "projects": [
         {
           "name": "Garry Improvements",
