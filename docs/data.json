@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-29T13:55:13.741269Z",
+  "generated_at": "2026-09-30T13:32:16.407006Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
       "name": "Arm every deal with proof",
-      "completion": 16,
+      "completion": 22,
       "project_ids": [
         "2f5367a5-461c-808c-9866-e91f126035e5",
         "3ab367a5-461c-8174-913f-f1423f473448",
@@ -44,10 +44,10 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Garry is implementing small improvements to continuously enhance his work.",
-      "completion": 35,
+      "completion": 38,
       "task_counts": {
-        "done": 7,
-        "total": 20
+        "done": 8,
+        "total": 21
       },
       "goal_ids": []
     },
@@ -183,7 +183,7 @@
       "status": "Not started",
       "stage": null,
       "pillar": "Garry",
-      "summary": "Introduces new collateral for Garry to present mindset consultancy and proposal materials.",
+      "summary": "Introduces mindset consultancy and proposal collateral for the Garry mini\u2011project.",
       "completion": 0,
       "task_counts": {
         "done": 0,
@@ -201,7 +201,7 @@
       "completion": 0,
       "task_counts": {
         "done": 0,
-        "total": 5
+        "total": 4
       },
       "goal_ids": []
     },
@@ -318,8 +318,8 @@
       "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy.",
       "completion": 67,
       "task_counts": {
-        "done": 15,
-        "total": 26
+        "done": 16,
+        "total": 31
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -348,9 +348,9 @@
       "stage": "Next",
       "pillar": "Proof",
       "summary": "Project with the data team to calculate the accuracy percentage of WGSN forecasts.",
-      "completion": 33,
+      "completion": 44,
       "task_counts": {
-        "done": 3,
+        "done": 4,
         "total": 9
       },
       "goal_ids": [
@@ -1698,6 +1698,41 @@
     },
     {
       "date": "2026-09-29",
+      "projects": [
+        {
+          "name": "Garry Improvements",
+          "status": "In Progress",
+          "summary": "Garry is implementing small improvements to continuously enhance his work."
+        },
+        {
+          "name": "Garry Salesforce Integration",
+          "status": "In Progress",
+          "summary": "A microproject to integrate Garry with Salesforce."
+        },
+        {
+          "name": "Knowledge Centre",
+          "status": "Not started",
+          "summary": "A sales rep workspace that consolidates insights from calls, accounts, and past value demonstrations, linking systems like Gong, Salesforce, usage data, and product catalog into a unified knowledge bank to help craft tailored, evidence\u2011based sales pitches."
+        },
+        {
+          "name": "Use Cases & Pain Points",
+          "status": "In Progress",
+          "summary": "No content"
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "A video series with XCOM leadership discussing WGSN innovations, recent changes, and initiatives supporting GEO."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
       "projects": [
         {
           "name": "Garry Improvements",
