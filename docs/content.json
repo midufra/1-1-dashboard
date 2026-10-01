@@ -77,12 +77,12 @@
    "pillar": "Proof",
    "status": "In Progress",
    "cat": "Now",
-   "wait": "Design",
+   "wait": null,
    "ownerNow": "Mirela — owns it",
    "ownerNext": "Mirela — stays",
    "when": "No handover",
    "ask": "Design time from next week to build the customer deep-dive page, so it can launch.",
-   "deps": "The master template is on its way. Design builds the deep-dive page once I hand it over next week.",
+   "deps": "Nothing blocking. The master template is on its way, and design picks up the deep-dive page next week.",
    "next": "Present to the wider organisation, hand the deep-dive page to design next week, then launch.",
    "kids": [
     {
@@ -346,12 +346,12 @@
    "pillar": "Proof",
    "status": "In Progress",
    "cat": "Now",
-   "wait": "David",
+   "wait": null,
    "ownerNow": "Mirela — commercial pitch",
    "ownerNext": "Data team — the number itself",
    "when": "Once approved",
    "ask": "Approve the accuracy commercial pitch so we can finalise it and make it official.",
-   "deps": "David, for approval. The data team stays on the number itself; headcount still limits how far it can go.",
+   "deps": "Nothing blocking. David’s approval is the next step; after that the data team carries the number itself.",
    "next": "Finalise once David signs off, then make it official and fold it into the methodology story.",
    "kids": [],
    "notion": "Accuracy Number (WGSN)"
@@ -364,10 +364,6 @@
    "headline": "The accuracy pitch is with David for sign-off, and the methodology is ready for the wider organisation. Garry’s QBR and localisation are now held on Gong transcript access. This week we test the data team’s Snowflake copy to see whether it is enough.",
    "waiting": [
     {
-     "who": "David",
-     "what": "approval of the accuracy commercial pitch, before it goes official."
-    },
-    {
      "who": "Data team",
      "what": "Gong transcripts via Snowflake. These hold Garry QBRs and localisation."
     }
@@ -376,8 +372,8 @@
     {
      "n": "Accuracy Number",
      "p": "proof",
-     "s": "Watch",
-     "b": "Commercial pitch delivered. Waiting on David’s approval so we can finalise it and make it official.",
+     "s": "On track",
+     "b": "Commercial pitch delivered and now with David for approval, the next step before we finalise it and make it official.",
      "next": "Get David’s sign-off, then finalise and make it official."
     },
     {
