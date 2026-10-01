@@ -26,19 +26,20 @@
    "ownerNext": "Engineering — build and run",
    "when": "January 2027",
    "ask": "Lock engineering ownership of Garry from January with Stef now, not in December. A handover agreed in December is a handover that does not happen.",
-   "deps": "Engineering (Stef’s team) for the build. The Q&A environment has landed, so QBRs and localisation are unblocked.",
+   "deps": "Engineering (Stef’s team) for the build. QBRs and localisation need Gong transcripts; the data team’s Snowflake copy is being tested as the route.",
    "next": "Ship the personalisation layer through Q4, then write the handover spec in November so January is a date, not an intention.",
    "kids": [
     {
      "n": "Data Page",
      "s": "In Progress",
-     "d": "17 Sep"
+     "d": "17 Sep",
+     "note": "Data team checking accuracy before launch."
     },
     {
      "n": "QBRs",
-     "s": "In Progress",
+     "s": "Blocked",
      "d": "—",
-     "note": "Unblocked — Q&A environment received."
+     "note": "Needs Gong transcripts. Testing the data team’s Snowflake copy."
     },
     {
      "n": "WGSN Pain & Benefits",
@@ -54,9 +55,9 @@
     },
     {
      "n": "Localization",
-     "s": "Not started",
+     "s": "Blocked",
      "d": "24 Sep",
-     "note": "Unblocked — Q&A environment received."
+     "note": "Needs Gong transcripts. Testing the data team’s Snowflake copy."
     },
     {
      "n": "Onboarding",
@@ -350,6 +351,72 @@
   }
  ],
  "weeks": [
+  {
+   "wk": "W40",
+   "dates": "28 Sep–2 Oct",
+   "headline": "The accuracy pitch is with David for sign-off, and the methodology is ready for the wider organisation. Garry’s QBR and localisation are now held on Gong transcript access. This week we test the data team’s Snowflake copy to see whether it is enough.",
+   "waiting": [
+    {
+     "who": "David",
+     "what": "approval of the accuracy commercial pitch, before it goes official."
+    },
+    {
+     "who": "Data team",
+     "what": "Gong transcripts via Snowflake. These hold Garry QBRs and localisation."
+    }
+   ],
+   "entries": [
+    {
+     "n": "Accuracy Number",
+     "p": "proof",
+     "s": "Watch",
+     "b": "Commercial pitch delivered. Waiting on David’s approval so we can finalise it and make it official.",
+     "next": "Get David’s sign-off, then finalise and make it official."
+    },
+    {
+     "n": "Methodology Narrative",
+     "p": "proof",
+     "s": "On track",
+     "b": "Ready to present to the wider organisation: the slide for presentations, plus the full presentation and methodology. The master template is on its way, and I’m testing it this week to see if we can start building the customer deep-dive page.",
+     "next": "Hand the deep-dive page to design next week so they can build it, then launch."
+    },
+    {
+     "n": "Garry · QBR & Localisation",
+     "p": "garry",
+     "s": "Blocked",
+     "b": "Blocked on access to Gong transcripts. I spoke with the data team yesterday. They have the data in Snowflake, so we’ll test whether it’s enough or whether we still need the full transcripts.",
+     "next": "Test the Snowflake data with the data team. If it falls short, find another route to the full transcripts."
+    },
+    {
+     "n": "Project Garry",
+     "p": "garry",
+     "s": "On track",
+     "b": "New business proposal reworked heavily. I’m now building deeper personalisation and rewriting the opening copy to make it more specific. Kicked off with Mindset to understand what they need from Garry. Salesforce connection in testing. Working with Laila on the one-pagers. Spend to date is $160, $29 of it in September. Most of that is our own testing; a proposal averages about $0.30.",
+     "next": "Finish the Salesforce connection so all Garry information lands in Salesforce by the end of this week."
+    },
+    {
+     "n": "Garry · Data page",
+     "p": "garry",
+     "s": "On track",
+     "b": "New section, “Data: How does the data reach customers?”. The data team is checking that everything is correct.",
+     "next": "Launch, probably tomorrow."
+    },
+    {
+     "n": "Ex-Com Videos",
+     "p": "knowledge",
+     "s": "On track",
+     "b": "Methodology video recorded. The IWSR copy is with subtitling.",
+     "next": "Launch IWSR this week or next."
+    },
+    {
+     "n": "Brand Positioning",
+     "p": "collateral",
+     "s": "New",
+     "b": "Spoke with Q about the brand project. It is partly brand repositioning and partly brand activation, which we should keep in mind.",
+     "next": null
+    }
+   ]
+  },
   {
    "wk": "W37",
    "dates": "7–11 Sep",
