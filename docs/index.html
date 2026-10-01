@@ -187,11 +187,13 @@ main{padding-block:0 72px}
 .past .wk{border-top:none;padding-block:10px 26px}
 .past .lede{font-size:17px;color:var(--ink-2)}
 .past .wcards{margin-top:20px}
-.agenda{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:30px 44px}
+.agenda{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px 40px}
 .ag ul{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:11px}
 .ag li{font-family:var(--f-display);font-size:16px;line-height:1.45;color:var(--ink-2);padding-left:17px;position:relative}
 .ag li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:1px;background:var(--ink-3)}
+.ag.wait li::before{background:var(--accent)}
 .ag.help li::before{background:var(--now);height:2px;top:.62em}
+.ag .none{font-family:var(--f-display);font-size:16px;line-height:1.45;color:var(--ink-3);margin:10px 0 0}
 .ag li b{color:var(--ink);font-weight:500}
 
 /* ── board ────────────────────────────────────────────────── */
@@ -550,8 +552,14 @@ function renderNow(){
 function agendaItems(kind){
   var focus = (D.weekly_focus || []).filter(function(f){ return f.type === kind; })
     .map(function(f){ return f.text; });
-  var fallback = (kind === "help") ? C.agenda.help : C.agenda.cover;
+  var fallback = {topic:C.agenda.focus, waiting:C.agenda.waiting, help:C.agenda.help}[kind] || [];
   return focus.length ? focus : fallback;
+}
+
+function agendaCol(cls, label, items, empty){
+  return '<div class="ag'+(cls ? ' '+cls : '')+'"><span class="k">'+label+'</span>'+
+    (items.length ? '<ul>'+items.map(function(x){ return '<li>'+x+'</li>'; }).join("")+'</ul>'
+                  : '<p class="none">'+empty+'</p>')+'</div>';
 }
 
 function weekHTML(w){
@@ -575,13 +583,11 @@ function weekHTML(w){
 }
 
 function render515(){
-  var cover = agendaItems("topic"), help = agendaItems("help");
-  var out = '<section class="sect"><div class="sect-k k">This 1:1<span class="note">The agenda, and where I am stuck. Topics come from the Weekly Focus database in Notion.</span></div>'+
+  var out = '<section class="sect"><div class="sect-k k">This 1:1<span class="note">The focus, what is waiting on others, and where I need your action. Items come from the Weekly Focus database in Notion.</span></div>'+
     '<div class="sect-b"><div class="agenda">'+
-    '<div class="ag"><span class="k">To cover</span><ul>'+
-      cover.map(function(x){ return '<li>'+x+'</li>'; }).join("")+'</ul></div>'+
-    '<div class="ag help"><span class="k">Where I need help</span><ul>'+
-      help.map(function(x){ return '<li>'+x+'</li>'; }).join("")+'</ul></div>'+
+    agendaCol("", "Focus this week", agendaItems("topic"), "Nothing set.")+
+    agendaCol("wait", "Paused or waiting", agendaItems("waiting"), "Nothing waiting.")+
+    agendaCol("help", "Where I need your help", agendaItems("help"), "Nothing needs your action this week.")+
     '</div></div></section>';
 
   out += '<section class="wk">'+weekHTML(C.weeks[0])+'</section>';

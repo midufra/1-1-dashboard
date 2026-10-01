@@ -738,19 +738,20 @@
   }
  ],
  "agenda": {
-  "cover": [
-   "Garry handover — agreeing the January date with <b>Stef</b>",
-   "Knowledge Centre — spec is with <b>RevOps</b> to scope",
-   "Methodology launch, <b>15 October</b> — ready for the wider organisation",
-   "Trend Confirmations redesign — walkthrough before it scales"
+  "focus": [
+   "Accuracy commercial pitch — with <b>David</b> for approval",
+   "Methodology ready for the wider organisation; customer deep-dive page to design next week",
+   "Garry: new business proposal personalisation, Salesforce connection, and the Data page launch",
+   "Garry spend — <b>$160</b> to date, about <b>$0.30</b> a proposal"
   ],
-  "help": [
-   "<b>David</b>’s approval of the accuracy commercial pitch",
-   "Gong transcript access — the <b>data team</b>’s Snowflake copy is being tested",
-   "<b>Design</b> time next week for the methodology deep-dive page",
-   "<b>Laila</b> for Interiors, the manual route, time-boxed",
-   "<b>Marion</b>’s time for the 20-testimonial mapping"
-  ]
+  "waiting": [
+   "Garry QBRs and localisation — Gong transcripts; testing the <b>data team</b>’s Snowflake copy",
+   "Accuracy pitch — <b>David</b>’s approval, the next step before it goes official",
+   "Methodology deep-dive page — <b>design</b> picks it up next week",
+   "Interiors confirmations — <b>Laila</b>, the manual route",
+   "Client Endorsements mapping — <b>Marion</b>’s time"
+  ],
+  "help": []
  },
  "timeline": [
   {

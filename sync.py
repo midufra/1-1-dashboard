@@ -196,10 +196,14 @@ def main():
         raw_type = get_select(props, "Type") or "Topic"
         if not text:
             continue
-        weekly_focus.append({
-            "type": "help" if raw_type.lower().startswith("help") else "topic",
-            "text": text,
-        })
+        kind = raw_type.lower()
+        if kind.startswith("help"):
+            kind = "help"
+        elif kind.startswith(("wait", "paus")):
+            kind = "waiting"
+        else:
+            kind = "topic"
+        weekly_focus.append({"type": kind, "text": text})
 
     # --- History log + monthly recap ---
     # Read whatever already exists so we accumulate real weekly snapshots
