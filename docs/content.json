@@ -71,19 +71,19 @@
   {
    "id": "methodology",
    "window": "Sep → Nov 2026",
-   "now": "Chasing Cesca’s master template so the Layer 3 plans can be actioned.",
-   "need": "A date from Cesca on the master template, plus design resource",
+   "now": "Ready for the wider organisation. Testing the master template this week to start the customer deep-dive page.",
+   "need": "Design resource for the deep-dive page, from next week",
    "name": "Methodology Narrative",
    "pillar": "Proof",
    "status": "In Progress",
    "cat": "Now",
-   "wait": "Cesca",
+   "wait": "Design",
    "ownerNow": "Mirela — owns it",
    "ownerNext": "Mirela — stays",
    "when": "No handover",
-   "ask": "A date from Cesca on the master template. And design resource for the visuals, video and brand guidelines — that brief has been open since Layer 3 sign-off.",
-   "deps": "Cesca, for the master template. Layer 3 plans are ready but cannot be actioned until it lands.",
-   "next": "Close the template out with Cesca, then pressure-test the narrative with senior sellers before it goes into the core deck.",
+   "ask": "Design time from next week to build the customer deep-dive page, so it can launch.",
+   "deps": "The master template is on its way. Design builds the deep-dive page once I hand it over next week.",
+   "next": "Present to the wider organisation, hand the deep-dive page to design next week, then launch.",
    "kids": [
     {
      "n": "Methodology Launch",
@@ -93,14 +93,21 @@
     },
     {
      "n": "Methodology Video",
-     "s": "Not started",
-     "d": "29 Oct"
+     "s": "In Progress",
+     "d": "29 Oct",
+     "note": "Recorded."
     },
     {
      "n": "Slide (visual for Garry)",
-     "s": "Not started",
+     "s": "Done",
      "d": "24 Sep",
-     "note": "Briefed on design."
+     "note": "Ready for presentations."
+    },
+    {
+     "n": "Customer deep-dive page",
+     "s": "In Progress",
+     "d": "—",
+     "note": "Testing the master template this week; to design next week."
     }
    ],
    "notion": "Methodology Narrative "
@@ -332,20 +339,20 @@
   },
   {
    "id": "accuracy",
-   "window": "Q1 2027, when headcount lands",
-   "now": "Nothing until the data team has capacity.",
-   "need": "Backing for the data team headcount",
+   "window": "Sep → Nov 2026",
+   "now": "Commercial pitch delivered. Waiting on David’s approval to finalise it and make it official.",
+   "need": "David’s sign-off on the commercial pitch",
    "name": "Accuracy Number",
    "pillar": "Proof",
-   "status": "Blocked",
-   "cat": "Later",
-   "wait": "Data team",
-   "ownerNow": "Mirela — on hold",
-   "ownerNext": "Data team",
-   "when": "When headcount lands",
-   "ask": "Back the data team headcount ask. This and the stats bank are parked behind the same constraint.",
-   "deps": "The data team. Exec are looking at headcount; the commercial narrative stays on hold until that concludes.",
-   "next": "Nothing until the data team has capacity. Revisit as soon as headcount is confirmed.",
+   "status": "In Progress",
+   "cat": "Now",
+   "wait": "David",
+   "ownerNow": "Mirela — commercial pitch",
+   "ownerNext": "Data team — the number itself",
+   "when": "Once approved",
+   "ask": "Approve the accuracy commercial pitch so we can finalise it and make it official.",
+   "deps": "David, for approval. The data team stays on the number itself; headcount still limits how far it can go.",
+   "next": "Finalise once David signs off, then make it official and fold it into the methodology story.",
    "kids": [],
    "notion": "Accuracy Number (WGSN)"
   }
@@ -578,14 +585,14 @@
     },
     {
      "n": "Accuracy Number",
-     "st": "Stalled"
+     "st": "In flight"
     },
     {
      "n": "Client Endorsements (Gong)",
      "st": "Not started"
     }
    ],
-   "note": "All three sit behind the same two constraints: data team capacity and Marion’s time."
+   "note": "Accuracy is moving again: the commercial pitch is with David. Proof Points and Endorsements still sit behind data team capacity and Marion’s time."
   },
   {
    "n": "Make every seller tell the same winning story",
@@ -642,6 +649,12 @@
  ],
  "asks": [
   {
+   "id": "d-accuracy",
+   "grp": "decision",
+   "src": "Accuracy Number",
+   "txt": "The accuracy commercial pitch is delivered and needs your approval so we can finalise it and make it official."
+  },
+  {
    "id": "d-customerstories",
    "grp": "decision",
    "src": "ROI",
@@ -660,6 +673,12 @@
    "txt": "Six active projects still sit under parents that are Cancelled, Done or Backlog. Adopt them under a live initiative, or close them?"
   },
   {
+   "id": "a-gong",
+   "grp": "people",
+   "src": "Project Garry",
+   "txt": "Gong transcript access for Garry’s QBRs and localisation. The data team is testing whether their Snowflake copy is enough; if not, we need the full transcripts."
+  },
+  {
    "id": "a-garry-eng",
    "grp": "people",
    "src": "Project Garry",
@@ -672,10 +691,10 @@
    "txt": "RevOps builds the Knowledge Centre. I write the spec and hold the strategy."
   },
   {
-   "id": "a-cesca",
+   "id": "a-deepdive",
    "grp": "people",
    "src": "Methodology Narrative",
-   "txt": "A date from Cesca for the master template. Layer 3 is approved and waiting on it."
+   "txt": "Design time from next week for the customer methodology deep-dive page. The master template is landing and the page is ready to brief."
   },
   {
    "id": "a-laila",
@@ -726,14 +745,15 @@
   "cover": [
    "Garry handover — agreeing the January date with <b>Stef</b>",
    "Knowledge Centre — spec is with <b>RevOps</b> to scope",
-   "Methodology launch, <b>15 October</b>",
+   "Methodology launch, <b>15 October</b> — ready for the wider organisation",
    "Trend Confirmations redesign — walkthrough before it scales"
   ],
   "help": [
-   "A date from <b>Cesca</b> for the master template",
+   "<b>David</b>’s approval of the accuracy commercial pitch",
+   "Gong transcript access — the <b>data team</b>’s Snowflake copy is being tested",
+   "<b>Design</b> time next week for the methodology deep-dive page",
    "<b>Laila</b> for Interiors, the manual route, time-boxed",
-   "<b>Marion</b>’s time for the 20-testimonial mapping",
-   "Backing for the <b>data team headcount</b> — Accuracy is parked behind it"
+   "<b>Marion</b>’s time for the 20-testimonial mapping"
   ]
  },
  "timeline": [
@@ -759,11 +779,12 @@
     2
    ],
    "miles": {
-    "0": "Template w/ Cesca",
+    "0": "Ready for org",
     "1": {
      "t": "Launch 15 Oct",
      "hard": true
-    }
+    },
+    "2": "Deep-dive page"
    }
   },
   {
@@ -845,11 +866,12 @@
   {
    "id": "accuracy",
    "span": [
-    4,
-    4
+    0,
+    2
    ],
    "miles": {
-    "4": "On headcount"
+    "1": "David sign-off",
+    "2": "Official"
    }
   }
  ],
