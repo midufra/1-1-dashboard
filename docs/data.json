@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T13:32:16.407006Z",
+  "generated_at": "2026-10-01T09:19:58.081119Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -44,9 +44,9 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Garry is implementing small improvements to continuously enhance his work.",
-      "completion": 38,
+      "completion": 43,
       "task_counts": {
-        "done": 8,
+        "done": 9,
         "total": 21
       },
       "goal_ids": []
@@ -170,7 +170,7 @@
       "stage": null,
       "pillar": "Garry",
       "summary": "The project launches a new Garry mini\u2011project page to showcase the data formats, types, and sources available to WGSN subscribers, highlighting how this data supports forecasts and demonstrating subscription benefits while reducing questions about data sources and shifting focus from \u201cHow do we forecast?\u201d to \u201cHow is the data presented in reports?\u201d",
-      "completion": 66,
+      "completion": 84,
       "task_counts": {
         "done": 0,
         "total": 2
@@ -344,8 +344,8 @@
     {
       "id": "3ab367a5-461c-8174-913f-f1423f473448",
       "name": "Accuracy Number (WGSN)",
-      "status": "Blocked",
-      "stage": "Next",
+      "status": "In Progress",
+      "stage": "Now",
       "pillar": "Proof",
       "summary": "Project with the data team to calculate the accuracy percentage of WGSN forecasts.",
       "completion": 44,
@@ -482,7 +482,7 @@
       "stage": null,
       "pillar": "Proof",
       "summary": "The project named ROI has a low priority and is currently canceled, with a timeline from January 27, 2026, to December 31, 2026. There are tasks associated with the project, but details are not provided.",
-      "completion": 23,
+      "completion": 27,
       "task_counts": {
         "done": 1,
         "total": 1
@@ -539,23 +539,15 @@
   "weekly_focus": [
     {
       "type": "topic",
-      "text": "IWSR Content Ex-com Video"
+      "text": "Accuracy pitch delivered, waiting approval"
     },
     {
       "type": "topic",
-      "text": "Started QBR plan Garry"
+      "text": "Methodology ready to be presented"
     },
     {
       "type": "topic",
-      "text": "Launched analytics Garry"
-    },
-    {
-      "type": "topic",
-      "text": "Launched client Logos Garry"
-    },
-    {
-      "type": "topic",
-      "text": "Garry 1:1 team"
+      "text": "QBR and Localisation: Blocked on Gong Data"
     }
   ],
   "history": [
@@ -1763,6 +1755,46 @@
           "name": "Methodology Narrative ",
           "status": "In Progress",
           "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "projects": [
+        {
+          "name": "Garry Improvements",
+          "status": "In Progress",
+          "summary": "Garry is implementing small improvements to continuously enhance his work."
+        },
+        {
+          "name": "Garry Salesforce Integration",
+          "status": "In Progress",
+          "summary": "A microproject to integrate Garry with Salesforce."
+        },
+        {
+          "name": "Knowledge Centre",
+          "status": "Not started",
+          "summary": "A sales rep workspace that consolidates insights from calls, accounts, and past value demonstrations, linking systems like Gong, Salesforce, usage data, and product catalog into a unified knowledge bank to help craft tailored, evidence\u2011based sales pitches."
+        },
+        {
+          "name": "Use Cases & Pain Points",
+          "status": "In Progress",
+          "summary": "No content"
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "A video series with XCOM leadership discussing WGSN innovations, recent changes, and initiatives supporting GEO."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "In Progress",
+          "summary": "Project with the data team to calculate the accuracy percentage of WGSN forecasts."
         }
       ]
     }
