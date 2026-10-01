@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T09:19:58.081119Z",
+  "generated_at": "2026-10-01T09:31:04.765198Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -347,7 +347,7 @@
       "status": "In Progress",
       "stage": "Now",
       "pillar": "Proof",
-      "summary": "Project with the data team to calculate the accuracy percentage of WGSN forecasts.",
+      "summary": "Project collaborates with the data team to calculate the percentage accuracy of WGSN forecasts.",
       "completion": 44,
       "task_counts": {
         "done": 4,
@@ -1794,7 +1794,7 @@
         {
           "name": "Accuracy Number (WGSN)",
           "status": "In Progress",
-          "summary": "Project with the data team to calculate the accuracy percentage of WGSN forecasts."
+          "summary": "Project collaborates with the data team to calculate the percentage accuracy of WGSN forecasts."
         }
       ]
     }
