@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T13:06:46.570720Z",
+  "generated_at": "2026-10-05T15:47:42.282363Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -44,10 +44,10 @@
       "stage": "Now",
       "pillar": "Garry",
       "summary": "Garry is implementing small improvements to continuously enhance his work.",
-      "completion": 45,
+      "completion": 43,
       "task_counts": {
         "done": 10,
-        "total": 22
+        "total": 23
       },
       "goal_ids": []
     },
@@ -1880,6 +1880,46 @@
     },
     {
       "date": "2026-10-04",
+      "projects": [
+        {
+          "name": "Garry Improvements",
+          "status": "In Progress",
+          "summary": "Garry is implementing small improvements to continuously enhance his work."
+        },
+        {
+          "name": "Garry Salesforce Integration",
+          "status": "In Progress",
+          "summary": "A microproject to integrate Garry with Salesforce."
+        },
+        {
+          "name": "Knowledge Centre",
+          "status": "Not started",
+          "summary": "A sales rep workspace that consolidates insights from calls, accounts, and past value demonstrations, linking systems like Gong, Salesforce, usage data, and product catalog into a unified knowledge bank to help craft tailored, evidence\u2011based sales pitches."
+        },
+        {
+          "name": "Use Cases & Pain Points",
+          "status": "In Progress",
+          "summary": "No content"
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "A video series with XCOM leadership discussing WGSN innovations, recent changes, and initiatives supporting GEO."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "In Progress",
+          "summary": "Project collaborates with the data team to calculate the percentage accuracy of WGSN forecasts."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
       "projects": [
         {
           "name": "Garry Improvements",
