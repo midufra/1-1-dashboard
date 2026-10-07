@@ -26,7 +26,7 @@
    "ownerNext": "Engineering — build and run",
    "when": "January 2027",
    "ask": "Lock engineering ownership of Garry from January with Stef now, not in December. A handover agreed in December is a handover that does not happen.",
-   "deps": "Engineering (Stef’s team) for the build. QBRs and localisation need Gong transcripts; the data team’s Snowflake copy is being tested as the route.",
+   "deps": "Engineering (Stef’s team) for the build. Gong transcripts are now in Garry, so QBRs and localisation are no longer blocked.",
    "next": "Ship the personalisation layer through Q4, then write the handover spec in November so January is a date, not an intention.",
    "kids": [
     {
@@ -37,9 +37,9 @@
     },
     {
      "n": "QBRs",
-     "s": "Blocked",
+     "s": "In Progress",
      "d": "—",
-     "note": "Needs Gong transcripts. Testing the data team’s Snowflake copy."
+     "note": "Well advanced. Testing with the AMs now."
     },
     {
      "n": "WGSN Pain & Benefits",
@@ -55,9 +55,9 @@
     },
     {
      "n": "Localization",
-     "s": "Blocked",
+     "s": "In Progress",
      "d": "24 Sep",
-     "note": "Needs Gong transcripts. Testing the data team’s Snowflake copy."
+     "note": "Unblocked: transcripts are in Garry. Restarts next week."
     },
     {
      "n": "Onboarding",
@@ -71,7 +71,7 @@
   {
    "id": "methodology",
    "window": "Sep → Nov 2026",
-   "now": "Ready for the wider organisation. Testing the master template this week to start the customer deep-dive page.",
+   "now": "Quiet week. Reviewed the WGSN Score copy for Cesca and agreed with Krystyna to start the Methodology Training.",
    "need": "Design resource for the deep-dive page, from next week",
    "name": "Methodology Narrative",
    "pillar": "Proof",
@@ -83,7 +83,7 @@
    "when": "No handover",
    "ask": "Design time from next week to build the customer deep-dive page, so it can launch.",
    "deps": "Nothing blocking. The master template is on its way, and design picks up the deep-dive page next week.",
-   "next": "Present to the wider organisation, hand the deep-dive page to design next week, then launch.",
+   "next": "Start the Methodology Training with Krystyna, hand the deep-dive page to design, then launch.",
    "kids": [
     {
      "n": "Methodology Launch",
@@ -108,6 +108,12 @@
      "s": "In Progress",
      "d": "—",
      "note": "Testing the master template this week; to design next week."
+    },
+    {
+     "n": "Methodology Training",
+     "s": "Planning",
+     "d": "—",
+     "note": "Starting with Krystyna."
     }
    ],
    "notion": "Methodology Narrative "
@@ -218,7 +224,7 @@
   {
    "id": "excom",
    "window": "Sep → Nov 2026",
-   "now": "Organising the November launches with the stakeholders and the video team.",
+   "now": "Partnership video with Warren and Clare scheduled for next week; script sent.",
    "need": "Nothing today",
    "name": "Ex-Com Interview Series",
    "pillar": "Knowledge",
@@ -245,8 +251,9 @@
     },
     {
      "n": "Partnerships Video",
-     "s": "Not started",
-     "d": "5 Nov"
+     "s": "In Progress",
+     "d": "5 Nov",
+     "note": "Recording next week with Warren and Clare. Script sent."
     },
     {
      "n": "Innovation Video",
@@ -340,24 +347,72 @@
   {
    "id": "accuracy",
    "window": "Sep → Nov 2026",
-   "now": "Commercial pitch delivered. Waiting on David’s approval to finalise it and make it official.",
-   "need": "David’s sign-off on the commercial pitch",
+   "now": "Copy delivered. Waiting on the data team to confirm a few details so the commercial pitch can be completed.",
+   "need": "The data team’s confirmation on a few details",
    "name": "Accuracy Number",
    "pillar": "Proof",
    "status": "In Progress",
    "cat": "Now",
-   "wait": null,
+   "wait": "Data team",
    "ownerNow": "Mirela — commercial pitch",
    "ownerNext": "Data team — the number itself",
    "when": "Once approved",
-   "ask": "Approve the accuracy commercial pitch so we can finalise it and make it official.",
-   "deps": "Nothing blocking. David’s approval is the next step; after that the data team carries the number itself.",
-   "next": "Finalise once David signs off, then make it official and fold it into the methodology story.",
+   "ask": "The data team’s confirmation on the outstanding details, so the commercial pitch can be completed.",
+   "deps": "The data team, to confirm a few details in the commercial pitch. After that they carry the number itself.",
+   "next": "Complete the commercial pitch once the data team confirms, then make it official and fold it into the methodology story.",
    "kids": [],
    "notion": "Accuracy Number (WGSN)"
   }
  ],
  "weeks": [
+  {
+   "wk": "W41",
+   "dates": "5–9 Oct",
+   "headline": "Garry’s Gong blocker is cleared: transcripts are now in Garry, QBR testing with the AMs starts now, and localisation restarts next week. The accuracy copy is delivered, with the commercial pitch waiting on a few details from the data team. Methodology had a quiet week.",
+   "waiting": [
+    {
+     "who": "Data team",
+     "what": "confirmation on a few details. This holds the accuracy commercial pitch."
+    }
+   ],
+   "entries": [
+    {
+     "n": "Accuracy Number",
+     "p": "proof",
+     "s": "Watch",
+     "b": "Copy delivered. Waiting on the data team to confirm a few details before the commercial pitch can be completed.",
+     "next": "Get the data team’s confirmation, then complete the commercial pitch."
+    },
+    {
+     "n": "Methodology Narrative",
+     "p": "proof",
+     "s": "Watch",
+     "b": "No major progress this week. Helped Cesca with a quick review of the WGSN Score copy, and agreed with Krystyna to start working on the Methodology Training.",
+     "next": "Start the Methodology Training with Krystyna."
+    },
+    {
+     "n": "Garry · QBR",
+     "p": "garry",
+     "s": "On track",
+     "b": "Well advanced. Testing with the AMs starts now.",
+     "next": "Test with the AMs and fold in their feedback."
+    },
+    {
+     "n": "Garry · Localisation",
+     "p": "garry",
+     "s": "On track",
+     "b": "Was blocked on Gong transcripts. We’ve now got the transcripts into Garry, so the project can move again.",
+     "next": "Restart localisation next week."
+    },
+    {
+     "n": "Ex-Com Videos",
+     "p": "knowledge",
+     "s": "On track",
+     "b": "Partnership video with Warren and Clare is scheduled for next week. Script sent to them today.",
+     "next": "Record the partnership video next week."
+    }
+   ]
+  },
   {
    "wk": "W40",
    "dates": "28 Sep–2 Oct",
@@ -588,7 +643,7 @@
      "st": "Not started"
     }
    ],
-   "note": "Accuracy is moving again: the commercial pitch is with David. Proof Points and Endorsements still sit behind data team capacity and Marion’s time."
+   "note": "Accuracy copy is delivered; the commercial pitch waits on a few details from the data team. Proof Points and Endorsements still sit behind data team capacity and Marion’s time."
   },
   {
    "n": "Make every seller tell the same winning story",
@@ -646,9 +701,9 @@
  "asks": [
   {
    "id": "d-accuracy",
-   "grp": "decision",
+   "grp": "people",
    "src": "Accuracy Number",
-   "txt": "The accuracy commercial pitch is delivered and needs your approval so we can finalise it and make it official."
+   "txt": "The accuracy copy is delivered. The data team needs to confirm a few details before the commercial pitch can be completed."
   },
   {
    "id": "d-customerstories",
@@ -667,12 +722,6 @@
    "grp": "decision",
    "src": "Portfolio hygiene",
    "txt": "Six active projects still sit under parents that are Cancelled, Done or Backlog. Adopt them under a live initiative, or close them?"
-  },
-  {
-   "id": "a-gong",
-   "grp": "people",
-   "src": "Project Garry",
-   "txt": "Gong transcript access for Garry’s QBRs and localisation. The data team is testing whether their Snowflake copy is enough; if not, we need the full transcripts."
   },
   {
    "id": "a-garry-eng",
@@ -739,15 +788,14 @@
  ],
  "agenda": {
   "focus": [
-   "Accuracy commercial pitch — with <b>David</b> for approval",
-   "Methodology ready for the wider organisation; customer deep-dive page to design next week",
-   "Garry: new business proposal personalisation, Salesforce connection, and the Data page launch",
-   "Garry spend — <b>$160</b> to date, about <b>$0.30</b> a proposal"
+   "Garry QBR — well advanced, testing with the <b>AMs</b> now",
+   "Garry localisation — transcripts are in Garry, restarting next week",
+   "Ex-Com partnership video with <b>Warren</b> and <b>Clare</b> next week; script sent",
+   "Methodology Training — starting with <b>Krystyna</b>"
   ],
   "waiting": [
-   "Garry QBRs and localisation — Gong transcripts; testing the <b>data team</b>’s Snowflake copy",
-   "Accuracy pitch — <b>David</b>’s approval, the next step before it goes official",
-   "Methodology deep-dive page — <b>design</b> picks it up next week",
+   "Accuracy commercial pitch — a few details to confirm with the <b>data team</b>",
+   "Methodology deep-dive page — <b>design</b>",
    "Interiors confirmations — <b>Laila</b>, the manual route",
    "Client Endorsements mapping — <b>Marion</b>’s time"
   ],
@@ -867,7 +915,7 @@
     2
    ],
    "miles": {
-    "1": "David sign-off",
+    "1": "Data team details",
     "2": "Official"
    }
   }
