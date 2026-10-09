@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T14:29:45.015824Z",
+  "generated_at": "2026-10-09T14:16:48.777824Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -37,6 +37,20 @@
     }
   ],
   "projects": [
+    {
+      "id": "3f3367a5-461c-80ea-9319-dfeca8b0baa2",
+      "name": "Methodology Annual Report",
+      "status": "Not started",
+      "stage": "Next",
+      "pillar": null,
+      "summary": "No content",
+      "completion": 0,
+      "task_counts": {
+        "done": 0,
+        "total": 1
+      },
+      "goal_ids": []
+    },
     {
       "id": "3f2367a5-461c-8096-982a-ffcff4df155e",
       "name": "Methodology Score",
@@ -361,7 +375,7 @@
       "completion": 67,
       "task_counts": {
         "done": 16,
-        "total": 33
+        "total": 36
       },
       "goal_ids": [
         "3b1367a5-461c-8195-a1d9-d7d72963c2df"
@@ -2082,6 +2096,46 @@
     },
     {
       "date": "2026-10-08",
+      "projects": [
+        {
+          "name": "Garry Improvements",
+          "status": "In Progress",
+          "summary": "Garry is implementing small improvements to continuously enhance his work."
+        },
+        {
+          "name": "Garry Salesforce Integration",
+          "status": "In Progress",
+          "summary": "A microproject to integrate Garry with Salesforce."
+        },
+        {
+          "name": "Knowledge Centre",
+          "status": "Not started",
+          "summary": "A sales rep workspace that consolidates insights from calls, accounts, and past value demonstrations, linking systems like Gong, Salesforce, usage data, and product catalog into a unified knowledge bank to help craft tailored, evidence\u2011based sales pitches."
+        },
+        {
+          "name": "Use Cases & Pain Points",
+          "status": "In Progress",
+          "summary": "No content"
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "A video series with XCOM leadership discussing WGSN innovations, recent changes, and initiatives supporting GEO."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "In Progress",
+          "summary": "Project collaborates with the data team to calculate the percentage accuracy of WGSN forecasts."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
       "projects": [
         {
           "name": "Garry Improvements",
