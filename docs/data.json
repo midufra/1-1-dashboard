@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-20T12:38:22.579797Z",
+  "generated_at": "2026-10-21T12:50:04.075938Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
       "name": "Arm every deal with proof",
-      "completion": 28,
+      "completion": 44,
       "project_ids": [
         "2f5367a5-461c-808c-9866-e91f126035e5",
         "3ab367a5-461c-8174-913f-f1423f473448",
@@ -54,7 +54,7 @@
     {
       "id": "3fa367a5-461c-8045-adde-ef067c7a0c9a",
       "name": "Methodology Annual Report",
-      "status": "In Progress",
+      "status": "Planning",
       "stage": "Next",
       "pillar": null,
       "summary": "No content",
@@ -82,14 +82,14 @@
     {
       "id": "3f2367a5-461c-8096-982a-ffcff4df155e",
       "name": "Methodology Score",
-      "status": "Planning",
+      "status": "In Progress",
       "stage": null,
       "pillar": null,
       "summary": "No content",
-      "completion": null,
+      "completion": 100,
       "task_counts": {
-        "done": 0,
-        "total": 0
+        "done": 2,
+        "total": 2
       },
       "goal_ids": []
     },
@@ -152,7 +152,7 @@
     {
       "id": "3e2367a5-461c-81a8-a784-ceba74ecaf5c",
       "name": "Garry One-pagers",
-      "status": "Planning",
+      "status": "In Progress",
       "stage": null,
       "pillar": "Garry",
       "summary": "This mini project creates personalized product collateral to introduce offerings to prospects and customers, making products discoverable, generating FOMO, and helping sales and account teams quickly present tailored product information.",
@@ -194,7 +194,7 @@
     {
       "id": "3e2367a5-461c-81fd-9e0d-cde619c7ed7c",
       "name": "Garry Personalisation",
-      "status": "Planning",
+      "status": "Not started",
       "stage": null,
       "pillar": "Garry",
       "summary": "This microproject deepens Garry personalization by expanding beyond initial guardrails to explore and refine offered personalized features.",
@@ -432,10 +432,10 @@
       "stage": "Now",
       "pillar": "Proof",
       "summary": "Project collaborates with the data team to calculate the percentage accuracy of WGSN forecasts.",
-      "completion": 56,
+      "completion": 88,
       "task_counts": {
-        "done": 5,
-        "total": 9
+        "done": 7,
+        "total": 8
       },
       "goal_ids": [
         "3b1367a5-461c-8145-8219-c297b2626ae2"
@@ -490,7 +490,7 @@
     {
       "id": "2f5367a5-461c-80ba-b4bc-ceec4ae58f96",
       "name": "Trend Confirmations",
-      "status": "In Progress",
+      "status": "Done",
       "stage": null,
       "pillar": "Proof",
       "summary": "Redesigned this week as a byproduct of Garry, Accuracy, and Methodology work \u2014 landed really well with Cesca and David, and already in use on the Nestl\u00e9 document. Presenting to Wendy next week.",
@@ -562,7 +562,7 @@
     {
       "id": "2f5367a5-461c-802b-bd95-d6a9561a8716",
       "name": "ROI",
-      "status": "Planning",
+      "status": "Not started",
       "stage": null,
       "pillar": "Proof",
       "summary": "The project named ROI has a low priority and is currently canceled, with a timeline from January 27, 2026, to December 31, 2026. There are tasks associated with the project, but details are not provided.",
@@ -635,36 +635,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-08-25",
-      "projects": [
-        {
-          "name": "Nestl\u00e9 Methodology Collateral",
-          "status": "Done",
-          "summary": "Requested by David, Harry, and Felix to present Nestl\u00e9's methodology. I invested significant time creating the needed material solo, which proved valuable as an exercise in effectively presenting the methodology."
-        },
-        {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "API video launched \u2014 live on YouTube and blog, shared via Carla's C-suite newsletter on 21 Aug. David and Cesca's methodology video scheduled and script shared with them. Next: share with wider company and add to the knowledge centre (slipped this week due to Nestl\u00e9/Garry)."
-        },
-        {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Design briefing on the Garry visual slide slipped again this week (Nestl\u00e9 + Garry took priority). Assembling the official doc combining Layers 1 and 2; shared the Layer 3 closing doc with Cesca to fill out. Next: brief design, then work the video script for the org-wide launch. Krystyna training conversation continuing \u2014 recommend postponing a few weeks past the Catwalks launch (1 Sept)."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Final launch tasks underway: redesigned sections, security checks, and deployment prep. Roadmap meetings held to shape next steps. Worked with Product Marketing on WGSN architecture. Oleg handing over IT ownership as he moves off the project post-launch. Launch is ready for next week. Next: sales launch meeting Thu 27 Aug, draft launch comms, prep for rep feedback on first 10 customer proposals."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "Blocked",
-          "summary": "Completed the analysis this week and finalised the recommendation to Cesca: keep developing rather than launch now, since the current numbers wouldn't hold up under scrutiny. Exec team is looking to add headcount to the data team so that work can continue. Commercial narrative remains on hold until that concludes."
-        }
-      ]
-    },
     {
       "date": "2026-08-26",
       "projects": [
@@ -2327,6 +2297,46 @@
     },
     {
       "date": "2026-10-20",
+      "projects": [
+        {
+          "name": "Garry Improvements",
+          "status": "In Progress",
+          "summary": "Garry is implementing small improvements to continuously enhance his work."
+        },
+        {
+          "name": "Garry Salesforce Integration",
+          "status": "In Progress",
+          "summary": "A microproject to integrate Garry with Salesforce."
+        },
+        {
+          "name": "Knowledge Centre",
+          "status": "Not started",
+          "summary": "A sales rep workspace that consolidates insights from calls, accounts, and past value demonstrations, linking systems like Gong, Salesforce, usage data, and product catalog into a unified knowledge bank to help craft tailored, evidence\u2011based sales pitches."
+        },
+        {
+          "name": "Use Cases & Pain Points",
+          "status": "In Progress",
+          "summary": "No content"
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "A video series with XCOM leadership discussing WGSN innovations, recent changes, and initiatives supporting GEO."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "In Progress",
+          "summary": "Project collaborates with the data team to calculate the percentage accuracy of WGSN forecasts."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
       "projects": [
         {
           "name": "Garry Improvements",
