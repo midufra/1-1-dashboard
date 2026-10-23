@@ -157,6 +157,7 @@ main{padding-block:0 72px}
 .wk-k{padding-top:6px}
 .wk-k .dates{display:block;margin-top:7px;font-size:9.5px;letter-spacing:.1em;color:var(--ink-3)}
 .wk-wait{font-size:12.5px;color:var(--ink-3);margin:12px 0 0}
+.wk-draft{display:inline-block;margin:0 0 12px;font-family:var(--f-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);border:1px dashed var(--ink-3);border-radius:3px;padding:3px 7px}
 .wk-wait b{font-weight:500;color:var(--ink-2)}
 .wcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(262px,1fr));gap:1px;margin-top:26px}
 .wcard{background:var(--surface);padding:16px 18px 17px;box-shadow:0 0 0 1px var(--line-2)}
@@ -564,6 +565,7 @@ function agendaCol(cls, label, items, empty){
 
 function weekHTML(w){
   var h = '<div class="wk-k k">'+w.wk+'<span class="dates">'+w.dates+'</span></div><div class="sect-b">'+
+    (w.draft ? '<span class="wk-draft">Suggested draft · from Notion activity</span>' : '')+
     '<p class="lede">'+w.headline+'</p>';
   if(w.waiting && w.waiting.length){
     h += '<p class="wk-wait">Held that week on '+w.waiting.map(function(x){
