@@ -366,6 +366,69 @@
  ],
  "weeks": [
   {
+   "wk": "W43",
+   "dates": "19–23 Oct",
+   "draft": true,
+   "headline": "Accuracy Option 1 is approved and the pitch is delivered; the number now waits on data from the data team. QBR testing with the AMs has started and Methodology Score is closed. The Ex-Com partnership script is delivered, with shooting next Tuesday.",
+   "waiting": [
+    {
+     "who": "Data team",
+     "what": "the data behind the accuracy number, now that Option 1 is approved."
+    }
+   ],
+   "entries": [
+    {
+     "n": "Accuracy Number",
+     "p": "proof",
+     "s": "On track",
+     "b": "Option 1 was approved and I’ve delivered the pitch. Now waiting on the data.",
+     "next": "Pick it up as soon as the data team delivers."
+    },
+    {
+     "n": "Garry · QBR",
+     "p": "garry",
+     "s": "On track",
+     "b": "Testing with the AMs has started.",
+     "next": "Fold in the AMs’ feedback."
+    },
+    {
+     "n": "Methodology Score",
+     "p": "proof",
+     "s": "Shipped",
+     "b": "Pitch created and approved with Cesca. The project is closed.",
+     "next": null
+    },
+    {
+     "n": "Methodology Training",
+     "p": "proof",
+     "s": "New",
+     "b": "Now its own project, in progress.",
+     "next": null
+    },
+    {
+     "n": "Ex-Com Videos",
+     "p": "knowledge",
+     "s": "On track",
+     "b": "Partnership script delivered. The Innovation video has started.",
+     "next": "Shoot the partnership video next Tuesday."
+    },
+    {
+     "n": "Garry · Improvements",
+     "p": "garry",
+     "s": "On track",
+     "b": "Three new pieces lined up: a new trend confirmations visual, a new customer stories visual, and a data stat across the microsite. One-pagers moved into progress.",
+     "next": "Start on the new visuals."
+    },
+    {
+     "n": "Trend Confirmations",
+     "p": "proof",
+     "s": "Shipped",
+     "b": "Closed in Notion this week.",
+     "next": null
+    }
+   ]
+  },
+  {
    "wk": "W41",
    "dates": "5–9 Oct",
    "headline": "Garry’s Gong blocker is cleared: transcripts are now in Garry, QBR testing with the AMs starts now, and localisation restarts next week. The accuracy copy is delivered, with the commercial pitch waiting on a few details from the data team. Methodology had a quiet week.",
@@ -788,13 +851,13 @@
  ],
  "agenda": {
   "focus": [
-   "Garry QBR — well advanced, testing with the <b>AMs</b> now",
-   "Garry localisation — transcripts are in Garry, restarting next week",
-   "Ex-Com partnership video with <b>Warren</b> and <b>Clare</b> next week; script sent",
-   "Methodology Training — starting with <b>Krystyna</b>"
+   "Accuracy Option 1 approved and the pitch delivered — waiting on data",
+   "Garry QBR — testing with the <b>AMs</b> has started",
+   "Ex-Com partnership script delivered; shooting next Tuesday",
+   "Methodology Score closed; Methodology Training under way"
   ],
   "waiting": [
-   "Accuracy commercial pitch — a few details to confirm with the <b>data team</b>",
+   "Accuracy number — data from the <b>data team</b>",
    "Methodology deep-dive page — <b>design</b>",
    "Interiors confirmations — <b>Laila</b>, the manual route",
    "Client Endorsements mapping — <b>Marion</b>’s time"
