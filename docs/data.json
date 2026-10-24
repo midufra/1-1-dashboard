@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T12:31:37.740499Z",
+  "generated_at": "2026-10-24T11:55:33.384180Z",
   "goals": [
     {
       "id": "3b1367a5-461c-8145-8219-c297b2626ae2",
@@ -25,7 +25,7 @@
     {
       "id": "3b1367a5-461c-81b4-9305-f7c613ba38ed",
       "name": "Give selling time back to sales",
-      "completion": 54,
+      "completion": 49,
       "project_ids": [
         "3ab367a5-461c-816c-a30e-d1cd10c1df22",
         "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -37,6 +37,76 @@
     }
   ],
   "projects": [
+    {
+      "id": "402367a5-461c-8059-b8d6-fab7b221f955",
+      "name": "Client logos round 2 - Customer Stories",
+      "status": "Not started",
+      "stage": "Later",
+      "pillar": null,
+      "summary": "No content",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "402367a5-461c-8063-b7dc-c6a5d751f541",
+      "name": "Mindset NDA/Old - Customer Stories",
+      "status": "Not started",
+      "stage": "Later",
+      "pillar": null,
+      "summary": "No content",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "402367a5-461c-80ee-bcab-c308aa52d05b",
+      "name": "Training - Customer Stories",
+      "status": "Planning",
+      "stage": "Later",
+      "pillar": null,
+      "summary": "No content",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "402367a5-461c-8050-9567-c306ff6e564b",
+      "name": "Townhall - Customer Stories",
+      "status": "Not started",
+      "stage": "Later",
+      "pillar": null,
+      "summary": "No content",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "402367a5-461c-80ea-b8c2-e80735d684f6",
+      "name": "Dec Push - Customer Stories",
+      "status": "Planning",
+      "stage": "Next",
+      "pillar": null,
+      "summary": "No content",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
     {
       "id": "3fa367a5-461c-8072-ade6-fe7c94527464",
       "name": "Methodology Training",
@@ -82,7 +152,7 @@
     {
       "id": "3f2367a5-461c-80dc-88fd-d10cf0dd1ddf",
       "name": "ExCom - Partnerships Warren/Mindset",
-      "status": "Planning",
+      "status": "In Progress",
       "stage": null,
       "pillar": null,
       "summary": "No content",
@@ -111,7 +181,7 @@
       "id": "3e2367a5-461c-812d-8d1f-fe5e0c69cec0",
       "name": "Garry WGSN Map",
       "status": "Not started",
-      "stage": null,
+      "stage": "Later",
       "pillar": "Garry",
       "summary": "Create a map section that visualizes global reach by displaying where team members and offices are located worldwide.",
       "completion": 0,
@@ -125,7 +195,7 @@
       "id": "3e2367a5-461c-8148-9d1f-e2f0097c2ed7",
       "name": "Garry Skills",
       "status": "Not started",
-      "stage": null,
+      "stage": "Later",
       "pillar": "Garry",
       "summary": "No content",
       "completion": 0,
@@ -153,7 +223,7 @@
       "id": "3e2367a5-461c-81c1-8ef2-efe264d04baf",
       "name": "Garry Sample Reports",
       "status": "Not started",
-      "stage": null,
+      "stage": "Later",
       "pillar": "Garry",
       "summary": "Create sample reports to generate FOMO and encourage subscriptions by limiting free content, define and approve the report format and access controls, and address engineering considerations for controlling prospect and customer visibility.",
       "completion": 0,
@@ -181,7 +251,7 @@
       "id": "3e2367a5-461c-81fd-9e0d-cde619c7ed7c",
       "name": "Garry Personalisation",
       "status": "Not started",
-      "stage": null,
+      "stage": "Later",
       "pillar": "Garry",
       "summary": "This microproject deepens Garry personalization by expanding beyond initial guardrails to explore and refine offered personalized features.",
       "completion": 0,
@@ -194,7 +264,7 @@
     {
       "id": "3d4367a5-461c-811f-a10c-f63f9e5d1dd7",
       "name": "Garry Localization",
-      "status": "In Progress",
+      "status": "Paused",
       "stage": null,
       "pillar": "Garry",
       "summary": "Garry mini\u2011project focuses on localizing Gary into supported languages, enabling regional teams to personalize proposals and sales materials.",
@@ -208,8 +278,8 @@
     {
       "id": "3d4367a5-461c-8141-baf6-e0e8782fe298",
       "name": "Innovation Video",
-      "status": "Not started",
-      "stage": null,
+      "status": "Canceled",
+      "stage": "Stop",
       "pillar": "Knowledge",
       "summary": "New ExCom interview video focusing on innovation.",
       "completion": 17,
@@ -223,7 +293,7 @@
       "id": "3d4367a5-461c-8189-9593-c29e95bb7359",
       "name": "Garry Discovery",
       "status": "Not started",
-      "stage": null,
+      "stage": "Later",
       "pillar": "Garry",
       "summary": "A new, personalizable collateral for the discovery stage will introduce WJSN, present the company, its products, and the benefits of its trend\u2011forecasting services.",
       "completion": 0,
@@ -251,7 +321,7 @@
       "id": "3d4367a5-461c-81d9-bd43-f2ea1d40d8da",
       "name": "Garry Mindset",
       "status": "Not started",
-      "stage": null,
+      "stage": "Later",
       "pillar": "Garry",
       "summary": "Introduces mindset consultancy and proposal collateral for the Garry mini\u2011project.",
       "completion": 0,
@@ -320,7 +390,7 @@
     {
       "id": "3ba367a5-461c-81ed-ac72-e6cb39b8d52f",
       "name": "Use Cases & Pain Points",
-      "status": "In Progress",
+      "status": "Canceled",
       "stage": "Now",
       "pillar": "Collateral",
       "summary": "No content",
@@ -414,7 +484,7 @@
     {
       "id": "3ab367a5-461c-8174-913f-f1423f473448",
       "name": "Accuracy Number (WGSN)",
-      "status": "In Progress",
+      "status": "Paused",
       "stage": "Now",
       "pillar": "Proof",
       "summary": "Project collaborates with the data team to calculate the percentage accuracy of WGSN forecasts.",
@@ -426,6 +496,34 @@
       "goal_ids": [
         "3b1367a5-461c-8145-8219-c297b2626ae2"
       ]
+    },
+    {
+      "id": "33c367a5-461c-803a-b9c0-f34c4106ea00",
+      "name": "Best Kept Secret - Customer Stories",
+      "status": "Backlog",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "Project \"Best Kept Secret\" is currently in the planning stage, with details on ownership, priority, and timelines yet to be defined. Links to parent projects and goals are included, along with a section for project tasks.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
+    },
+    {
+      "id": "33c367a5-461c-805f-b6d7-dd90a393c145",
+      "name": "Detailed Quotes NPS - Customer Stories",
+      "status": "Not started",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "Project is in the planning stage with details on ownership, priority, and tasks yet to be defined. Key links and notes are also included but remain empty.",
+      "completion": null,
+      "task_counts": {
+        "done": 0,
+        "total": 0
+      },
+      "goal_ids": []
     },
     {
       "id": "336367a5-461c-80f5-b3e8-f5288dbe1c1d",
@@ -518,6 +616,22 @@
       "goal_ids": []
     },
     {
+      "id": "2f5367a5-461c-80e8-a14c-f73a0d970622",
+      "name": "Customer Stories Program",
+      "status": "In Progress",
+      "stage": null,
+      "pillar": "Collateral",
+      "summary": "The Customer Stories Program is a high-priority project planned from January 25, 2026, to June 30, 2026, with various tasks outlined. Key outputs and references related to customer stories are included for project work.",
+      "completion": 41,
+      "task_counts": {
+        "done": 13,
+        "total": 32
+      },
+      "goal_ids": [
+        "3b1367a5-461c-81b4-9305-f7c613ba38ed"
+      ]
+    },
+    {
       "id": "2f5367a5-461c-8015-9b28-d27b6e073f60",
       "name": "Metric Survey",
       "status": "Canceled",
@@ -548,11 +662,11 @@
     {
       "id": "2f5367a5-461c-802b-bd95-d6a9561a8716",
       "name": "ROI",
-      "status": "Not started",
-      "stage": null,
+      "status": "Backlog",
+      "stage": "Later",
       "pillar": "Proof",
       "summary": "The project named ROI has a low priority and is currently canceled, with a timeline from January 27, 2026, to December 31, 2026. There are tasks associated with the project, but details are not provided.",
-      "completion": 29,
+      "completion": 100,
       "task_counts": {
         "done": 1,
         "total": 1
@@ -621,36 +735,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-08-29",
-      "projects": [
-        {
-          "name": "Nestl\u00e9 Methodology Collateral",
-          "status": "Done",
-          "summary": "Requested by David, Harry, and Felix to present Nestl\u00e9's methodology. I invested significant time creating the needed material solo, which proved valuable as an exercise in effectively presenting the methodology."
-        },
-        {
-          "name": "Ex-Com Interview Series",
-          "status": "In Progress",
-          "summary": "API video launched \u2014 live on YouTube and blog, shared via Carla's C-suite newsletter on 21 Aug. David and Cesca's methodology video scheduled and script shared with them. Next: share with wider company and add to the knowledge centre (slipped this week due to Nestl\u00e9/Garry)."
-        },
-        {
-          "name": "Methodology Narrative (Layer 2)",
-          "status": "In Progress",
-          "summary": "Design briefing on the Garry visual slide slipped again this week (Nestl\u00e9 + Garry took priority). Assembling the official doc combining Layers 1 and 2; shared the Layer 3 closing doc with Cesca to fill out. Next: brief design, then work the video script for the org-wide launch. Krystyna training conversation continuing \u2014 recommend postponing a few weeks past the Catwalks launch (1 Sept)."
-        },
-        {
-          "name": "Project Garry",
-          "status": "In Progress",
-          "summary": "Final launch tasks underway: redesigned sections, security checks, and deployment prep. Roadmap meetings held to shape next steps. Worked with Product Marketing on WGSN architecture. Oleg handing over IT ownership as he moves off the project post-launch. Launch is ready for next week. Next: sales launch meeting Thu 27 Aug, draft launch comms, prep for rep feedback on first 10 customer proposals."
-        },
-        {
-          "name": "Accuracy Number (WGSN)",
-          "status": "Blocked",
-          "summary": "Completed the analysis this week and finalised the recommendation to Cesca: keep developing rather than launch now, since the current numbers wouldn't hold up under scrutiny. Exec team is looking to add headcount to the data team so that work can continue. Commercial narrative remains on hold until that concludes."
-        }
-      ]
-    },
     {
       "date": "2026-08-30",
       "projects": [
@@ -2377,6 +2461,46 @@
         {
           "name": "Accuracy Number (WGSN)",
           "status": "In Progress",
+          "summary": "Project collaborates with the data team to calculate the percentage accuracy of WGSN forecasts."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "projects": [
+        {
+          "name": "Garry Improvements",
+          "status": "In Progress",
+          "summary": "Garry is implementing small improvements to continuously enhance his work."
+        },
+        {
+          "name": "Garry Salesforce Integration",
+          "status": "In Progress",
+          "summary": "A microproject to integrate Garry with Salesforce."
+        },
+        {
+          "name": "Knowledge Centre",
+          "status": "Not started",
+          "summary": "A sales rep workspace that consolidates insights from calls, accounts, and past value demonstrations, linking systems like Gong, Salesforce, usage data, and product catalog into a unified knowledge bank to help craft tailored, evidence\u2011based sales pitches."
+        },
+        {
+          "name": "Use Cases & Pain Points",
+          "status": "Canceled",
+          "summary": "No content"
+        },
+        {
+          "name": "Ex-Com Interview Series",
+          "status": "In Progress",
+          "summary": "A video series with XCOM leadership discussing WGSN innovations, recent changes, and initiatives supporting GEO."
+        },
+        {
+          "name": "Methodology Narrative ",
+          "status": "In Progress",
+          "summary": "Repackaging the WGSN methodology framework to clearly explain how WGSN forecasts trends and ensures accuracy."
+        },
+        {
+          "name": "Accuracy Number (WGSN)",
+          "status": "Paused",
           "summary": "Project collaborates with the data team to calculate the percentage accuracy of WGSN forecasts."
         }
       ]
